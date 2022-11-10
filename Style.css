@@ -46,7 +46,6 @@ h5 {
 
 .button {
     position: relative;
-    left: 100px;
     top: 100px;
     width: 400px;
     height: 400px;
@@ -578,5 +577,9 @@ a {
     .content{
     overflow-x: visible;
         overflow-y:hidden;
+    }
+    
+    .button{
+        left: 10%;
     }
 }
