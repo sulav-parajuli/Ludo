@@ -573,3 +573,9 @@ a {
     left: 20px;
     top: 10px;
 }
+
+@media screen and (max-width: 740px) {
+    .content{
+    overflow-x: visible;
+    }
+}
