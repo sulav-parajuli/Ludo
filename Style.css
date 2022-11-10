@@ -577,5 +577,6 @@ a {
 @media screen and (max-width: 740px) {
     .content{
     overflow-x: visible;
+        overflow-y:hidden;
     }
 }
