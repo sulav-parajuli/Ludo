@@ -698,1305 +698,1308 @@ function disappear(score) {
 }
 
 function checker() {
-    //if value is 1. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 1) {
-        if (document.querySelector(".path1 .g1").style.backgroundColor === "") {
-            path(value, "green");
+    var i;
+    for (i = 0; i < 4; i++) {
+        //if value is 1. 
+        if (gs[i] === 1) {
+            if (document.querySelector(".path1 .g1").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 1) {
-        if (document.querySelector(".path1 .g1").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 1) {
+            if (document.querySelector(".path1 .g1").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 1) {
-        if (document.querySelector(".path1 .g1").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 1) {
+            if (document.querySelector(".path1 .g1").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 1) {
-        if (document.querySelector(".path1 .g1").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 1) {
+            if (document.querySelector(".path1 .g1").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 2. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 2) {
-        if (document.querySelector(".path2 .g1").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 2. 
+        if (gs[i] === 2) {
+            if (document.querySelector(".path2 .g1").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 2) {
-        if (document.querySelector(".path2 .g1").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 2) {
+            if (document.querySelector(".path2 .g1").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 2) {
-        if (document.querySelector(".path2 .g1").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 2) {
+            if (document.querySelector(".path2 .g1").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 2) {
-        if (document.querySelector(".path3 .g1").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 2) {
+            if (document.querySelector(".path3 .g1").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 3. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 3) {
-        if (document.querySelector(".path3 .g1").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 3. 
+        if (gs[i] === 3) {
+            if (document.querySelector(".path3 .g1").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 3) {
-        if (document.querySelector(".path3 .g1").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 3) {
+            if (document.querySelector(".path3 .g1").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 3) {
-        if (document.querySelector(".path3 .g1").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 3) {
+            if (document.querySelector(".path3 .g1").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 3) {
-        if (document.querySelector(".path3 .g1").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 3) {
+            if (document.querySelector(".path3 .g1").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 4. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 4) {
-        if (document.querySelector(".path4 .g1").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 4. 
+        if (gs[i] === 4) {
+            if (document.querySelector(".path4 .g1").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 4) {
-        if (document.querySelector(".path4 .g1").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 4) {
+            if (document.querySelector(".path4 .g1").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 4) {
-        if (document.querySelector(".path4 .g1").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 4) {
+            if (document.querySelector(".path4 .g1").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 4) {
-        if (document.querySelector(".path4 .g1").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 4) {
+            if (document.querySelector(".path4 .g1").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 5. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 5) {
-        if (document.querySelector(".path5 .g1").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 5. 
+        if (gs[i] === 5) {
+            if (document.querySelector(".path5 .g1").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 5) {
-        if (document.querySelector(".path5 .g1").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 5) {
+            if (document.querySelector(".path5 .g1").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 5) {
-        if (document.querySelector(".path5 .g1").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 5) {
+            if (document.querySelector(".path5 .g1").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 5) {
-        if (document.querySelector(".path5 .g1").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 5) {
+            if (document.querySelector(".path5 .g1").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 6. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 6) {
-        if (document.querySelector(".vpath .g6").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 6. 
+        if (gs[i] === 6) {
+            if (document.querySelector(".vpath .g6").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 6) {
-        if (document.querySelector(".vpath .g6").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 6) {
+            if (document.querySelector(".vpath .g6").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 6) {
-        if (document.querySelector(".vpath .g6").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 6) {
+            if (document.querySelector(".vpath .g6").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 6) {
-        if (document.querySelector(".vpath .g6").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 6) {
+            if (document.querySelector(".vpath .g6").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 7. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 7) {
-        if (document.querySelector(".vpath .g5").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 7. 
+        if (gs[i] === 7) {
+            if (document.querySelector(".vpath .g5").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 7) {
-        if (document.querySelector(".vpath .g5").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 7) {
+            if (document.querySelector(".vpath .g5").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 7) {
-        if (document.querySelector(".vpath .g5").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 7) {
+            if (document.querySelector(".vpath .g5").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 7) {
-        if (document.querySelector(".vpath .g5").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 7) {
+            if (document.querySelector(".vpath .g5").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 8. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 8) {
-        if (document.querySelector(".vpath .g4").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 8. 
+        if (gs[i] === 8) {
+            if (document.querySelector(".vpath .g4").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 8) {
-        if (document.querySelector(".vpath .g4").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 8) {
+            if (document.querySelector(".vpath .g4").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 8) {
-        if (document.querySelector(".vpath .g4").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 8) {
+            if (document.querySelector(".vpath .g4").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 8) {
-        if (document.querySelector(".vpath .g4").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 8) {
+            if (document.querySelector(".vpath .g4").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 9. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 9) {
-        if (document.querySelector(".vpath .g3").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 9. 
+        if (gs[i] === 9) {
+            if (document.querySelector(".vpath .g3").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 9) {
-        if (document.querySelector(".vpath .g3").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 9) {
+            if (document.querySelector(".vpath .g3").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 9) {
-        if (document.querySelector(".vpath .g3").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 9) {
+            if (document.querySelector(".vpath .g3").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 9) {
-        if (document.querySelector(".vpath .g3").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 9) {
+            if (document.querySelector(".vpath .g3").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 10. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 10) {
-        if (document.querySelector(".vpath .g2").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 10. 
+        if (gs[i] === 10) {
+            if (document.querySelector(".vpath .g2").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 10) {
-        if (document.querySelector(".vpath .g2").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 10) {
+            if (document.querySelector(".vpath .g2").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 10) {
-        if (document.querySelector(".vpath .g2").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 10) {
+            if (document.querySelector(".vpath .g2").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 10) {
-        if (document.querySelector(".vpath .g2").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 10) {
+            if (document.querySelector(".vpath .g2").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 11. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 11) {
-        if (document.querySelector(".vpath .g1").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 11. 
+        if (gs[i] === 11) {
+            if (document.querySelector(".vpath .g1").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 11) {
-        if (document.querySelector(".vpath .g1").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 11) {
+            if (document.querySelector(".vpath .g1").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 11) {
-        if (document.querySelector(".vpath .g1").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 11) {
+            if (document.querySelector(".vpath .g1").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 11) {
-        if (document.querySelector(".vpath .g1").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 11) {
+            if (document.querySelector(".vpath .g1").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 12. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 12) {
-        if (document.querySelector(".vpath1 .g1").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 12. 
+        if (gs[i] === 12) {
+            if (document.querySelector(".vpath1 .g1").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 12) {
-        if (document.querySelector(".vpath1 .g1").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 12) {
+            if (document.querySelector(".vpath1 .g1").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 12) {
-        if (document.querySelector(".vpath1 .g1").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 12) {
+            if (document.querySelector(".vpath1 .g1").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 12) {
-        if (document.querySelector(".vpath1 .g1").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 12) {
+            if (document.querySelector(".vpath1 .g1").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 13. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 13) {
-        if (document.querySelector(".vpath2 .g1").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 13. 
+        if (gs[i] === 13) {
+            if (document.querySelector(".vpath2 .g1").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 13) {
-        if (document.querySelector(".vpath2 .g1").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 13) {
+            if (document.querySelector(".vpath2 .g1").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 13) {
-        if (document.querySelector(".vpath2 .g1").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 13) {
+            if (document.querySelector(".vpath2 .g1").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 13) {
-        if (document.querySelector(".vpath2 .g1").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 13) {
+            if (document.querySelector(".vpath2 .g1").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 14. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 14) {
-        if (document.querySelector(".vpath2 .g2").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 14. 
+        if (gs[i] === 14) {
+            if (document.querySelector(".vpath2 .g2").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 14) {
-        if (document.querySelector(".vpath2 .g2").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 14) {
+            if (document.querySelector(".vpath2 .g2").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 14) {
-        if (document.querySelector(".vpath2 .g2").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 14) {
+            if (document.querySelector(".vpath2 .g2").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 14) {
-        if (document.querySelector(".vpath2 .g2").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 14) {
+            if (document.querySelector(".vpath2 .g2").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 15. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 15) {
-        if (document.querySelector(".vpath2 .g3").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 15. 
+        if (gs[i] === 15) {
+            if (document.querySelector(".vpath2 .g3").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 15) {
-        if (document.querySelector(".vpath2 .g3").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 15) {
+            if (document.querySelector(".vpath2 .g3").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 15) {
-        if (document.querySelector(".vpath2 .g3").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 15) {
+            if (document.querySelector(".vpath2 .g3").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 15) {
-        if (document.querySelector(".vpath2 .g3").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 15) {
+            if (document.querySelector(".vpath2 .g3").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 16. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 16) {
-        if (document.querySelector(".vpath2 .g4").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 16. 
+        if (gs[i] === 16) {
+            if (document.querySelector(".vpath2 .g4").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 16) {
-        if (document.querySelector(".vpath2 .g4").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 16) {
+            if (document.querySelector(".vpath2 .g4").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 16) {
-        if (document.querySelector(".vpath2 .g4").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 16) {
+            if (document.querySelector(".vpath2 .g4").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 16) {
-        if (document.querySelector(".vpath2 .g4").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 16) {
+            if (document.querySelector(".vpath2 .g4").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 17. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 17) {
-        if (document.querySelector(".vpath2 .g5").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 17. 
+        if (gs[i] === 17) {
+            if (document.querySelector(".vpath2 .g5").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 17) {
-        if (document.querySelector(".vpath2 .g5").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 17) {
+            if (document.querySelector(".vpath2 .g5").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 17) {
-        if (document.querySelector(".vpath2 .g5").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 17) {
+            if (document.querySelector(".vpath2 .g5").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 17) {
-        if (document.querySelector(".vpath2 .g5").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 17) {
+            if (document.querySelector(".vpath2 .g5").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 18. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 18) {
-        if (document.querySelector(".vpath2 .g6").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 18. 
+        if (gs[i] === 18) {
+            if (document.querySelector(".vpath2 .g6").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 18) {
-        if (document.querySelector(".vpath2 .g6").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 18) {
+            if (document.querySelector(".vpath2 .g6").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 18) {
-        if (document.querySelector(".vpath2 .g6").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 18) {
+            if (document.querySelector(".vpath2 .g6").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 18) {
-        if (document.querySelector(".vpath2 .g6").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 18) {
+            if (document.querySelector(".vpath2 .g6").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 19. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 19) {
-        if (document.querySelector(".path6 .g1").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 19. 
+        if (gs[i] === 19) {
+            if (document.querySelector(".path6 .g1").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 19) {
-        if (document.querySelector(".path6 .g1").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 19) {
+            if (document.querySelector(".path6 .g1").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 19) {
-        if (document.querySelector(".path6 .g1").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 19) {
+            if (document.querySelector(".path6 .g1").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 19) {
-        if (document.querySelector(".path6 .g1").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 19) {
+            if (document.querySelector(".path6 .g1").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 20. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 20) {
-        if (document.querySelector(".path7 .g1").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 20. 
+        if (gs[i] === 20) {
+            if (document.querySelector(".path7 .g1").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 20) {
-        if (document.querySelector(".path7 .g1").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 20) {
+            if (document.querySelector(".path7 .g1").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 20) {
-        if (document.querySelector(".path7 .g1").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 20) {
+            if (document.querySelector(".path7 .g1").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 20) {
-        if (document.querySelector(".path7 .g1").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 20) {
+            if (document.querySelector(".path7 .g1").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 21. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 21) {
-        if (document.querySelector(".path8 .g1").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 21. 
+        if (gs[i] === 21) {
+            if (document.querySelector(".path8 .g1").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 21) {
-        if (document.querySelector(".path8 .g1").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 21) {
+            if (document.querySelector(".path8 .g1").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 21) {
-        if (document.querySelector(".path8 .g1").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 21) {
+            if (document.querySelector(".path8 .g1").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 21) {
-        if (document.querySelector(".path8 .g1").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 21) {
+            if (document.querySelector(".path8 .g1").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 22. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 22) {
-        if (document.querySelector(".path9 .g1").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 22. 
+        if (gs[i] === 22) {
+            if (document.querySelector(".path9 .g1").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 22) {
-        if (document.querySelector(".path9 .g1").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 22) {
+            if (document.querySelector(".path9 .g1").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 22) {
-        if (document.querySelector(".path9 .g1").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 22) {
+            if (document.querySelector(".path9 .g1").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 22) {
-        if (document.querySelector(".path9 .g1").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 22) {
+            if (document.querySelector(".path9 .g1").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 23. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 23) {
-        if (document.querySelector(".path10 .g1").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 23. 
+        if (gs[i] === 23) {
+            if (document.querySelector(".path10 .g1").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 23) {
-        if (document.querySelector(".path10 .g1").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 23) {
+            if (document.querySelector(".path10 .g1").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 23) {
-        if (document.querySelector(".path10 .g1").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 23) {
+            if (document.querySelector(".path10 .g1").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 23) {
-        if (document.querySelector(".path10 .g1").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 23) {
+            if (document.querySelector(".path10 .g1").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 24. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 24) {
-        if (document.querySelector(".path11 .g1").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 24. 
+        if (gs[i] === 24) {
+            if (document.querySelector(".path11 .g1").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 24) {
-        if (document.querySelector(".path11 .g1").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 24) {
+            if (document.querySelector(".path11 .g1").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 24) {
-        if (document.querySelector(".path11 .g1").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 24) {
+            if (document.querySelector(".path11 .g1").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 24) {
-        if (document.querySelector(".path11 .g1").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 24) {
+            if (document.querySelector(".path11 .g1").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 25. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 25) {
-        if (document.querySelector(".path11 .g2").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 25. 
+        if (gs[i] === 25) {
+            if (document.querySelector(".path11 .g2").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 25) {
-        if (document.querySelector(".path11 .g2").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 25) {
+            if (document.querySelector(".path11 .g2").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 25) {
-        if (document.querySelector(".path11 .g2").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 25) {
+            if (document.querySelector(".path11 .g2").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 25) {
-        if (document.querySelector(".path11 .g2").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 25) {
+            if (document.querySelector(".path11 .g2").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 26. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 26) {
-        if (document.querySelector(".path11 .g3").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 26. 
+        if (gs[i] === 26) {
+            if (document.querySelector(".path11 .g3").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 26) {
-        if (document.querySelector(".path11 .g3").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 26) {
+            if (document.querySelector(".path11 .g3").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 26) {
-        if (document.querySelector(".path11 .g3").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 26) {
+            if (document.querySelector(".path11 .g3").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 26) {
-        if (document.querySelector(".path11 .g3").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 26) {
+            if (document.querySelector(".path11 .g3").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 27. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 27) {
-        if (document.querySelector(".path10 .g3").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 27. 
+        if (gs[i] === 27) {
+            if (document.querySelector(".path10 .g3").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 27) {
-        if (document.querySelector(".path10 .g3").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 27) {
+            if (document.querySelector(".path10 .g3").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 27) {
-        if (document.querySelector(".path10 .g3").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 27) {
+            if (document.querySelector(".path10 .g3").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 27) {
-        if (document.querySelector(".path10 .g3").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 27) {
+            if (document.querySelector(".path10 .g3").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 28. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 28) {
-        if (document.querySelector(".path9 .g3").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 28. 
+        if (gs[i] === 28) {
+            if (document.querySelector(".path9 .g3").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 28) {
-        if (document.querySelector(".path9 .g3").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 28) {
+            if (document.querySelector(".path9 .g3").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 28) {
-        if (document.querySelector(".path9 .g3").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 28) {
+            if (document.querySelector(".path9 .g3").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 28) {
-        if (document.querySelector(".path9 .g3").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 28) {
+            if (document.querySelector(".path9 .g3").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 29. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 29) {
-        if (document.querySelector(".path8 .g3").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 29. 
+        if (gs[i] === 29) {
+            if (document.querySelector(".path8 .g3").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 29) {
-        if (document.querySelector(".path8 .g3").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 29) {
+            if (document.querySelector(".path8 .g3").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 29) {
-        if (document.querySelector(".path8 .g3").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 29) {
+            if (document.querySelector(".path8 .g3").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 29) {
-        if (document.querySelector(".path8 .g3").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 29) {
+            if (document.querySelector(".path8 .g3").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 30. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 30) {
-        if (document.querySelector(".path7 .g3").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 30. 
+        if (gs[i] === 30) {
+            if (document.querySelector(".path7 .g3").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 30) {
-        if (document.querySelector(".path7 .g3").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 30) {
+            if (document.querySelector(".path7 .g3").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 30) {
-        if (document.querySelector(".path7 .g3").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 30) {
+            if (document.querySelector(".path7 .g3").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 30) {
-        if (document.querySelector(".path7 .g3").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 30) {
+            if (document.querySelector(".path7 .g3").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 31. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 31) {
-        if (document.querySelector(".path6 .g3").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 31. 
+        if (gs[i] === 31) {
+            if (document.querySelector(".path6 .g3").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 31) {
-        if (document.querySelector(".path6 .g3").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 31) {
+            if (document.querySelector(".path6 .g3").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 31) {
-        if (document.querySelector(".path6 .g3").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 31) {
+            if (document.querySelector(".path6 .g3").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 31) {
-        if (document.querySelector(".path6 .g3").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 31) {
+            if (document.querySelector(".path6 .g3").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 32. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 32) {
-        if (document.querySelector(".vpath5 .g1").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 32. 
+        if (gs[i] === 32) {
+            if (document.querySelector(".vpath5 .g1").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 32) {
-        if (document.querySelector(".vpath5 .g1").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 32) {
+            if (document.querySelector(".vpath5 .g1").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 32) {
-        if (document.querySelector(".vpath5 .g1").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 32) {
+            if (document.querySelector(".vpath5 .g1").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 32) {
-        if (document.querySelector(".vpath5 .g1").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 32) {
+            if (document.querySelector(".vpath5 .g1").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 33. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 33) {
-        if (document.querySelector(".vpath5 .g2").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 33. 
+        if (gs[i] === 33) {
+            if (document.querySelector(".vpath5 .g2").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 33) {
-        if (document.querySelector(".vpath5 .g2").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 33) {
+            if (document.querySelector(".vpath5 .g2").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 33) {
-        if (document.querySelector(".vpath5 .g2").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 33) {
+            if (document.querySelector(".vpath5 .g2").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 33) {
-        if (document.querySelector(".vpath5 .g2").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 33) {
+            if (document.querySelector(".vpath5 .g2").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 34. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 34) {
-        if (document.querySelector(".vpath5 .g3").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 34. 
+        if (gs[i] === 34) {
+            if (document.querySelector(".vpath5 .g3").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 34) {
-        if (document.querySelector(".vpath5 .g3").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 34) {
+            if (document.querySelector(".vpath5 .g3").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 34) {
-        if (document.querySelector(".vpath5 .g3").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 34) {
+            if (document.querySelector(".vpath5 .g3").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 34) {
-        if (document.querySelector(".vpath5 .g3").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 34) {
+            if (document.querySelector(".vpath5 .g3").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 35. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 35) {
-        if (document.querySelector(".vpath5 .g4").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 35. 
+        if (gs[i] === 35) {
+            if (document.querySelector(".vpath5 .g4").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 35) {
-        if (document.querySelector(".vpath5 .g4").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 35) {
+            if (document.querySelector(".vpath5 .g4").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 35) {
-        if (document.querySelector(".vpath5 .g4").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 35) {
+            if (document.querySelector(".vpath5 .g4").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 35) {
-        if (document.querySelector(".vpath5 .g4").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 35) {
+            if (document.querySelector(".vpath5 .g4").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 36. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 36) {
-        if (document.querySelector(".vpath5 .g5").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 36. 
+        if (gs[i] === 36) {
+            if (document.querySelector(".vpath5 .g5").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 36) {
-        if (document.querySelector(".vpath5 .g5").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 36) {
+            if (document.querySelector(".vpath5 .g5").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 36) {
-        if (document.querySelector(".vpath5 .g5").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 36) {
+            if (document.querySelector(".vpath5 .g5").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 36) {
-        if (document.querySelector(".vpath5 .g5").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 36) {
+            if (document.querySelector(".vpath5 .g5").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 37. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 37) {
-        if (document.querySelector(".vpath5 .g6").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 37. 
+        if (gs[i] === 37) {
+            if (document.querySelector(".vpath5 .g6").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 37) {
-        if (document.querySelector(".vpath5 .g6").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 37) {
+            if (document.querySelector(".vpath5 .g6").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 37) {
-        if (document.querySelector(".vpath5 .g6").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 37) {
+            if (document.querySelector(".vpath5 .g6").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 37) {
-        if (document.querySelector(".vpath5 .g6").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 37) {
+            if (document.querySelector(".vpath5 .g6").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 38. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 38) {
-        if (document.querySelector(".vpath4 .g6").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 38. 
+        if (gs[i] === 38) {
+            if (document.querySelector(".vpath4 .g6").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 38) {
-        if (document.querySelector(".vpath4 .g6").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 38) {
+            if (document.querySelector(".vpath4 .g6").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 38) {
-        if (document.querySelector(".vpath4 .g6").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 38) {
+            if (document.querySelector(".vpath4 .g6").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 38) {
-        if (document.querySelector(".vpath4 .g6").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 38) {
+            if (document.querySelector(".vpath4 .g6").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 39. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 39) {
-        if (document.querySelector(".vpath3 .g6").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 39. 
+        if (gs[i] === 39) {
+            if (document.querySelector(".vpath3 .g6").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 39) {
-        if (document.querySelector(".vpath3 .g6").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 39) {
+            if (document.querySelector(".vpath3 .g6").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 39) {
-        if (document.querySelector(".vpath3 .g6").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 39) {
+            if (document.querySelector(".vpath3 .g6").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 39) {
-        if (document.querySelector(".vpath3 .g6").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 39) {
+            if (document.querySelector(".vpath3 .g6").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 40. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 40) {
-        if (document.querySelector(".vpath3 .g5").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 40. 
+        if (gs[i] === 40) {
+            if (document.querySelector(".vpath3 .g5").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 40) {
-        if (document.querySelector(".vpath3 .g5").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 40) {
+            if (document.querySelector(".vpath3 .g5").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 40) {
-        if (document.querySelector(".vpath3 .g5").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 40) {
+            if (document.querySelector(".vpath3 .g5").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 40) {
-        if (document.querySelector(".vpath3 .g5").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 40) {
+            if (document.querySelector(".vpath3 .g5").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 41. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 41) {
-        if (document.querySelector(".vpath3 .g4").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 41. 
+        if (gs[i] === 41) {
+            if (document.querySelector(".vpath3 .g4").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 41) {
-        if (document.querySelector(".vpath3 .g4").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 41) {
+            if (document.querySelector(".vpath3 .g4").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 41) {
-        if (document.querySelector(".vpath3 .g4").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 41) {
+            if (document.querySelector(".vpath3 .g4").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 41) {
-        if (document.querySelector(".vpath3 .g4").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 41) {
+            if (document.querySelector(".vpath3 .g4").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 42. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 42) {
-        if (document.querySelector(".vpath3 .g3").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 42. 
+        if (gs[i] === 42) {
+            if (document.querySelector(".vpath3 .g3").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 42) {
-        if (document.querySelector(".vpath3 .g3").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 42) {
+            if (document.querySelector(".vpath3 .g3").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 42) {
-        if (document.querySelector(".vpath3 .g3").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 42) {
+            if (document.querySelector(".vpath3 .g3").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 42) {
-        if (document.querySelector(".vpath3 .g3").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 42) {
+            if (document.querySelector(".vpath3 .g3").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 43. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 43) {
-        if (document.querySelector(".vpath3 .g2").style.backgroundColor !== "") {
-            return (1)
-        } else {
-            path(value, "green");
-            return (0);
+        //if value is 43. 
+        if (gs[i] === 43) {
+            if (document.querySelector(".vpath3 .g2").style.backgroundColor !== "") {
+                returgs[i]
+            } else {
+                path(value, "green");
+                return (0);
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 43) {
-        if (document.querySelector(".vpath3 .g2").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 43) {
+            if (document.querySelector(".vpath3 .g2").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 43) {
-        if (document.querySelector(".vpath3 .g2").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 43) {
+            if (document.querySelector(".vpath3 .g2").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 43) {
-        if (document.querySelector(".vpath3 .g2").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 43) {
+            if (document.querySelector(".vpath3 .g2").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 44. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 44) {
-        if (document.querySelector(".vpath3 .g1").style.backgroundColor !== "") {
-            return (1)
-        } else {
-            path(value, "green");
-            return (0);
+        //if value is 44. 
+        if (gs[i] === 44) {
+            if (document.querySelector(".vpath3 .g1").style.backgroundColor !== "") {
+                returgs[i]
+            } else {
+                path(value, "green");
+                return (0);
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 44) {
-        if (document.querySelector(".vpath3 .g1").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 44) {
+            if (document.querySelector(".vpath3 .g1").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 44) {
-        if (document.querySelector(".vpath3 .g1").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 44) {
+            if (document.querySelector(".vpath3 .g1").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 44) {
-        if (document.querySelector(".vpath3 .g1").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 44) {
+            if (document.querySelector(".vpath3 .g1").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 45. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 45) {
-        if (document.querySelector(".path5 .g3").style.backgroundColor !== "") {
-            return (1)
-        } else {
-            path(value, "green");
-            return (0);
+        //if value is 45. 
+        if (gs[i] === 45) {
+            if (document.querySelector(".path5 .g3").style.backgroundColor !== "") {
+                returgs[i]
+            } else {
+                path(value, "green");
+                return (0);
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 45) {
-        if (document.querySelector(".path5 .g3").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 45) {
+            if (document.querySelector(".path5 .g3").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 45) {
-        if (document.querySelector(".path5 .g3").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 45) {
+            if (document.querySelector(".path5 .g3").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 45) {
-        if (document.querySelector(".path5 .g3").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 45) {
+            if (document.querySelector(".path5 .g3").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 46. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 46) {
-        if (document.querySelector(".path4 .g3").style.backgroundColor !== "") {
-            return (1)
-        } else {
-            path(value, "green");
-            return (0);
+        //if value is 46. 
+        if (gs[i] === 46) {
+            if (document.querySelector(".path4 .g3").style.backgroundColor !== "") {
+                returgs[i]
+            } else {
+                path(value, "green");
+                return (0);
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 46) {
-        if (document.querySelector(".path4 .g3").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 46) {
+            if (document.querySelector(".path4 .g3").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 46) {
-        if (document.querySelector(".path4 .g3").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 46) {
+            if (document.querySelector(".path4 .g3").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 46) {
-        if (document.querySelector(".path4 .g3").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 46) {
+            if (document.querySelector(".path4 .g3").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 47. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 47) {
-        if (document.querySelector(".path3 .g3").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 47. 
+        if (gs[i] === 47) {
+            if (document.querySelector(".path3 .g3").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 47) {
-        if (document.querySelector(".path3 .g3").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 47) {
+            if (document.querySelector(".path3 .g3").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 47) {
-        if (document.querySelector(".path3 .g3").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 47) {
+            if (document.querySelector(".path3 .g3").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 47) {
-        if (document.querySelector(".path3 .g3").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 47) {
+            if (document.querySelector(".path3 .g3").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 48. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 48) {
-        if (document.querySelector(".path2 .g3").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 48. 
+        if (gs[i] === 48) {
+            if (document.querySelector(".path2 .g3").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 48) {
-        if (document.querySelector(".path2 .g3").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 48) {
+            if (document.querySelector(".path2 .g3").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 48) {
-        if (document.querySelector(".path2 .g3").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 48) {
+            if (document.querySelector(".path2 .g3").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 48) {
-        if (document.querySelector(".path2 .g3").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 48) {
+            if (document.querySelector(".path2 .g3").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 49. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 49) {
-        if (document.querySelector(".path1 .g3").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 49. 
+        if (gs[i] === 49) {
+            if (document.querySelector(".path1 .g3").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 49) {
-        if (document.querySelector(".path1 .g3").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 49) {
+            if (document.querySelector(".path1 .g3").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 49) {
-        if (document.querySelector(".path1 .g3").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 49) {
+            if (document.querySelector(".path1 .g3").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 49) {
-        if (document.querySelector(".path1 .g3").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 49) {
+            if (document.querySelector(".path1 .g3").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 50. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 50) {
-        if (document.querySelector(".path .g3").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 50. 
+        if (gs[i] === 50) {
+            if (document.querySelector(".path .g3").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 50) {
-        if (document.querySelector(".path .g3").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 50) {
+            if (document.querySelector(".path .g3").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 50) {
-        if (document.querySelector(".path .g3").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 50) {
+            if (document.querySelector(".path .g3").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 50) {
-        if (document.querySelector(".path .g3").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 50) {
+            if (document.querySelector(".path .g3").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 51. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 51) {
-        if (document.querySelector(".path .g2").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 51. 
+        if (gs[i] === 51) {
+            if (document.querySelector(".path .g2").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 51) {
-        if (document.querySelector(".path .g2").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 51) {
+            if (document.querySelector(".path .g2").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 51) {
-        if (document.querySelector(".path .g2").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 51) {
+            if (document.querySelector(".path .g2").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 51) {
-        if (document.querySelector(".path .g2").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 51) {
+            if (document.querySelector(".path .g2").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //if value is 52. 
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 52) {
-        if (document.querySelector(".path .g1").style.backgroundColor === "") {
-            path(value, "green");
+        //if value is 52. 
+        if (gs[i] === 52) {
+            if (document.querySelector(".path .g1").style.backgroundColor === "") {
+                path(gs[i], "green");
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 52) {
-        if (document.querySelector(".path .g1").style.backgroundColor === "") {
-            path(value, "red");
+        if (rs[i] === 52) {
+            if (document.querySelector(".path .g1").style.backgroundColor === "") {
+                path(rs[i], "red");
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 52) {
-        if (document.querySelector(".path .g1").style.backgroundColor === "") {
-            path(value, "yellow");
+        if (ys[i] === 52) {
+            if (document.querySelector(".path .g1").style.backgroundColor === "") {
+                path(ys[i], "yellow");
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 52) {
-        if (document.querySelector(".path .g1").style.backgroundColor === "") {
-            path(value, "blue");
+        if (bs[i] === 52) {
+            if (document.querySelector(".path .g1").style.backgroundColor === "") {
+                path(bs[i], "blue");
+            }
         }
-    }
 
-    //For Home.
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 53) { //green home.
-        if (document.querySelector(".path1 .g2").style.backgroundColor !== "green") {
-            path(value, "green");
-            return (0);
+        //For Home.
+        if (gs[i] === 53) { //green home.
+            if (document.querySelector(".path1 .g2").style.backgroundColor !== "green") {
+                path(gs[i], "green");
+                return (0);
+            }
         }
-    }
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 54) {
-        if (document.querySelector(".path2 .g2").style.backgroundColor !== "green") {
-            path(value, "green");
-            return (0);
+        if (gs[i] === 54) {
+            if (document.querySelector(".path2 .g2").style.backgroundColor !== "green") {
+                path(gs[i], "green");
+                return (0);
+            }
         }
-    }
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 55) {
-        if (document.querySelector(".path3 .g2").style.backgroundColor !== "green") {
-            path(value, "green");
-            return (0);
+        if (gs[i] === 55) {
+            if (document.querySelector(".path3 .g2").style.backgroundColor !== "green") {
+                path(gs[i], "green");
+                return (0);
+            }
         }
-    }
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 56) {
-        if (document.querySelector(".path4 .g2").style.backgroundColor !== "green") {
-            path(value, "green");
-            return (0);
+        if (gs[i] === 56) {
+            if (document.querySelector(".path4 .g2").style.backgroundColor !== "green") {
+                path(gs[i], "green");
+                return (0);
+            }
         }
-    }
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 57) {
-        if (document.querySelector(".path5 .g2").style.backgroundColor !== "green") {
-            path(value, "green");
-            return (0);
+        if (gs[i] === 57) {
+            if (document.querySelector(".path5 .g2").style.backgroundColor !== "green") {
+                path(gs[i], "green");
+                return (0);
+            }
         }
-    }
-    if (gs[0] || gs[1] || gs[2] || gs[3] === 58) {
-        if (document.querySelector(".home .hg").style.backgroundColor !== "green") {
-            path(value, "green");
-            return (0);
+        if (gs[i] === 58) {
+            if (document.querySelector(".home .hg").style.backgroundColor !== "green") {
+                path(gs[i], "green");
+                return (0);
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 59) { //red home.
-        if (document.querySelector(".vpath1 .g2").style.backgroundColor !== "red") {
-            path(value, "red");
-            return (0);
+        if (rs[i] === 59) { //red home.
+            if (document.querySelector(".vpath1 .g2").style.backgroundColor !== "red") {
+                path(rs[i], "red");
+                return (0);
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 60) {
-        if (document.querySelector(".vpath1 .g3").style.backgroundColor !== "red") {
-            path(value, "red");
-            return (0);
+        if (rs[i] === 60) {
+            if (document.querySelector(".vpath1 .g3").style.backgroundColor !== "red") {
+                path(rs[i], "red");
+                return (0);
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 61) {
-        if (document.querySelector(".vpath1 .g4").style.backgroundColor !== "red") {
-            path(value, "red");
-            return (0);
+        if (rs[i] === 61) {
+            if (document.querySelector(".vpath1 .g4").style.backgroundColor !== "red") {
+                path(rs[i], "red");
+                return (0);
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 62) {
-        if (document.querySelector(".vpath1 .g5").style.backgroundColor !== "red") {
-            path(value, "red");
-            return (0);
+        if (rs[i] === 62) {
+            if (document.querySelector(".vpath1 .g5").style.backgroundColor !== "red") {
+                path(rs[i], "red");
+                return (0);
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 63) {
-        if (document.querySelector(".vpath1 .g6").style.backgroundColor !== "red") {
-            path(value, "red");
-            return (0);
+        if (rs[i] === 63) {
+            if (document.querySelector(".vpath1 .g6").style.backgroundColor !== "red") {
+                path(rs[i], "red");
+                return (0);
+            }
         }
-    }
-    if (rs[0] || rs[1] || rs[2] || rs[3] === 64) {
-        if (document.querySelector(".home .hr").style.backgroundColor !== "red") {
-            path(value, "red");
-            return (0);
+        if (rs[i] === 64) {
+            if (document.querySelector(".home .hr").style.backgroundColor !== "red") {
+                path(rs[i], "red");
+                return (0);
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 65) { //blue home.
-        if (document.querySelector(".path10 .g2").style.backgroundColor !== "blue") {
-            path(value, "blue");
-            return (0);
+        if (bs[i] === 65) { //blue home.
+            if (document.querySelector(".path10 .g2").style.backgroundColor !== "blue") {
+                path(bs[i], "blue");
+                return (0);
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 66) {
-        if (document.querySelector(".path9 .g2").style.backgroundColor !== "blue") {
-            path(value, "blue");
-            return (0);
+        if (bs[i] === 66) {
+            if (document.querySelector(".path9 .g2").style.backgroundColor !== "blue") {
+                path(bs[i], "blue");
+                return (0);
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 67) {
-        if (document.querySelector(".path8 .g2").style.backgroundColor !== "blue") {
-            path(value, "blue");
-            return (0);
+        if (bs[i] === 67) {
+            if (document.querySelector(".path8 .g2").style.backgroundColor !== "blue") {
+                path(bs[i], "blue");
+                return (0);
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 68) {
-        if (document.querySelector(".path7 .g2").style.backgroundColor !== "blue") {
-            path(value, "blue");
-            return (0);
+        if (bs[i] === 68) {
+            if (document.querySelector(".path7 .g2").style.backgroundColor !== "blue") {
+                path(bs[i], "blue");
+                return (0);
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 69) {
-        if (document.querySelector(".path6 .g2").style.backgroundColor !== "blue") {
-            path(value, "blue");
-            return (0);
+        if (bs[i] === 69) {
+            if (document.querySelector(".path6 .g2").style.backgroundColor !== "blue") {
+                path(bs[i], "blue");
+                return (0);
+            }
         }
-    }
-    if (bs[0] || bs[1] || bs[2] || bs[3] === 70) {
-        if (document.querySelector(".home .hb").style.backgroundColor !== "blue") {
-            path(value, "blue");
-            return (0);
+        if (bs[i] === 70) {
+            if (document.querySelector(".home .hb").style.backgroundColor !== "blue") {
+                path(bs[i], "blue");
+                return (0);
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 71) { //yellow home.
-        if (document.querySelector(".vpath4 .g5").style.backgroundColor !== "yellow") {
-            path(value, "yellow");
-            return (0);
+        if (ys[i] === 71) { //yellow home.
+            if (document.querySelector(".vpath4 .g5").style.backgroundColor !== "yellow") {
+                path(ys[i], "yellow");
+                return (0);
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 72) {
-        if (document.querySelector(".vpath4 .g4").style.backgroundColor !== "yellow") {
-            path(value, "yellow");
-            return (0);
+        if (ys[i] === 72) {
+            if (document.querySelector(".vpath4 .g4").style.backgroundColor !== "yellow") {
+                path(ys[i], "yellow");
+                return (0);
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 73) {
-        if (document.querySelector(".vpath4 .g3").style.backgroundColor !== "yellow") {
-            path(value, "yellow");
-            return (0);
+        if (ys[i] === 73) {
+            if (document.querySelector(".vpath4 .g3").style.backgroundColor !== "yellow") {
+                path(ys[i], "yellow");
+                return (0);
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 74) {
-        if (document.querySelector(".vpath4 .g2").style.backgroundColor !== "yellow") {
-            path(value, "yellow");
-            return (0);
+        if (ys[i] === 74) {
+            if (document.querySelector(".vpath4 .g2").style.backgroundColor !== "yellow") {
+                path(ys[i], "yellow");
+                return (0);
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 75) {
-        if (document.querySelector(".vpath4 .g1").style.backgroundColor !== "yellow") {
-            path(value, "yellow");
-            return (0);
+        if (ys[i] === 75) {
+            if (document.querySelector(".vpath4 .g1").style.backgroundColor !== "yellow") {
+                path(ys[i], "yellow");
+                return (0);
+            }
         }
-    }
-    if (ys[0] || ys[1] || ys[2] || ys[3] === 76) {
-        if (document.querySelector(".home .hy").style.backgroundColor !== "yellow") {
-            path(value, "yellow");
-            return (0);
+        if (ys[i] === 76) {
+            if (document.querySelector(".home .hy").style.backgroundColor !== "yellow") {
+                path(ys[i], "yellow");
+                return (0);
+            }
         }
     }
 }
@@ -2171,12 +2174,13 @@ function countdown() {
     document.querySelector(".countdown").style.backgroundColor = "white";
     document.querySelector(".countdown #chronometer").style.visibility = "visible";
     document.querySelector(".countdown #counter").style.visibility = "visible";
+    document.querySelector(".btn").disabled = disabled;
     document.querySelector(".countdown #chronometer").src = "images/count-down.gif";
     document.querySelector(".countdown #counter").src = "images/counter.gif";
     timer = setTimeout(function() {
         animationend(null);
         updater(null);
-        // checker(null);
+        checker(null);
         dispose_countdown(null);
     }, 5000);
 }
