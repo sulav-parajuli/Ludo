@@ -1,4 +1,4 @@
-var selector, timer;
+var selector, timer, i;
 
 function path(score, col) {
     if (score !== 0) {
@@ -697,8 +697,171 @@ function selector(score) {
     }
 }
 
-function checker() {
-    var i;
+function updater() { //updates main circular board.
+    if (gb[0] === 1) {
+        document.querySelector(".greena .first").display = "none";
+        document.querySelector(".greena .first").style.backgroundColor = "";
+    } else if (gb[0] === 0) {
+        document.querySelector(".greena .first").display = "relative";
+        document.querySelector(".greena .first").style.backgroundColor = "green";
+        document.querySelector(".greena .first img").style.visibility = "hidden";
+        document.querySelector(".greena .first img").src = "";
+        dispose_countdown(null);
+    }
+    if (gb[1] === 1) {
+        document.querySelector(".greena .Second").display = "none";
+        document.querySelector(".greena .Second").style.backgroundColor = "";
+    } else if (gb[1] === 0) {
+        document.querySelector(".greena .Second").display = "relative";
+        document.querySelector(".greena .Second").style.backgroundColor = "green";
+        document.querySelector(".greena .Second img").style.visibility = "hidden";
+        document.querySelector(".greena .Second img").src = "";
+        dispose_countdown(null);
+    }
+    if (gb[2] === 1) {
+        document.querySelector(".greena .Third").display = "none";
+        document.querySelector(".greena .Third").style.backgroundColor = "";
+    } else if (gb[2] === 0) {
+        document.querySelector(".greena .Third").display = "relative";
+        document.querySelector(".greena .Third").style.backgroundColor = "green";
+        document.querySelector(".greena .Third img").style.visibility = "hidden";
+        document.querySelector(".greena .Third img").src = "";
+        dispose_countdown(null);
+    }
+    if (gb[3] === 1) {
+        document.querySelector(".greena .Fourth").display = "none";
+        document.querySelector(".greena .Fourth").style.backgroundColor = "";
+    } else if (gb[3] === 0) {
+        document.querySelector(".greena .Fourth").display = "relative";
+        document.querySelector(".greena .Fourth").style.backgroundColor = "green";
+        document.querySelector(".greena .Fourth img").style.visibility = "hidden";
+        document.querySelector(".greena .Fourth img").src = "";
+        dispose_countdown(null);
+    }
+
+    if (rb[0] === 1) {
+        document.querySelector(".reda .first").display = "none";
+        document.querySelector(".reda .first").style.backgroundColor = "";
+    } else if (rb[0] === 0) {
+        document.querySelector(".reda .first").display = "relative";
+        document.querySelector(".reda .first").style.backgroundColor = "red";
+        document.querySelector(".reda .first img").style.visibility = "hidden";
+        document.querySelector(".reda .first img").src = "";
+        dispose_countdown(null);
+    }
+    if (rb[1] === 1) {
+        document.querySelector(".reda .Second").display = "none";
+        document.querySelector(".reda .Second").style.backgroundColor = "";
+    } else if (rb[1] === 0) {
+        document.querySelector(".reda .Second").display = "relative";
+        document.querySelector(".reda .Second").style.backgroundColor = "red";
+        document.querySelector(".reda .Second img").style.visibility = "hidden";
+        document.querySelector(".reda .Second img").src = "";
+        dispose_countdown(null);
+    }
+    if (rb[2] === 1) {
+        document.querySelector(".reda .Third").display = "none";
+        document.querySelector(".reda .Third").style.backgroundColor = "";
+    } else if (rb[2] === 0) {
+        document.querySelector(".reda .Third").display = "relative";
+        document.querySelector(".reda .Third").style.backgroundColor = "red";
+        document.querySelector(".reda .Third img").style.visibility = "hidden";
+        document.querySelector(".reda .Third img").src = "";
+        dispose_countdown(null);
+    }
+    if (rb[3] === 1) {
+        document.querySelector(".reda .Fourth").display = "none";
+        document.querySelector(".reda .Fourth").style.backgroundColor = "";
+    } else if (rb[3] === 0) {
+        document.querySelector(".reda .Fourth").display = "relative";
+        document.querySelector(".reda .Fourth").style.backgroundColor = "red";
+        document.querySelector(".reda .Fourth img").style.visibility = "hidden";
+        document.querySelector(".reda .Fourth img").src = "";
+        dispose_countdown(null);
+    }
+
+    if (yb[0] === 1) {
+        document.querySelector(".yellowa .first").display = "none";
+        document.querySelector(".yellowa .first").style.backgroundColor = "";
+    } else if (yb[0] === 0) {
+        document.querySelector(".yellowa .first").display = "relative";
+        document.querySelector(".yellowa .first").style.backgroundColor = "yellow";
+        document.querySelector(".yellowa .first img").style.visibility = "hidden";
+        document.querySelector(".yellowa .first img").src = "";
+        dispose_countdown(null);
+    }
+    if (yb[1] === 1) {
+        document.querySelector(".yellowa .Second").display = "none";
+        document.querySelector(".yellowa .Second").style.backgroundColor = "";
+    } else if (yb[1] === 0) {
+        document.querySelector(".yellowa .Second").display = "relative";
+        document.querySelector(".yellowa .Second").style.backgroundColor = "yellow";
+        document.querySelector(".yellowa .Second img").style.visibility = "hidden";
+        document.querySelector(".yellowa .Second img").src = "";
+        dispose_countdown(null);
+    }
+    if (yb[2] === 1) {
+        document.querySelector(".yellowa .Third").display = "none";
+        document.querySelector(".yellowa .Third").style.backgroundColor = "";
+    } else if (yb[2] === 0) {
+        document.querySelector(".yellowa .Third").display = "relative";
+        document.querySelector(".yellowa .Third").style.backgroundColor = "yellow";
+        document.querySelector(".yellowa .Third img").style.visibility = "hidden";
+        document.querySelector(".yellowa .Third img").src = "";
+        dispose_countdown(null);
+    }
+    if (yb[3] === 1) {
+        document.querySelector(".yellowa .Fourth").display = "none";
+        document.querySelector(".yellowa .Fourth").style.backgroundColor = "";
+    } else if (yb[3] === 0) {
+        document.querySelector(".yellowa .Fourth").display = "relative";
+        document.querySelector(".yellowa .Fourth").style.backgroundColor = "yellow";
+        document.querySelector(".yellowa .Fourth img").style.visibility = "hidden";
+        document.querySelector(".yellowa .Fourth img").src = "";
+        dispose_countdown(null);
+    }
+
+    if (bb[0] === 1) {
+        document.querySelector(".bluea .first").display = "none";
+        document.querySelector(".bluea .first").style.backgroundColor = "";
+    } else if (bb[0] === 0) {
+        document.querySelector(".bluea .first").display = "relative";
+        document.querySelector(".bluea .first").style.backgroundColor = "blue";
+        document.querySelector(".bluea .first img").style.visibility = "hidden";
+        document.querySelector(".bluea .first img").src = "";
+        dispose_countdown(null);
+    }
+    if (bb[1] === 1) {
+        document.querySelector(".bluea .Second").display = "none";
+        document.querySelector(".bluea .Second").style.backgroundColor = "";
+    } else if (bb[1] === 0) {
+        document.querySelector(".bluea .Second").display = "relative";
+        document.querySelector(".bluea .Second").style.backgroundColor = "blue";
+        document.querySelector(".bluea .Second img").style.visibility = "hidden";
+        document.querySelector(".bluea .Second img").src = "";
+        dispose_countdown(null);
+    }
+    if (bb[2] === 1) {
+        document.querySelector(".bluea .Third").display = "none";
+        document.querySelector(".bluea .Third").style.backgroundColor = "";
+    } else if (bb[2] === 0) {
+        document.querySelector(".bluea .Third").display = "relative";
+        document.querySelector(".bluea .Third").style.backgroundColor = "blue";
+        document.querySelector(".bluea .Third img").style.visibility = "hidden";
+        document.querySelector(".bluea .Third img").src = "";
+        dispose_countdown(null);
+    }
+    if (bb[3] === 1) {
+        document.querySelector(".bluea .Fourth").display = "none";
+        document.querySelector(".bluea .Fourth").style.backgroundColor = "";
+    } else if (bb[3] === 0) {
+        document.querySelector(".bluea .Fourth").display = "relative";
+        document.querySelector(".bluea .Fourth").style.backgroundColor = "blue";
+        document.querySelector(".bluea .Fourth img").style.visibility = "hidden";
+        document.querySelector(".bluea .Fourth img").src = "";
+        dispose_countdown(null);
+    }
+
     for (i = 0; i < 4; i++) {
         //if value is 1. 
         if (gs[i] === 1) {
@@ -2004,172 +2167,6 @@ function checker() {
     }
 }
 
-function updater() { //updates main circular board.
-    if (gb[0] === 1) {
-        document.querySelector(".greena .first").display = "none";
-        document.querySelector(".greena .first").style.backgroundColor = "";
-    } else if (gb[0] === 0) {
-        document.querySelector(".greena .first").display = "relative";
-        document.querySelector(".greena .first").style.backgroundColor = "green";
-        document.querySelector(".greena .first img").style.visibility = "hidden";
-        document.querySelector(".greena .first img").src = "";
-        dispose_countdown(null);
-    }
-    if (gb[1] === 1) {
-        document.querySelector(".greena .Second").display = "none";
-        document.querySelector(".greena .Second").style.backgroundColor = "";
-    } else if (gb[1] === 0) {
-        document.querySelector(".greena .Second").display = "relative";
-        document.querySelector(".greena .Second").style.backgroundColor = "green";
-        document.querySelector(".greena .Second img").style.visibility = "hidden";
-        document.querySelector(".greena .Second img").src = "";
-        dispose_countdown(null);
-    }
-    if (gb[2] === 1) {
-        document.querySelector(".greena .Third").display = "none";
-        document.querySelector(".greena .Third").style.backgroundColor = "";
-    } else if (gb[2] === 0) {
-        document.querySelector(".greena .Third").display = "relative";
-        document.querySelector(".greena .Third").style.backgroundColor = "green";
-        document.querySelector(".greena .Third img").style.visibility = "hidden";
-        document.querySelector(".greena .Third img").src = "";
-        dispose_countdown(null);
-    }
-    if (gb[3] === 1) {
-        document.querySelector(".greena .Fourth").display = "none";
-        document.querySelector(".greena .Fourth").style.backgroundColor = "";
-    } else if (gb[3] === 0) {
-        document.querySelector(".greena .Fourth").display = "relative";
-        document.querySelector(".greena .Fourth").style.backgroundColor = "green";
-        document.querySelector(".greena .Fourth img").style.visibility = "hidden";
-        document.querySelector(".greena .Fourth img").src = "";
-        dispose_countdown(null);
-    }
-
-    if (rb[0] === 1) {
-        document.querySelector(".reda .first").display = "none";
-        document.querySelector(".reda .first").style.backgroundColor = "";
-    } else if (rb[0] === 0) {
-        document.querySelector(".reda .first").display = "relative";
-        document.querySelector(".reda .first").style.backgroundColor = "red";
-        document.querySelector(".reda .first img").style.visibility = "hidden";
-        document.querySelector(".reda .first img").src = "";
-        dispose_countdown(null);
-    }
-    if (rb[1] === 1) {
-        document.querySelector(".reda .Second").display = "none";
-        document.querySelector(".reda .Second").style.backgroundColor = "";
-    } else if (rb[1] === 0) {
-        document.querySelector(".reda .Second").display = "relative";
-        document.querySelector(".reda .Second").style.backgroundColor = "red";
-        document.querySelector(".reda .Second img").style.visibility = "hidden";
-        document.querySelector(".reda .Second img").src = "";
-        dispose_countdown(null);
-    }
-    if (rb[2] === 1) {
-        document.querySelector(".reda .Third").display = "none";
-        document.querySelector(".reda .Third").style.backgroundColor = "";
-    } else if (rb[2] === 0) {
-        document.querySelector(".reda .Third").display = "relative";
-        document.querySelector(".reda .Third").style.backgroundColor = "red";
-        document.querySelector(".reda .Third img").style.visibility = "hidden";
-        document.querySelector(".reda .Third img").src = "";
-        dispose_countdown(null);
-    }
-    if (rb[3] === 1) {
-        document.querySelector(".reda .Fourth").display = "none";
-        document.querySelector(".reda .Fourth").style.backgroundColor = "";
-    } else if (rb[3] === 0) {
-        document.querySelector(".reda .Fourth").display = "relative";
-        document.querySelector(".reda .Fourth").style.backgroundColor = "red";
-        document.querySelector(".reda .Fourth img").style.visibility = "hidden";
-        document.querySelector(".reda .Fourth img").src = "";
-        dispose_countdown(null);
-    }
-
-    if (yb[0] === 1) {
-        document.querySelector(".yellowa .first").display = "none";
-        document.querySelector(".yellowa .first").style.backgroundColor = "";
-    } else if (yb[0] === 0) {
-        document.querySelector(".yellowa .first").display = "relative";
-        document.querySelector(".yellowa .first").style.backgroundColor = "yellow";
-        document.querySelector(".yellowa .first img").style.visibility = "hidden";
-        document.querySelector(".yellowa .first img").src = "";
-        dispose_countdown(null);
-    }
-    if (yb[1] === 1) {
-        document.querySelector(".yellowa .Second").display = "none";
-        document.querySelector(".yellowa .Second").style.backgroundColor = "";
-    } else if (yb[1] === 0) {
-        document.querySelector(".yellowa .Second").display = "relative";
-        document.querySelector(".yellowa .Second").style.backgroundColor = "yellow";
-        document.querySelector(".yellowa .Second img").style.visibility = "hidden";
-        document.querySelector(".yellowa .Second img").src = "";
-        dispose_countdown(null);
-    }
-    if (yb[2] === 1) {
-        document.querySelector(".yellowa .Third").display = "none";
-        document.querySelector(".yellowa .Third").style.backgroundColor = "";
-    } else if (yb[2] === 0) {
-        document.querySelector(".yellowa .Third").display = "relative";
-        document.querySelector(".yellowa .Third").style.backgroundColor = "yellow";
-        document.querySelector(".yellowa .Third img").style.visibility = "hidden";
-        document.querySelector(".yellowa .Third img").src = "";
-        dispose_countdown(null);
-    }
-    if (yb[3] === 1) {
-        document.querySelector(".yellowa .Fourth").display = "none";
-        document.querySelector(".yellowa .Fourth").style.backgroundColor = "";
-    } else if (yb[3] === 0) {
-        document.querySelector(".yellowa .Fourth").display = "relative";
-        document.querySelector(".yellowa .Fourth").style.backgroundColor = "yellow";
-        document.querySelector(".yellowa .Fourth img").style.visibility = "hidden";
-        document.querySelector(".yellowa .Fourth img").src = "";
-        dispose_countdown(null);
-    }
-
-    if (bb[0] === 1) {
-        document.querySelector(".bluea .first").display = "none";
-        document.querySelector(".bluea .first").style.backgroundColor = "";
-    } else if (bb[0] === 0) {
-        document.querySelector(".bluea .first").display = "relative";
-        document.querySelector(".bluea .first").style.backgroundColor = "blue";
-        document.querySelector(".bluea .first img").style.visibility = "hidden";
-        document.querySelector(".bluea .first img").src = "";
-        dispose_countdown(null);
-    }
-    if (bb[1] === 1) {
-        document.querySelector(".bluea .Second").display = "none";
-        document.querySelector(".bluea .Second").style.backgroundColor = "";
-    } else if (bb[1] === 0) {
-        document.querySelector(".bluea .Second").display = "relative";
-        document.querySelector(".bluea .Second").style.backgroundColor = "blue";
-        document.querySelector(".bluea .Second img").style.visibility = "hidden";
-        document.querySelector(".bluea .Second img").src = "";
-        dispose_countdown(null);
-    }
-    if (bb[2] === 1) {
-        document.querySelector(".bluea .Third").display = "none";
-        document.querySelector(".bluea .Third").style.backgroundColor = "";
-    } else if (bb[2] === 0) {
-        document.querySelector(".bluea .Third").display = "relative";
-        document.querySelector(".bluea .Third").style.backgroundColor = "blue";
-        document.querySelector(".bluea .Third img").style.visibility = "hidden";
-        document.querySelector(".bluea .Third img").src = "";
-        dispose_countdown(null);
-    }
-    if (bb[3] === 1) {
-        document.querySelector(".bluea .Fourth").display = "none";
-        document.querySelector(".bluea .Fourth").style.backgroundColor = "";
-    } else if (bb[3] === 0) {
-        document.querySelector(".bluea .Fourth").display = "relative";
-        document.querySelector(".bluea .Fourth").style.backgroundColor = "blue";
-        document.querySelector(".bluea .Fourth img").style.visibility = "hidden";
-        document.querySelector(".bluea .Fourth img").src = "";
-        dispose_countdown(null);
-    }
-}
-
 function countdown() {
     document.querySelector(".countdown").style.backgroundColor = "white";
     document.querySelector(".countdown #chronometer").style.visibility = "visible";
@@ -2180,7 +2177,6 @@ function countdown() {
     timer = setTimeout(function() {
         animationend(null);
         updater(null);
-        checker(null);
         dispose_countdown(null);
     }, 5000);
 }
