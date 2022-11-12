@@ -317,7 +317,7 @@ function path(score, col) {
     }
 }
 
-function selector(score) {
+function select(score) {
     if (score === 1) {
         document.querySelector(".path1 .g1").style.backgroundColor = ""; //green starts from here.
         selector = document.querySelector(".path1 .g1 img");
