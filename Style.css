@@ -573,7 +573,25 @@ a {
     top: 10px;
 }
 
-@media screen and (min-width: 170px) {
+@media screen and (min-width: 100px) {
+        @media screen and (max-width: 370px) {
+            .content {
+                overflow-x: visible;
+                overflow-y: hidden;
+            }
+            .button {
+                left: 10%;
+            }
+            .button-first,
+            .button-Fourth,
+            .button-Second,
+            .button-Third {
+                width: 320px;
+            }
+        }
+    }
+
+@media screen and (min-width: 370px) {
         @media screen and (max-width: 500px) {
             .content {
                 overflow-x: visible;
