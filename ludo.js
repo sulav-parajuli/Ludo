@@ -684,10 +684,6 @@ function greenstrike(value) {
                 });
             }
         }
-        // updater(gs[0]);
-        // updater(gs[1]);
-        // updater(gs[2]);
-        // updater(gs[3]);
     }
     if (value === 6) {
         if (pos !== "none") {
@@ -1025,10 +1021,10 @@ function redstrike(value) {
                 });
             }
         }
-        // updater(rs[0]);
-        // updater(rs[1]);
-        // updater(rs[2]);
-        // updater(rs[3]);
+
+
+
+
     }
     if (value === 6) {
         if (pos !== "none") {
@@ -1366,10 +1362,10 @@ function bluestrike(value) {
                 });
             }
         }
-        // updater(bs[0]);
-        // updater(bs[1]);
-        // updater(bs[2]);
-        // updater(bs[3]);
+
+
+
+
     }
     if (value === 6) {
         if (pos !== "none") {
@@ -1707,10 +1703,10 @@ function yellowstrike(value) {
                 });
             }
         }
-        // updater(ys[0]);
-        // updater(ys[1]);
-        // updater(ys[2]);
-        // updater(ys[3]);
+
+
+
+
     }
     if (value === 6) {
         if (pos !== "none") {
