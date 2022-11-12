@@ -5,9 +5,9 @@ function path(score, col) {
         animationend(null);
         updater(null);
         clearTimeout(time);
-        setTimeout(function() {
-            checker(null);
-        }, 500);
+        // setTimeout(function() {
+        //     checker(null);
+        // }, 500);
     }
     if (score === 1) { //green starts from here.
         document.querySelector(".path1 .g1").style.backgroundColor = col;

@@ -457,7 +457,7 @@ function result(turn, value, count) {
     if (turn === 1) {
         col = document.querySelector("#name1").style.color;
         if (col === "green" || col === "yellow" || col === "blue" || col === "red") {
-            if (value === 1 || value === 2 || value === 3 || value === 4 || value === 5 || value === 6) {
+            if (value === 1 || value === 2 || value === 3 || value === 4 || value === 5) {
                 window[col + "strike"](value); //calls the function "greenstrike(value)" if color is "green".
                 return (2);
             }
@@ -469,7 +469,7 @@ function result(turn, value, count) {
     } else if (turn === 2) {
         col = document.querySelector("#name2").style.color;
         if (col === "green" || col === "yellow" || col === "blue" || col === "red") {
-            if (value === 1 || value === 2 || value === 3 || value === 4 || value === 5 || value === 6) {
+            if (value === 1 || value === 2 || value === 3 || value === 4 || value === 5) {
                 window[col + "strike"](value);
                 if (count === "second") {
                     return (1);
@@ -485,7 +485,7 @@ function result(turn, value, count) {
     } else if (turn === 3) {
         col = document.querySelector("#name3").style.color;
         if (col === "green" || col === "yellow" || col === "blue" || col === "red") {
-            if (value === 1 || value === 2 || value === 3 || value === 4 || value === 5 || value === 6) {
+            if (value === 1 || value === 2 || value === 3 || value === 4 || value === 5) {
                 window[col + "strike"](value);
                 if (count === "third") {
                     return (1);
@@ -501,7 +501,7 @@ function result(turn, value, count) {
     } else if (turn === 4) {
         col = document.querySelector("#name4").style.color;
         if (col === "green" || col === "yellow" || col === "blue" || col === "red") {
-            if (value === 1 || value === 2 || value === 3 || value === 4 || value === 5 || value === 6) {
+            if (value === 1 || value === 2 || value === 3 || value === 4 || value === 5) {
                 window[col + "strike"](value);
                 return (1);
             }
