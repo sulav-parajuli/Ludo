@@ -1,10 +1,13 @@
-var selector, timer, i;
+var selector, timer;
 
 function path(score, col) {
     if (score !== 0) {
         animationend(null);
         updater(null);
         clearTimeout(time);
+        setTimeout(function() {
+            checker(null);
+        }, 500);
     }
     if (score === 1) { //green starts from here.
         document.querySelector(".path1 .g1").style.backgroundColor = col;
@@ -861,7 +864,10 @@ function updater() { //updates main circular board.
         document.querySelector(".bluea .Fourth img").src = "";
         dispose_countdown(null);
     }
+}
 
+function checker() {
+    var i;
     for (i = 0; i < 4; i++) {
         //if value is 1. 
         if (gs[i] === 1) {
@@ -2171,12 +2177,12 @@ function countdown() {
     document.querySelector(".countdown").style.backgroundColor = "white";
     document.querySelector(".countdown #chronometer").style.visibility = "visible";
     document.querySelector(".countdown #counter").style.visibility = "visible";
-    document.querySelector(".btn").disabled = "blocked";
     document.querySelector(".countdown #chronometer").src = "images/count-down.gif";
     document.querySelector(".countdown #counter").src = "images/counter.gif";
     timer = setTimeout(function() {
         animationend(null);
         updater(null);
+        checker(null);
         dispose_countdown(null);
     }, 5000);
 }
