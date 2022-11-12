@@ -592,6 +592,9 @@ a {
             .submitt {
                 width: 320px;
             }
+            .img {
+            visibility: hidden;
+        }
         }
     }
 
@@ -614,6 +617,9 @@ a {
             .submitt {
                 width: 320px;
             }
+            .img {
+            visibility: hidden;
+        }
         }
     }
     
@@ -636,6 +642,9 @@ a {
             .submitt {
                 width: 320px;
             }
+            .img {
+            visibility: visible;
+        }
         }
     }
     
@@ -648,5 +657,8 @@ a {
             .button {
                 left: 27%;
             }
+            .img {
+            visibility: visible;
+        }
         }
     }
