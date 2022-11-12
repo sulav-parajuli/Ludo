@@ -2171,7 +2171,7 @@ function countdown() {
     document.querySelector(".countdown").style.backgroundColor = "white";
     document.querySelector(".countdown #chronometer").style.visibility = "visible";
     document.querySelector(".countdown #counter").style.visibility = "visible";
-    document.querySelector(".countdown #chronometer").src = "images/chronometer.gif";
+    document.querySelector(".countdown #chronometer").src = "images/count-down.gif";
     document.querySelector(".countdown #counter").src = "images/counter.gif";
     timer = setTimeout(function() {
         animationend(null);
