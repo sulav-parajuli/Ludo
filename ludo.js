@@ -1900,437 +1900,294 @@ function animationend() {
     }
 
     //others animation end.
-    //if (score === 1) { //green starts from here.
+    //green starts from here.
     if (document.querySelector(".path1 .g1 img").style.visibility = "visible") {
         document.querySelector(".path1 .g1 img").style.visibility = "hidden";
         document.querySelector(".path1 .g1 img").src = "";
     }
-    //}
-    //if (score === 2) {
     if (document.querySelector(".path2 .g1 img").style.visibility = "visible") {
         document.querySelector(".path2 .g1 img").style.visibility = "hidden";
         document.querySelector(".path2 .g1 img").src = "";
     }
-    //}
-    //if (score === 3) {
     if (document.querySelector(".path3 .g1 img").style.visibility = "visible") {
         document.querySelector(".path3 .g1 img").style.visibility = "hidden";
         document.querySelector(".path3 .g1 img").src = "";
     }
-    //}
-    //if (score === 4) {
     if (document.querySelector(".path4 .g1 img").style.visibility = "visible") {
         document.querySelector(".path4 .g1 img").style.visibility = "hidden";
         document.querySelector(".path4 .g1 img").src = "";
     }
-    //}
-    //if (score === 5) {
     if (document.querySelector(".path5 .g1 img").style.visibility = "visible") {
         document.querySelector(".path5 .g1 img").style.visibility = "hidden";
         document.querySelector(".path5 .g1 img").src = "";
     }
-    //}
-    //if (score === 6) {
     if (document.querySelector(".vpath .g6 img").style.visibility = "visible") {
         document.querySelector(".vpath .g6 img").style.visibility = "hidden";
         document.querySelector(".vpath .g6 img").src = "";
     }
-    //}
-    //if (score === 7) {
     if (document.querySelector(".vpath .g5 img").style.visibility = "visible") {
         document.querySelector(".vpath .g5 img").style.visibility = "hidden";
         document.querySelector(".vpath .g5 img").src = "";
     }
-    //}
-    //if (score === 8) {
     if (document.querySelector(".vpath .g4 img").style.visibility = "visible") {
         document.querySelector(".vpath .g4 img").style.visibility = "hidden";
         document.querySelector(".vpath .g4 img").src = "";
     }
-    //}
-    //if (score === 9) {
     if (document.querySelector(".vpath .g3 img").style.visibility = "visible") {
         document.querySelector(".vpath .g3 img").style.visibility = "hidden";
         document.querySelector(".vpath .g3 img").src = "";
     }
-    //}
-    //if (score === 10) {
     if (document.querySelector(".vpath .g2 img").style.visibility = "visible") {
         document.querySelector(".vpath .g2 img").style.visibility = "hidden";
         document.querySelector(".vpath .g2 img").src = "";
     }
-    //}
-    //if (score === 11) {
     if (document.querySelector(".vpath .g1 img").style.visibility = "visible") {
         document.querySelector(".vpath .g1 img").style.visibility = "hidden";
         document.querySelector(".vpath .g1 img").src = "";
     }
-    //}
-    //if (score === 12) {
     if (document.querySelector(".vpath .g1 img").style.visibility = "visible") {
         document.querySelector(".vpath .g1 img").style.visibility = "hidden";
         document.querySelector(".vpath .g1 img").src = "";
     }
-    //}
-    //if (score === 13) {
     if (document.querySelector(".vpath2 .g1 img").style.visibility = "visible") {
         document.querySelector(".vpath2 .g1 img").style.visibility = "hidden";
         document.querySelector(".vpath2 .g1 img").src = "";
-    }
-    //}
-    //if (score === 14) { //red starts from here.
+    } //red starts from here.
     if (document.querySelector(".vpath2 .g2 img").style.visibility = "visible") {
         document.querySelector(".vpath2 .g2 img").style.visibility = "hidden";
         document.querySelector(".vpath2 .g2 img").src = "";
     }
-    //}
-    //if (score === 15) {
     if (document.querySelector(".vpath2 .g3 img").style.visibility = "visible") {
         document.querySelector(".vpath2 .g3 img").style.visibility = "hidden";
         document.querySelector(".vpath2 .g3 img").src = "";
     }
-    //}
-    //if (score === 16) {
     if (document.querySelector(".vpath2 .g4 img").style.visibility = "visible") {
         document.querySelector(".vpath2 .g4 img").style.visibility = "hidden";
         document.querySelector(".vpath2 .g4 img").src = "";
     }
-    //}
-    //if (score === 17) {
     if (document.querySelector(".vpath2 .g5 img").style.visibility = "visible") {
         document.querySelector(".vpath2 .g5 img").style.visibility = "hidden";
         document.querySelector(".vpath2 .g5 img").src = "";
     }
-    //}
-    //if (score === 18) {
     if (document.querySelector(".vpath2 .g6 img").style.visibility = "visible") {
         document.querySelector(".vpath2 .g6 img").style.visibility = "hidden";
         document.querySelector(".vpath2 .g6 img").src = "";
     }
-    //}
-    //if (score === 19) {
     if (document.querySelector(".path6 .g1 img").style.visibility = "visible") {
         document.querySelector(".path6 .g1 img").style.visibility = "hidden";
         document.querySelector(".path6 .g1 img").src = "";
     }
-    //}
-    //if (score === 20) {
     if (document.querySelector(".path7 .g1 img").style.visibility = "visible") {
         document.querySelector(".path7 .g1 img").style.visibility = "hidden";
         document.querySelector(".path7 .g1 img").src = "";
     }
-    //}
-    //if (score === 21) {
     if (document.querySelector(".path8 .g1 img").style.visibility = "visible") {
         document.querySelector(".path8 .g1 img").style.visibility = "hidden";
         document.querySelector(".path8 .g1 img").src = "";
     }
-    //}
-    //if (score === 22) {
     if (document.querySelector(".path9 .g1 img").style.visibility = "visible") {
         document.querySelector(".path9 .g1 img").style.visibility = "hidden";
         document.querySelector(".path9 .g1 img").src = "";
     }
-    //}
-    //if (score === 23) {
     if (document.querySelector(".path10 .g1 img").style.visibility = "visible") {
         document.querySelector(".path10 .g1 img").style.visibility = "hidden";
         document.querySelector(".path10 .g1 img").src = "";
     }
-    //}
-    //if (score === 24) {
     if (document.querySelector(".path11 .g1 img").style.visibility = "visible") {
         document.querySelector(".path11 .g1 img").style.visibility = "hidden";
         document.querySelector(".path11 .g1 img").src = "";
     }
-    //}
-    //if (score === 25) {
     if (document.querySelector(".path11 .g2 img").style.visibility = "visible") {
         document.querySelector(".path11 .g2 img").style.visibility = "hidden";
         document.querySelector(".path11 .g2 img").src = "";
     }
-    //}
-    //if (score === 26) {
     if (document.querySelector(".path11 .g3 img").style.visibility = "visible") {
         document.querySelector(".path11 .g3 img").style.visibility = "hidden";
         document.querySelector(".path11 .g3 img").src = "";
-    }
-    //}
-    //if (score === 27) { //Blue starts from here.
+    } //Blue starts from here.
     if (document.querySelector(".path10 .g3 img").style.visibility = "visible") {
         document.querySelector(".path10 .g3 img").style.visibility = "hidden";
         document.querySelector(".path10 .g3 img").src = "";
     }
-    //}
-    //if (score === 28) {
     if (document.querySelector(".path9 .g3 img").style.visibility = "visible") {
         document.querySelector(".path9 .g3 img").style.visibility = "hidden";
         document.querySelector(".path9 .g3 img").src = "";
     }
-    //}
-    //if (score === 29) {
     if (document.querySelector(".path8 .g3 img").style.visibility = "visible") {
         document.querySelector(".path8 .g3 img").style.visibility = "hidden";
         document.querySelector(".path8 .g3 img").src = "";
     }
-    //}
-    //if (score === 30) {
     if (document.querySelector(".path7 .g3 img").style.visibility = "visible") {
         document.querySelector(".path7 .g3 img").style.visibility = "hidden";
         document.querySelector(".path7 .g3 img").src = "";
     }
-    //}
-    //if (score === 31) {
     if (document.querySelector(".path6 .g3 img").style.visibility = "visible") {
         document.querySelector(".path6 .g3 img").style.visibility = "hidden";
         document.querySelector(".path6 .g3 img").src = "";
     }
-    //}
-    //if (score === 32) {
     if (document.querySelector(".vpath5 .g1 img").style.visibility = "visible") {
         document.querySelector(".vpath5 .g1 img").style.visibility = "hidden";
         document.querySelector(".vpath5 .g1 img").src = "";
     }
-    //}
-    //if (score === 33) {
     if (document.querySelector(".vpath5 .g2 img").style.visibility = "visible") {
         document.querySelector(".vpath5 .g2 img").style.visibility = "hidden";
         document.querySelector(".vpath5 .g2 img").src = "";
     }
-    //}
-    //if (score === 34) {
     if (document.querySelector(".vpath5 .g3 img").style.visibility = "visible") {
         document.querySelector(".vpath5 .g3 img").style.visibility = "hidden";
         document.querySelector(".vpath5 .g3 img").src = "";
     }
-    //}
-    //if (score === 35) {
     if (document.querySelector(".vpath5 .g4 img").style.visibility = "visible") {
         document.querySelector(".vpath5 .g4 img").style.visibility = "hidden";
         document.querySelector(".vpath5 .g4 img").src = "";
     }
-    //}
-    //if (score === 36) {
     if (document.querySelector(".vpath5 .g5 img").style.visibility = "visible") {
         document.querySelector(".vpath5 .g5 img").style.visibility = "hidden";
         document.querySelector(".vpath5 .g5 img").src = "";
     }
-    //}
-    //if (score === 37) {
     if (document.querySelector(".vpath5 .g6 img").style.visibility = "visible") {
         document.querySelector(".vpath5 .g6 img").style.visibility = "hidden";
         document.querySelector(".vpath5 .g6 img").src = "";
     }
-    //}
-    //if (score === 38) {
     if (document.querySelector(".vpath4 .g6 img").style.visibility = "visible") {
         document.querySelector(".vpath4 .g6 img").style.visibility = "hidden";
         document.querySelector(".vpath4 .g6 img").src = "";
     }
-    //}
-    //if (score === 39) {
     if (document.querySelector(".vpath3 .g6 img").style.visibility = "visible") {
         document.querySelector(".vpath3 .g6 img").style.visibility = "hidden";
         document.querySelector(".vpath3 .g6 img").src = "";
-    }
-    //}
-    //if (score === 40) { //yellow starts from here.
+    } //yellow starts from here.
     if (document.querySelector(".vpath3 .g5 img").style.visibility = "visible") {
         document.querySelector(".vpath3 .g5 img").style.visibility = "hidden";
         document.querySelector(".vpath3 .g5 img").src = "";
     }
-    //}
-    //if (score === 41) {
     if (document.querySelector(".vpath3 .g4 img").style.visibility = "visible") {
         document.querySelector(".vpath3 .g4 img").style.visibility = "hidden";
         document.querySelector(".vpath3 .g4 img").src = "";
     }
-    //}
-    //if (score === 42) {
     if (document.querySelector(".vpath3 .g3 img").style.visibility = "visible") {
         document.querySelector(".vpath3 .g3 img").style.visibility = "hidden";
         document.querySelector(".vpath3 .g3 img").src = "";
     }
-    //}
-    //if (score === 43) {
     if (document.querySelector(".vpath3 .g2 img").style.visibility = "visible") {
         document.querySelector(".vpath3 .g2 img").style.visibility = "hidden";
         document.querySelector(".vpath3 .g2 img").src = "";
     }
-    //}
-    //if (score === 44) {
     if (document.querySelector(".vpath3 .g1 img").style.visibility = "visible") {
         document.querySelector(".vpath3 .g1 img").style.visibility = "hidden";
         document.querySelector(".vpath3 .g1 img").src = "";
     }
-    //}
-    //if (score === 45) {
     if (document.querySelector(".path5 .g3 img").style.visibility = "visible") {
         document.querySelector(".path5 .g3 img").style.visibility = "hidden";
         document.querySelector(".path5 .g3 img").src = "";
     }
-    //}
-    //if (score === 46) {
     if (document.querySelector(".path4 .g3 img").style.visibility = "visible") {
         document.querySelector(".path4 .g3 img").style.visibility = "hidden";
         document.querySelector(".path4 .g3 img").src = "";
     }
-    //}
-    //if (score === 47) {
     if (document.querySelector(".path3 .g3 img").style.visibility = "visible") {
         document.querySelector(".path3 .g3 img").style.visibility = "hidden";
         document.querySelector(".path3 .g3 img").src = "";
     }
-    //}
-    //if (score === 48) {
     if (document.querySelector(".path2 .g3 img").style.visibility = "visible") {
         document.querySelector(".path2 .g3 img").style.visibility = "hidden";
         document.querySelector(".path2 .g3 img").src = "";
     }
-    //}
-    //if (score === 49) {
     if (document.querySelector(".path1 .g3 img").style.visibility = "visible") {
         document.querySelector(".path1 .g3 img").style.visibility = "hidden";
         document.querySelector(".path1 .g3 img").src = "";
     }
-    //}
-    //if (score === 50) {
     if (document.querySelector(".path .g3 img").style.visibility = "visible") {
         document.querySelector(".path .g3 img").style.visibility = "hidden";
         document.querySelector(".path .g3 img").src = "";
     }
-    //}
-    //if (score === 51) {
     if (document.querySelector(".path .g2 img").style.visibility = "visible") {
         document.querySelector(".path .g2 img").style.visibility = "hidden";
         document.querySelector(".path .g2 img").src = "";
     }
-    //}
-    //if (score === 52) {
     if (document.querySelector(".path .g1 img").style.visibility = "visible") {
         document.querySelector(".path .g1 img").style.visibility = "hidden";
         document.querySelector(".path .g1 img").src = "";
     }
-    //}
     //For Home.
-    //if (score === 53) { //green home.
     if (document.querySelector(".path1 .g2 img").style.visibility = "visible") {
         document.querySelector(".path1 .g2 img").style.visibility = "hidden";
         document.querySelector(".path1 .g2 img").src = "";
     }
-    //}
-    //if (score === 54) {
     if (document.querySelector(".path2 .g2 img").style.visibility = "visible") {
         document.querySelector(".path2 .g2 img").style.visibility = "hidden";
         document.querySelector(".path2 .g2 img").src = "";
-        //    }
     }
-    //if (score === 55) {
     if (document.querySelector(".path3 .g2 img").style.visibility = "visible") {
         document.querySelector(".path3 .g2 img").style.visibility = "hidden";
         document.querySelector(".path3 .g2 img").src = "";
     }
-    //}
-    //if (score === 56) {
     if (document.querySelector(".path4 .g2 img").style.visibility = "visible") {
         document.querySelector(".path4 .g2 img").style.visibility = "hidden";
         document.querySelector(".path4 .g2 img").src = "";
     }
-    //}
-    //if (score === 57) {
     if (document.querySelector(".path5 .g2 img").style.visibility = "visible") {
         document.querySelector(".path5 .g2 img").style.visibility = "hidden";
         document.querySelector(".path5 .g2 img").src = "";
     }
-    //}
-    //if (score === 59) { //red home.
     if (document.querySelector(".vpath1 .g2 img").style.visibility = "visible") {
         document.querySelector(".vpath1 .g2 img").style.visibility = "hidden";
         document.querySelector(".vpath1 .g2 img").src = "";
     }
-    //}
-    //if (score === 60) {
     if (document.querySelector(".vpath1 .g3 img").style.visibility = "visible") {
         document.querySelector(".vpath1 .g3 img").style.visibility = "hidden";
         document.querySelector(".vpath1 .g3 img").src = "";
     }
-    //}
-    //if (score === 61) {
     if (document.querySelector(".vpath1 .g4 img").style.visibility = "visible") {
         document.querySelector(".vpath1 .g4 img").style.visibility = "hidden";
         document.querySelector(".vpath1 .g4 img").src = "";
     }
-    //}
-    //if (score === 62) {
     if (document.querySelector(".vpath1 .g5 img").style.visibility = "visible") {
         document.querySelector(".vpath1 .g5 img").style.visibility = "hidden";
         document.querySelector(".vpath1 .g5 img").src = "";
     }
-    //}
-    //if (score === 63) {
     if (document.querySelector(".vpath1 .g6 img").style.visibility = "visible") {
         document.querySelector(".vpath1 .g6 img").style.visibility = "hidden";
         document.querySelector(".vpath1 .g6 img").src = "";
     }
-    //}
-    //if (score === 65) { //blue home.
     if (document.querySelector(".path10 .g2 img").style.visibility = "visible") {
         document.querySelector(".path10 .g2 img").style.visibility = "hidden";
         document.querySelector(".path10 .g2 img").src = "";
     }
-    //}
-    //if (score === 66) {
     if (document.querySelector(".path9 .g2 img").style.visibility = "visible") {
         document.querySelector(".path9 .g2 img").style.visibility = "hidden";
         document.querySelector(".path9 .g2 img").src = "";
     }
-    //}
-    //if (score === 67) {
     if (document.querySelector(".path8 .g2 img").style.visibility = "visible") {
         document.querySelector(".path8 .g2 img").style.visibility = "hidden";
         document.querySelector(".path8 .g2 img").src = "";
     }
-    //}
-    //if (score === 68) {
     if (document.querySelector(".path7 .g2 img").style.visibility = "visible") {
         document.querySelector(".path7 .g2 img").style.visibility = "hidden";
         document.querySelector(".path7 .g2 img").src = "";
     }
-    //}
-    //if (score === 69) {
     if (document.querySelector(".path6 .g2 img").style.visibility = "visible") {
         document.querySelector(".path6 .g2 img").style.visibility = "hidden";
         document.querySelector(".path6 .g2 img").src = "";
     }
-    //}
-    //if (score === 71) { //yellow home.
     if (document.querySelector(".vpath4 .g5 img").style.visibility = "visible") {
         document.querySelector(".vpath4 .g5 img").style.visibility = "hidden";
         document.querySelector(".vpath4 .g5 img").src = "";
     }
-    //}
-    //if (score === 72) {
     if (document.querySelector(".vpath4 .g4 img").style.visibility = "visible") {
         document.querySelector(".vpath4 .g4 img").style.visibility = "hidden";
         document.querySelector(".vpath4 .g4 img").src = "";
     }
-    //}
-    //if (score === 73) {
     if (document.querySelector(".vpath4 .g3 img").style.visibility = "visible") {
         document.querySelector(".vpath4 .g3 img").style.visibility = "hidden";
         document.querySelector(".vpath4 .g3 img").src = "";
     }
-    //}
-    //if (score === 74) {
     if (document.querySelector(".vpath4 .g2 img").style.visibility = "visible") {
         document.querySelector(".vpath4 .g2 img").style.visibility = "hidden";
         document.querySelector(".vpath4 .g2 img").src = "";
     }
-    //}
-    //if (score === 75) {
     if (document.querySelector(".vpath4 .g1 img").style.visibility = "visible") {
         document.querySelector(".vpath4 .g1 img").style.visibility = "hidden";
         document.querySelector(".vpath4 .g1 img").src = "";
     }
-    //}
 }
