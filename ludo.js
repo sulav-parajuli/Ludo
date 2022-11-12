@@ -526,7 +526,7 @@ function greenstrike(value) {
             if (temp > 51) {
                 greatvalue = temp - 51;
                 temp = 52 + greatvalue;
-                selector = disappear(gs[0]);
+                selector = selector(gs[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -543,7 +543,7 @@ function greenstrike(value) {
                     }
                 });
             } else {
-                selector = disappear(gs[0]);
+                selector = selector(gs[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -567,7 +567,7 @@ function greenstrike(value) {
             if (temp > 51) {
                 greatvalue = temp - 51;
                 temp = 52 + greatvalue;
-                selector1 = disappear(gs[1]);
+                selector1 = selector(gs[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -584,7 +584,7 @@ function greenstrike(value) {
                     }
                 });
             } else {
-                selector1 = disappear(gs[1]);
+                selector1 = selector(gs[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -608,7 +608,7 @@ function greenstrike(value) {
             if (temp > 51) {
                 greatvalue = temp - 51;
                 temp = 52 + greatvalue;
-                selector2 = disappear(gs[2]);
+                selector2 = selector(gs[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -625,7 +625,7 @@ function greenstrike(value) {
                     }
                 });
             } else {
-                selector2 = disappear(gs[2]);
+                selector2 = selector(gs[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -649,7 +649,7 @@ function greenstrike(value) {
             if (temp > 51) {
                 greatvalue = temp - 51;
                 temp = 52 + greatvalue;
-                selector3 = disappear(gs[3]);
+                selector3 = selector(gs[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -666,7 +666,7 @@ function greenstrike(value) {
                     }
                 });
             } else {
-                selector3 = disappear(gs[3]);
+                selector3 = selector(gs[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -785,7 +785,7 @@ function redstrike(value) {
                 greatvalue = temp - 52;
                 greatr[0] = temp;
                 temp = greatvalue;
-                selector = disappear(rs[0]);
+                selector = selector(rs[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -804,7 +804,7 @@ function redstrike(value) {
             } else if (greatr[0] > 64) {
                 greatvalue = greatr[0] - 64;
                 temp = greatvalue + 58;
-                selector = disappear(rs[0]);
+                selector = selector(rs[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -821,7 +821,7 @@ function redstrike(value) {
                     }
                 });
             } else {
-                selector = disappear(rs[0]);
+                selector = selector(rs[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -847,7 +847,7 @@ function redstrike(value) {
                 greatvalue = temp - 52;
                 greatr[1] = temp;
                 temp = greatvalue;
-                selector1 = disappear(rs[1]);
+                selector1 = selector(rs[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -866,7 +866,7 @@ function redstrike(value) {
             } else if (greatr[1] > 64) {
                 greatvalue = greatr[1] - 64;
                 temp = greatvalue + 58;
-                selector1 = disappear(rs[1]);
+                selector1 = selector(rs[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -883,7 +883,7 @@ function redstrike(value) {
                     }
                 });
             } else {
-                selector1 = disappear(rs[1]);
+                selector1 = selector(rs[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -909,7 +909,7 @@ function redstrike(value) {
                 greatvalue = temp - 52;
                 greatr[2] = temp;
                 temp = greatvalue;
-                selector2 = disappear(rs[2]);
+                selector2 = selector(rs[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -928,7 +928,7 @@ function redstrike(value) {
             } else if (greatr[2] > 64) {
                 greatvalue = greatr[2] - 64;
                 temp = greatvalue + 58;
-                selector2 = disappear(rs[2]);
+                selector2 = selector(rs[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -945,7 +945,7 @@ function redstrike(value) {
                     }
                 });
             } else {
-                selector2 = disappear(rs[2]);
+                selector2 = selector(rs[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -971,7 +971,7 @@ function redstrike(value) {
                 greatvalue = temp - 52;
                 greatr[3] = temp;
                 temp = greatvalue;
-                selector3 = disappear(rs[3]);
+                selector3 = selector(rs[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -990,7 +990,7 @@ function redstrike(value) {
             } else if (greatr[3] > 64) {
                 greatvalue = greatr[3] - 64;
                 temp = greatvalue + 58;
-                selector3 = disappear(rs[3]);
+                selector3 = selector(rs[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1007,7 +1007,7 @@ function redstrike(value) {
                     }
                 });
             } else {
-                selector3 = disappear(rs[3]);
+                selector3 = selector(rs[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1126,7 +1126,7 @@ function bluestrike(value) {
                 greatvalue = temp - 52;
                 greatb[0] = temp;
                 temp = greatvalue;
-                selector = disappear(bs[0]);
+                selector = selector(bs[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1145,7 +1145,7 @@ function bluestrike(value) {
             } else if (greatb[0] > 77) {
                 greatvalue = greatb[0] - 77;
                 temp = greatvalue + 64;
-                selector = disappear(bs[0]);
+                selector = selector(bs[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1162,7 +1162,7 @@ function bluestrike(value) {
                     }
                 });
             } else {
-                selector = disappear(bs[0]);
+                selector = selector(bs[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1188,7 +1188,7 @@ function bluestrike(value) {
                 greatvalue = temp - 52;
                 greatb[1] = temp;
                 temp = greatvalue;
-                selector1 = disappear(bs[1]);
+                selector1 = selector(bs[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1207,7 +1207,7 @@ function bluestrike(value) {
             } else if (greatb[1] > 77) {
                 greatvalue = greatb[1] - 77;
                 temp = greatvalue + 64;
-                selector1 = disappear(bs[1]);
+                selector1 = selector(bs[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1224,7 +1224,7 @@ function bluestrike(value) {
                     }
                 });
             } else {
-                selector1 = disappear(bs[1]);
+                selector1 = selector(bs[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1250,7 +1250,7 @@ function bluestrike(value) {
                 greatvalue = temp - 52;
                 greatb[2] = temp;
                 temp = greatvalue;
-                selector2 = disappear(bs[2]);
+                selector2 = selector(bs[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1269,7 +1269,7 @@ function bluestrike(value) {
             } else if (greatb[2] > 77) {
                 greatvalue = greatb[2] - 77;
                 temp = greatvalue + 64;
-                selector2 = disappear(bs[2]);
+                selector2 = selector(bs[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1286,7 +1286,7 @@ function bluestrike(value) {
                     }
                 });
             } else {
-                selector2 = disappear(bs[2]);
+                selector2 = selector(bs[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1312,7 +1312,7 @@ function bluestrike(value) {
                 greatvalue = temp - 52;
                 greatb[3] = temp;
                 temp = greatvalue;
-                selector3 = disappear(bs[3]);
+                selector3 = selector(bs[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1331,7 +1331,7 @@ function bluestrike(value) {
             } else if (greatb[3] > 77) {
                 greatvalue = greatb[3] - 77;
                 temp = greatvalue + 64;
-                selector3 = disappear(bs[3]);
+                selector3 = selector(bs[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1348,7 +1348,7 @@ function bluestrike(value) {
                     }
                 });
             } else {
-                selector3 = disappear(bs[3]);
+                selector3 = selector(bs[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1467,7 +1467,7 @@ function yellowstrike(value) {
                 greatvalue = temp - 52;
                 greaty[0] = temp;
                 temp = greatvalue;
-                selector = disappear(ys[0]);
+                selector = selector(ys[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1486,7 +1486,7 @@ function yellowstrike(value) {
             } else if (greaty[0] > 90) {
                 greatvalue = greaty[0] - 90;
                 temp = greatvalue + 70;
-                selector = disappear(ys[0]);
+                selector = selector(ys[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1503,7 +1503,7 @@ function yellowstrike(value) {
                     }
                 });
             } else {
-                selector = disappear(ys[0]);
+                selector = selector(ys[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1529,7 +1529,7 @@ function yellowstrike(value) {
                 greatvalue = temp - 52;
                 greaty[1] = temp;
                 temp = greatvalue;
-                selector1 = disappear(ys[1]);
+                selector1 = selector(ys[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1548,7 +1548,7 @@ function yellowstrike(value) {
             } else if (greaty[1] > 90) {
                 greatvalue = greaty[1] - 90;
                 temp = greatvalue + 70;
-                selector1 = disappear(ys[1]);
+                selector1 = selector(ys[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1565,7 +1565,7 @@ function yellowstrike(value) {
                     }
                 });
             } else {
-                selector1 = disappear(ys[1]);
+                selector1 = selector(ys[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1591,7 +1591,7 @@ function yellowstrike(value) {
                 greatvalue = temp - 52;
                 greaty[2] = temp;
                 temp = greatvalue;
-                selector2 = disappear(ys[2]);
+                selector2 = selector(ys[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1610,7 +1610,7 @@ function yellowstrike(value) {
             } else if (greaty[2] > 90) {
                 greatvalue = greaty[2] - 90;
                 temp = greatvalue + 70;
-                selector2 = disappear(ys[2]);
+                selector2 = selector(ys[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1627,7 +1627,7 @@ function yellowstrike(value) {
                     }
                 });
             } else {
-                selector2 = disappear(ys[2]);
+                selector2 = selector(ys[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1653,7 +1653,7 @@ function yellowstrike(value) {
                 greatvalue = temp - 52;
                 greaty[3] = temp;
                 temp = greatvalue;
-                selector3 = disappear(ys[3]);
+                selector3 = selector(ys[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1672,7 +1672,7 @@ function yellowstrike(value) {
             } else if (greaty[3] > 90) {
                 greatvalue = greaty[3] - 90;
                 temp = greatvalue + 70;
-                selector3 = disappear(ys[3]);
+                selector3 = selector(ys[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1689,7 +1689,7 @@ function yellowstrike(value) {
                     }
                 });
             } else {
-                selector3 = disappear(ys[3]);
+                selector3 = selector(ys[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
