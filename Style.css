@@ -1,667 +1,611 @@
-* {
-    margin: 0px;
-}
-
-footer {
-    text-align: center;
-    font-family: 'Noto Sans', sans-serif;
-}
-
-h1,
-h4 {
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    text-align: center;
-    position: relative;
-    top: 80px;
-    margin: 5px;
-}
-
-h5 {
-    font-family: 'Noto Sans', sans-serif;
-    color: white;
-    font-size: 15px;
-    text-align: center;
-    position: relative;
-    top: 80px;
-    margin: 5px;
-}
-
-.content {
-    height: 100%;
-    overflow-x: hidden;
-    background-size: cover;
-    background-position: center;
-    background-image: url('images/background.png');
-}
-
-.container {
-    width: 800px;
-    height: 100%;
-    position: relative;
-    border-width: 3px;
-    border-style: solid;
-    left: 100px;
-}
-
-.button {
-    position: relative;
-    top: 100px;
-    width: 400px;
-    height: 400px;
-    left: 475px;
-    margin-top: 10px;
-}
-
-.img {
-    width: 300px;
-    height: 300px;
-    position: relative;
-    bottom: 50px;
-    left: 20px;
-}
-
-.button-first:hover,
-.button-Second:hover,
-.button-Fourth:hover,
-.button-Third:hover,
-a:hover,
-.btn:hover,
-.submitt:hover {
-    background-color: lightgray;
-    color: blue;
-}
-
-a {
-    text-decoration: none;
-    color: purple;
-}
-
-.Player {
-    position: relative;
-    left: 950px;
-    bottom: 700px;
-    display: inline;
-    background-color: purple;
-}
-
-.btn {
-    width: 320px;
-    height: 40px;
-    position: relative;
-    font-family: 'Noto Sans', sans-serif;
-    background-color: white;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 20px;
-    color: purple;
-    top: 12px;
-}
-
-.countdown {
-    width: 320px;
-    height: 40px;
-    background-color: #0E011D;
-    position: absolute;
-    font-family: 'Noto Sans', sans-serif;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 20px;
-    top: 230px;
-}
-
-.button-first {
-    width: 400px;
-    height: 40px;
-    position: relative;
-    background-color: darkgray;
-    border-radius: 5px;
-    text-align: center;
-    color: purple;
-    font-size: 20px;
-    margin: 3px;
-}
-
-.button-Second {
-    width: 400px;
-    height: 40px;
-    position: relative;
-    background-color: darkgray;
-    border-radius: 5px;
-    text-align: center;
-    color: purple;
-    font-size: 20px;
-    top: 3px;
-    margin: 3px;
-}
-
-.button-Fourth {
-    width: 400px;
-    height: 40px;
-    position: relative;
-    background-color: darkgray;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 20px;
-    color: purple;
-    top: 9px;
-    margin: 3px;
-}
-
-.submitt {
-    width: 400px;
-    height: 40px;
-    position: relative;
-    background-color: white;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 20px;
-    top: 9px;
-}
-
-.button-Third {
-    width: 400px;
-    height: 40px;
-    position: relative;
-    background-color: darkgray;
-    border-radius: 5px;
-    text-align: center;
-    color: purple;
-    font-size: 20px;
-    top: 6px;
-    margin: 3px;
-}
-
-.Player1 {
-    width: 320px;
-    height: 40px;
-    position: relative;
-    font-family: 'Noto Sans', sans-serif;
-    background-color: darkgray;
-    border-radius: 5px;
-    margin-bottom: 3px;
-}
-
-.Player2 {
-    width: 320px;
-    height: 40px;
-    position: relative;
-    font-family: 'Noto Sans', sans-serif;
-    top: 3px;
-    background-color: darkgray;
-    border-radius: 5px;
-    margin-bottom: 3px;
-}
-
-.Player3 {
-    width: 320px;
-    height: 40px;
-    position: relative;
-    font-family: 'Noto Sans', sans-serif;
-    top: 6px;
-    border-radius: 5px;
-    margin-bottom: 3px;
-    background-color: darkgray;
-}
-
-.Player4 {
-    width: 320px;
-    height: 40px;
-    font-family: 'Noto Sans', sans-serif;
-    position: relative;
-    border-radius: 5px;
-    top: 9px;
-    margin-bottom: 3px;
-    background-color: darkgray;
-}
-
-.home {
-    width: 150px;
-    height: 130px;
-    position: absolute;
-    display: relative;
-    bottom: 289px;
-    left: 326px;
-}
-
-.greena {
-    width: 235px;
-    height: 200px;
-    bottom: 653px;
-    left: 60px;
-    top: 54px;
-    position: absolute;
-}
-
-.dice {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    border-radius: 35%;
-    border: 1px solid;
-}
-
-.first {
-    width: 45px;
-    height: 45px;
-    display: relative;
-    position: absolute;
-    top: 35px;
-    left: 95px;
-    border-radius: 45%;
-}
-
-.path {
-    width: 50px;
-    height: 129px;
-    left: 30px;
-    bottom: 287px;
-    display: relative;
-    position: absolute;
-}
-
-.path1 {
-    width: 50px;
-    height: 129px;
-    bottom: 287px;
-    left: 80px;
-    display: relative;
-    position: absolute;
-}
-
-.path2 {
-    width: 50px;
-    height: 129px;
-    bottom: 287px;
-    left: 130px;
-    display: relative;
-    position: absolute;
-}
-
-.path3 {
-    width: 50px;
-    height: 129px;
-    bottom: 287px;
-    left: 180px;
-    display: relative;
-    position: absolute;
-}
-
-.path4 {
-    width: 50px;
-    height: 129px;
-    bottom: 287px;
-    left: 230px;
-    display: relative;
-    position: absolute;
-}
-
-.path5 {
-    width: 50px;
-    height: 129px;
-    bottom: 287px;
-    left: 280px;
-    display: relative;
-    position: absolute;
-}
-
-.path6 {
-    width: 50px;
-    height: 129px;
-    bottom: 287px;
-    left: 477px;
-    display: relative;
-    position: absolute;
-}
-
-.path7 {
-    width: 50px;
-    height: 129px;
-    bottom: 287px;
-    left: 527px;
-    display: relative;
-    position: absolute;
-}
-
-.path8 {
-    width: 50px;
-    height: 129px;
-    bottom: 287px;
-    left: 577px;
-    display: relative;
-    position: absolute;
-}
-
-.path9 {
-    width: 50px;
-    height: 129px;
-    bottom: 287px;
-    left: 627px;
-    display: relative;
-    position: absolute;
-}
-
-.path10 {
-    width: 50px;
-    height: 129px;
-    bottom: 287px;
-    left: 677px;
-    display: relative;
-    position: absolute;
-}
-
-.path11 {
-    width: 50px;
-    height: 129px;
-    bottom: 287px;
-    left: 727px;
-    display: relative;
-    position: absolute;
-}
-
-.g1,
-.g2,
-.g3,
-.g4,
-.g5,
-.g6 {
-    width: 40px;
-    height: 40px;
-    border-radius: 45%;
-    margin-bottom: 3px;
-    margin-left: 3px;
-}
-
-.hg {
-    width: 40px;
-    height: 40px;
-    border-radius: 45%;
-    display: relative;
-    position: absolute;
-    top: 45px;
-    left: 5px;
-}
-
-.hb {
-    width: 40px;
-    height: 40px;
-    border-radius: 45%;
-    display: relative;
-    position: absolute;
-    top: 45px;
-    left: 100px;
-}
-
-.hy {
-    width: 40px;
-    height: 40px;
-    border-radius: 45%;
-    display: relative;
-    position: absolute;
-    left: 50px;
-    top: 85px;
-}
-
-.hr {
-    width: 40px;
-    height: 40px;
-    border-radius: 45%;
-    display: relative;
-    position: absolute;
-    left: 50px;
-    bottom: 85px;
-}
-
-.vpath {
-    width: 50px;
-    height: 258px;
-    position: absolute;
-    display: relative;
-    left: 327px;
-    top: 29px;
-}
-
-.vpath1 {
-    width: 50px;
-    height: 258px;
-    position: absolute;
-    display: relative;
-    left: 377px;
-    top: 29px;
-}
-
-.vpath2 {
-    width: 50px;
-    height: 258px;
-    position: absolute;
-    display: relative;
-    left: 427px;
-    top: 29px;
-}
-
-.vpath3 {
-    width: 50px;
-    height: 258px;
-    position: absolute;
-    display: relative;
-    bottom: 27px;
-    left: 327px;
-}
-
-.vpath4 {
-    width: 50px;
-    height: 258px;
-    position: absolute;
-    display: relative;
-    bottom: 27px;
-    left: 377px;
-}
-
-.vpath5 {
-    width: 50px;
-    height: 258px;
-    position: absolute;
-    display: relative;
-    bottom: 27px;
-    left: 427px;
-}
-
-.Second {
-    width: 45px;
-    height: 45px;
-    display: relative;
-    position: absolute;
-    top: 77px;
-    left: 45px;
-    border-radius: 45%;
-}
-
-.Third {
-    width: 45px;
-    height: 45px;
-    display: relative;
-    position: absolute;
-    top: 77px;
-    left: 145px;
-    border-radius: 45%;
-}
-
-.Fourth {
-    width: 45px;
-    height: 45px;
-    display: relative;
-    position: absolute;
-    top: 120px;
-    left: 95px;
-    border-radius: 45%;
-}
-
-.reda {
-    width: 235px;
-    height: 200px;
-    top: 54px;
-    left: 507px;
-    bottom: 654px;
-    position: absolute;
-}
-
-.yellowa {
-    width: 235px;
-    height: 200px;
-    bottom: 57px;
-    right: 505px;
-    position: absolute;
-}
-
-.bluea {
-    width: 235px;
-    height: 200px;
-    left: 507px;
-    bottom: 58px;
-    position: absolute;
-}
-
-#main {
-    width: 800px;
-    height: 700px;
-}
-
-#status {
-    position: absolute;
-    left: 220px;
-    top: 10px;
-}
-
-#image {
-    position: relative;
-    left: 225px;
-    bottom: 20px;
-}
-
-#star {
-    width: 60px;
-    height: 60px;
-    position: relative;
-    bottom: 10px;
-    right: 7px;
-    visibility: hidden;
-}
-
-#counter {
-    width: 320px;
-    height: 40px;
-    position: relative;
-    visibility: hidden;
-    border-radius: 10px;
-}
-
-#chronometer {
-    width: 50px;
-    height: 40px;
-    position: relative;
-    visibility: hidden;
-    right: 120px;
-    bottom: 45px;
-}
-
-#name1,
-#name2,
-#name3,
-#name4 {
-    position: relative;
-    left: 20px;
-    top: 10px;
-}
-
-@media screen and (min-width: 100px) {
-    @media screen and (max-width: 370px) {
-        h1 {
-            font-size: 1.7em;
-        }
-        .content {
-            overflow-x: visible;
-            overflow-y: hidden;
-        }
-        .button {
-            left: 10%;
-        }
-        .button-first,
-        .button-Fourth,
-        .button-Second,
-        .button-Third,
-        .submitt {
-            width: 320px;
-        }
-        .img {
-            visibility: hidden;
-        }
+        * {
+        margin: 0px;
     }
-}
-
-@media screen and (min-width: 370px) {
-    @media screen and (max-width: 500px) {
-        h1 {
-            font-size: 1.7em;
-        }
-        .content {
-            overflow-x: visible;
-            overflow-y: hidden;
-        }
-        .button {
-            left: 17%;
-        }
-        .button-first,
-        .button-Fourth,
-        .button-Second,
-        .button-Third,
-        .submitt {
-            width: 320px;
-        }
-        .img {
-            visibility: hidden;
-        }
+    
+    footer {
+        text-align: center;
+        font-family: 'Noto Sans', sans-serif;
     }
-}
-
-@media screen and (min-width: 500px) {
+    
+    h1,
+    h4 {
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 80px;
+        margin: 5px;
+    }
+    
+    h5 {
+        font-family: 'Noto Sans', sans-serif;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        position: relative;
+        top: 80px;
+        margin: 5px;
+    }
+    
+    .content {
+        height: 100%;
+        overflow-x: hidden;
+        background-size: cover;
+        background-position: center;
+        background-image: url('images/background.png');
+    }
+    
+    .container {
+        width: 800px;
+        height: 100%;
+        position: relative;
+        border-width: 3px;
+        border-style: solid;
+        left: 100px;
+    }
+    
+    .button {
+        position: relative;
+        top: 100px;
+        width: 400px;
+        height: 400px;
+        left: 475px;
+        margin-top: 10px;
+    }
+    
+    .img {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        bottom: 50px;
+        left: 20px;
+    }
+    
+    .button-first:hover,
+    .button-Second:hover,
+    .button-Fourth:hover,
+    .button-Third:hover,
+    a:hover,
+    .btn:hover,
+    .submitt:hover {
+        background-color: lightgray;
+        color: blue;
+    }
+    
+    a {
+        text-decoration: none;
+        color: purple;
+    }
+    
+    .Player {
+        position: relative;
+        left: 950px;
+        bottom: 700px;
+        display: inline;
+        background-color: purple;
+    }
+    
+    .btn {
+        width: 320px;
+        height: 40px;
+        position: relative;
+        font-family: 'Noto Sans', sans-serif;
+        background-color: white;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 20px;
+        color: purple;
+        top: 12px;
+    }
+    
+    .countdown {
+        width: 320px;
+        height: 40px;
+        background-color: #0E011D;
+        position: absolute;
+        font-family: 'Noto Sans', sans-serif;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 20px;
+        top: 230px;
+    }
+    
+    .button-first {
+        width: 400px;
+        height: 40px;
+        position: relative;
+        background-color: darkgray;
+        border-radius: 5px;
+        text-align: center;
+        color: purple;
+        font-size: 20px;
+        margin: 3px;
+    }
+    
+    .button-Second {
+        width: 400px;
+        height: 40px;
+        position: relative;
+        background-color: darkgray;
+        border-radius: 5px;
+        text-align: center;
+        color: purple;
+        font-size: 20px;
+        top: 3px;
+        margin: 3px;
+    }
+    
+    .button-Fourth {
+        width: 400px;
+        height: 40px;
+        position: relative;
+        background-color: darkgray;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 20px;
+        color: purple;
+        top: 9px;
+        margin: 3px;
+    }
+    
+    .submitt {
+        width: 400px;
+        height: 40px;
+        position: relative;
+        background-color: white;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 20px;
+        top: 9px;
+    }
+    
+    .button-Third {
+        width: 400px;
+        height: 40px;
+        position: relative;
+        background-color: darkgray;
+        border-radius: 5px;
+        text-align: center;
+        color: purple;
+        font-size: 20px;
+        top: 6px;
+        margin: 3px;
+    }
+    
+    .Player1 {
+        width: 320px;
+        height: 40px;
+        position: relative;
+        font-family: 'Noto Sans', sans-serif;
+        background-color: darkgray;
+        border-radius: 5px;
+        margin-bottom: 3px;
+    }
+    
+    .Player2 {
+        width: 320px;
+        height: 40px;
+        position: relative;
+        font-family: 'Noto Sans', sans-serif;
+        top: 3px;
+        background-color: darkgray;
+        border-radius: 5px;
+        margin-bottom: 3px;
+    }
+    
+    .Player3 {
+        width: 320px;
+        height: 40px;
+        position: relative;
+        font-family: 'Noto Sans', sans-serif;
+        top: 6px;
+        border-radius: 5px;
+        margin-bottom: 3px;
+        background-color: darkgray;
+    }
+    
+    .Player4 {
+        width: 320px;
+        height: 40px;
+        font-family: 'Noto Sans', sans-serif;
+        position: relative;
+        border-radius: 5px;
+        top: 9px;
+        margin-bottom: 3px;
+        background-color: darkgray;
+    }
+    
+    .home {
+        width: 150px;
+        height: 130px;
+        position: absolute;
+        display: relative;
+        bottom: 289px;
+        left: 326px;
+    }
+    
+    .greena {
+        width: 235px;
+        height: 200px;
+        bottom: 653px;
+        left: 60px;
+        top: 54px;
+        position: absolute;
+    }
+    
+    .dice {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        border-radius: 35%;
+        border: 1px solid;
+    }
+    
+    .first {
+        width: 45px;
+        height: 45px;
+        display: relative;
+        position: absolute;
+        top: 35px;
+        left: 95px;
+        border-radius: 45%;
+    }
+    
+    .path {
+        width: 50px;
+        height: 129px;
+        left: 30px;
+        bottom: 287px;
+        display: relative;
+        position: absolute;
+    }
+    
+    .path1 {
+        width: 50px;
+        height: 129px;
+        bottom: 287px;
+        left: 80px;
+        display: relative;
+        position: absolute;
+    }
+    
+    .path2 {
+        width: 50px;
+        height: 129px;
+        bottom: 287px;
+        left: 130px;
+        display: relative;
+        position: absolute;
+    }
+    
+    .path3 {
+        width: 50px;
+        height: 129px;
+        bottom: 287px;
+        left: 180px;
+        display: relative;
+        position: absolute;
+    }
+    
+    .path4 {
+        width: 50px;
+        height: 129px;
+        bottom: 287px;
+        left: 230px;
+        display: relative;
+        position: absolute;
+    }
+    
+    .path5 {
+        width: 50px;
+        height: 129px;
+        bottom: 287px;
+        left: 280px;
+        display: relative;
+        position: absolute;
+    }
+    
+    .path6 {
+        width: 50px;
+        height: 129px;
+        bottom: 287px;
+        left: 477px;
+        display: relative;
+        position: absolute;
+    }
+    
+    .path7 {
+        width: 50px;
+        height: 129px;
+        bottom: 287px;
+        left: 527px;
+        display: relative;
+        position: absolute;
+    }
+    
+    .path8 {
+        width: 50px;
+        height: 129px;
+        bottom: 287px;
+        left: 577px;
+        display: relative;
+        position: absolute;
+    }
+    
+    .path9 {
+        width: 50px;
+        height: 129px;
+        bottom: 287px;
+        left: 627px;
+        display: relative;
+        position: absolute;
+    }
+    
+    .path10 {
+        width: 50px;
+        height: 129px;
+        bottom: 287px;
+        left: 677px;
+        display: relative;
+        position: absolute;
+    }
+    
+    .path11 {
+        width: 50px;
+        height: 129px;
+        bottom: 287px;
+        left: 727px;
+        display: relative;
+        position: absolute;
+    }
+    
+    .g1,
+    .g2,
+    .g3,
+    .g4,
+    .g5,
+    .g6 {
+        width: 40px;
+        height: 40px;
+        border-radius: 45%;
+        margin-bottom: 3px;
+        margin-left: 3px;
+    }
+    
+    .hg {
+        width: 40px;
+        height: 40px;
+        border-radius: 45%;
+        display: relative;
+        position: absolute;
+        top: 45px;
+        left: 5px;
+    }
+    
+    .hb {
+        width: 40px;
+        height: 40px;
+        border-radius: 45%;
+        display: relative;
+        position: absolute;
+        top: 45px;
+        left: 100px;
+    }
+    
+    .hy {
+        width: 40px;
+        height: 40px;
+        border-radius: 45%;
+        display: relative;
+        position: absolute;
+        left: 50px;
+        top: 85px;
+    }
+    
+    .hr {
+        width: 40px;
+        height: 40px;
+        border-radius: 45%;
+        display: relative;
+        position: absolute;
+        left: 50px;
+        bottom: 85px;
+    }
+    
+    .vpath {
+        width: 50px;
+        height: 258px;
+        position: absolute;
+        display: relative;
+        left: 327px;
+        top: 29px;
+    }
+    
+    .vpath1 {
+        width: 50px;
+        height: 258px;
+        position: absolute;
+        display: relative;
+        left: 377px;
+        top: 29px;
+    }
+    
+    .vpath2 {
+        width: 50px;
+        height: 258px;
+        position: absolute;
+        display: relative;
+        left: 427px;
+        top: 29px;
+    }
+    
+    .vpath3 {
+        width: 50px;
+        height: 258px;
+        position: absolute;
+        display: relative;
+        bottom: 27px;
+        left: 327px;
+    }
+    
+    .vpath4 {
+        width: 50px;
+        height: 258px;
+        position: absolute;
+        display: relative;
+        bottom: 27px;
+        left: 377px;
+    }
+    
+    .vpath5 {
+        width: 50px;
+        height: 258px;
+        position: absolute;
+        display: relative;
+        bottom: 27px;
+        left: 427px;
+    }
+    
+    .Second {
+        width: 45px;
+        height: 45px;
+        display: relative;
+        position: absolute;
+        top: 77px;
+        left: 45px;
+        border-radius: 45%;
+    }
+    
+    .Third {
+        width: 45px;
+        height: 45px;
+        display: relative;
+        position: absolute;
+        top: 77px;
+        left: 145px;
+        border-radius: 45%;
+    }
+    
+    .Fourth {
+        width: 45px;
+        height: 45px;
+        display: relative;
+        position: absolute;
+        top: 120px;
+        left: 95px;
+        border-radius: 45%;
+    }
+    
+    .reda {
+        width: 235px;
+        height: 200px;
+        top: 54px;
+        left: 507px;
+        bottom: 654px;
+        position: absolute;
+    }
+    
+    .yellowa {
+        width: 235px;
+        height: 200px;
+        bottom: 57px;
+        right: 505px;
+        position: absolute;
+    }
+    
+    .bluea {
+        width: 235px;
+        height: 200px;
+        left: 507px;
+        bottom: 58px;
+        position: absolute;
+    }
+    
+    #main {
+        width: 800px;
+        height: 700px;
+    }
+    
+    #status {
+        position: absolute;
+        left: 220px;
+        top: 10px;
+    }
+    
+    #image {
+        position: relative;
+        left: 225px;
+        bottom: 20px;
+    }
+    
+    #star {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        bottom: 10px;
+        right: 7px;
+        visibility: hidden;
+    }
+    
+    #counter {
+        width: 320px;
+        height: 40px;
+        position: relative;
+        visibility: hidden;
+        border-radius: 10px;
+    }
+    
+    #chronometer {
+        width: 50px;
+        height: 40px;
+        position: relative;
+        visibility: hidden;
+        right: 120px;
+        bottom: 45px;
+    }
+    
+    #name1,
+    #name2,
+    #name3,
+    #name4 {
+        position: relative;
+        left: 20px;
+        top: 10px;
+    }
+    
     @media screen and (max-width: 740px) {
-        h1 {
-            font-size: 1.7em;
-        }
         .content {
             overflow-x: visible;
             overflow-y: hidden;
         }
-        .button {
-            left: 25%;
+        @media screen and (min-width: 740px) {
+            @media screen and (max-width: 1100px) {
+                .content {
+                    overflow-x: visible;
+                    overflow-y: hidden;
+                }
+                .button {
+                    left: 27%;
+                }
+                .img {
+                    visibility: visible;
+                }
+            }
         }
-        .button-first,
-        .button-Fourth,
-        .button-Second,
-        .button-Third,
-        .submitt {
-            width: 320px;
+        @media screen and (min-width: 740px) {
+            @media screen and (max-width: 1100px) {
+                h1 {
+                    font-size: 1.7em;
+                }
+                .content {
+                    overflow-x: visible;
+                    overflow-y: hidden;
+                }
+                .button {
+                    left: 27%;
+                }
+                .img {
+                    visibility: visible;
+                }
+            }
         }
-        .img {
-            visibility: visible;
-        }
-    }
-}
-
-@media screen and (min-width: 740px) {
-    @media screen and (max-width: 1100px) {
-        h1 {
-            font-size: 1.7em;
-        }
-        .content {
-            overflow-x: visible;
-            overflow-y: hidden;
-        }
-        .button {
-            left: 27%;
-        }
-        .img {
-            visibility: visible;
-        }
-    }
-}
