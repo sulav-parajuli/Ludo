@@ -2174,7 +2174,7 @@ function countdown() {
     document.querySelector(".countdown").style.backgroundColor = "white";
     document.querySelector(".countdown #chronometer").style.visibility = "visible";
     document.querySelector(".countdown #counter").style.visibility = "visible";
-    document.querySelector(".btn").disabled = disabled;
+    document.querySelector(".btn").disabled = "blocked";
     document.querySelector(".countdown #chronometer").src = "images/count-down.gif";
     document.querySelector(".countdown #counter").src = "images/counter.gif";
     timer = setTimeout(function() {
