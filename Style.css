@@ -643,7 +643,7 @@ a {
             width: 320px;
         }
         .img {
-            visibility: visible;
+            visibility: hidden;
         }
     }
 }
