@@ -5,9 +5,10 @@ function path(score, col) {
         animationend(null);
         updater(null);
         clearTimeout(time);
-        // setTimeout(function() {
-        //     checker(null);
-        // }, 500);
+        setTimeout(function() {
+            disappear(null);
+            checker(null);
+        }, 500);
     }
     if (score === 1) { //green starts from here.
         document.querySelector(".path1 .g1").style.backgroundColor = col;
@@ -115,7 +116,6 @@ function path(score, col) {
     }
     if (score === 27) { //Blue starts from here.
         document.querySelector(".path10 .g3").style.backgroundColor = col;
-        updater(null);
         dispose_countdown(null);
     }
     if (score === 28) {
@@ -317,7 +317,239 @@ function path(score, col) {
     }
 }
 
-function selecto(score) {
+function disappear() {
+    if (score === 1) { //green starts from here.
+        document.querySelector(".path1 .g1").style.backgroundColor = "";
+    }
+    if (score === 2) {
+        document.querySelector(".path2 .g1").style.backgroundColor = "";
+    }
+    if (score === 3) {
+        document.querySelector(".path3 .g1").style.backgroundColor = "";
+    }
+    if (score === 4) {
+        document.querySelector(".path4 .g1").style.backgroundColor = "";
+    }
+    if (score === 5) {
+        document.querySelector(".path5 .g1").style.backgroundColor = "";
+    }
+    if (score === 6) {
+        document.querySelector(".vpath .g6").style.backgroundColor = "";
+    }
+    if (score === 7) {
+        document.querySelector(".vpath .g5").style.backgroundColor = "";
+    }
+    if (score === 8) {
+        document.querySelector(".vpath .g4").style.backgroundColor = "";
+    }
+    if (score === 9) {
+        document.querySelector(".vpath .g3").style.backgroundColor = "";
+    }
+    if (score === 10) {
+        document.querySelector(".vpath .g2").style.backgroundColor = "";
+    }
+    if (score === 11) {
+        document.querySelector(".vpath .g1").style.backgroundColor = "";
+    }
+    if (score === 12) {
+        document.querySelector(".vpath1 .g1").style.backgroundColor = "";
+    }
+    if (score === 13) {
+        document.querySelector(".vpath2 .g1").style.backgroundColor = "";
+    }
+    if (score === 14) { //red starts from here.
+        document.querySelector(".vpath2 .g2").style.backgroundColor = "";
+    }
+    if (score === 15) {
+        document.querySelector(".vpath2 .g3").style.backgroundColor = "";
+    }
+    if (score === 16) {
+        document.querySelector(".vpath2 .g4").style.backgroundColor = "";
+    }
+    if (score === 17) {
+        document.querySelector(".vpath2 .g5").style.backgroundColor = "";
+    }
+    if (score === 18) {
+        document.querySelector(".vpath2 .g6").style.backgroundColor = "";
+    }
+    if (score === 19) {
+        document.querySelector(".path6 .g1").style.backgroundColor = "";
+    }
+    if (score === 20) {
+        document.querySelector(".path7 .g1").style.backgroundColor = "";
+    }
+    if (score === 21) {
+        document.querySelector(".path8 .g1").style.backgroundColor = "";
+    }
+    if (score === 22) {
+        document.querySelector(".path9 .g1").style.backgroundColor = "";
+    }
+    if (score === 23) {
+        document.querySelector(".path10 .g1").style.backgroundColor = "";
+    }
+    if (score === 24) {
+        document.querySelector(".path11 .g1").style.backgroundColor = "";
+    }
+    if (score === 25) {
+        document.querySelector(".path11 .g2").style.backgroundColor = "";
+    }
+    if (score === 26) {
+        document.querySelector(".path11 .g3").style.backgroundColor = "";
+    }
+    if (score === 27) { //Blue starts from here.
+        document.querySelector(".path10 .g3").style.backgroundColor = "";
+    }
+    if (score === 28) {
+        document.querySelector(".path9 .g3").style.backgroundColor = "";
+    }
+    if (score === 29) {
+        document.querySelector(".path8 .g3").style.backgroundColor = "";
+    }
+    if (score === 30) {
+        document.querySelector(".path7 .g3").style.backgroundColor = "";
+    }
+    if (score === 31) {
+        document.querySelector(".path6 .g3").style.backgroundColor = "";
+    }
+    if (score === 32) {
+        document.querySelector(".vpath5 .g1").style.backgroundColor = "";
+    }
+    if (score === 33) {
+        document.querySelector(".vpath5 .g2").style.backgroundColor = "";
+    }
+    if (score === 34) {
+        document.querySelector(".vpath5 .g3").style.backgroundColor = "";
+    }
+    if (score === 35) {
+        document.querySelector(".vpath5 .g4").style.backgroundColor = "";
+    }
+    if (score === 36) {
+        document.querySelector(".vpath5 .g5").style.backgroundColor = "";
+    }
+    if (score === 37) {
+        document.querySelector(".vpath5 .g6").style.backgroundColor = "";
+    }
+    if (score === 38) {
+        document.querySelector(".vpath4 .g6").style.backgroundColor = "";
+    }
+    if (score === 39) {
+        document.querySelector(".vpath3 .g6").style.backgroundColor = "";
+    }
+    if (score === 40) { //yellow starts from here.
+        document.querySelector(".vpath3 .g5").style.backgroundColor = "";
+    }
+    if (score === 41) {
+        document.querySelector(".vpath3 .g4").style.backgroundColor = "";
+    }
+    if (score === 42) {
+        document.querySelector(".vpath3 .g3").style.backgroundColor = "";
+    }
+    if (score === 43) {
+        document.querySelector(".vpath3 .g2").style.backgroundColor = "";
+    }
+    if (score === 44) {
+        document.querySelector(".vpath3 .g1").style.backgroundColor = "";
+    }
+    if (score === 45) {
+        document.querySelector(".path5 .g3").style.backgroundColor = "";
+    }
+    if (score === 46) {
+        document.querySelector(".path4 .g3").style.backgroundColor = "";
+    }
+    if (score === 47) {
+        document.querySelector(".path3 .g3").style.backgroundColor = "";
+    }
+    if (score === 48) {
+        document.querySelector(".path2 .g3").style.backgroundColor = "";
+    }
+    if (score === 49) {
+        document.querySelector(".path1 .g3").style.backgroundColor = "";
+    }
+    if (score === 50) {
+        document.querySelector(".path .g3").style.backgroundColor = "";
+    }
+    if (score === 51) {
+        document.querySelector(".path .g2").style.backgroundColor = "";
+    }
+    if (score === 52) {
+        document.querySelector(".path .g1").style.backgroundColor = "";
+    }
+    //For Home.
+    if (score === 53) { //green home.
+        document.querySelector(".path1 .g2").style.backgroundColor = "";
+    }
+    if (score === 54) {
+        document.querySelector(".path2 .g2").style.backgroundColor = "";
+    }
+    if (score === 55) {
+        document.querySelector(".path3 .g2").style.backgroundColor = "";
+    }
+    if (score === 56) {
+        document.querySelector(".path4 .g2").style.backgroundColor = "";
+    }
+    if (score === 57) {
+        document.querySelector(".path5 .g2").style.backgroundColor = "";
+    }
+    if (score === 58) {
+        document.querySelector(".home .hg").style.backgroundColor = "";
+    }
+    if (score === 59) { //red home.
+        document.querySelector(".vpath1 .g2").style.backgroundColor = "";
+    }
+    if (score === 60) {
+        document.querySelector(".vpath1 .g3").style.backgroundColor = "";
+    }
+    if (score === 61) {
+        document.querySelector(".vpath1 .g4").style.backgroundColor = "";
+    }
+    if (score === 62) {
+        document.querySelector(".vpath1 .g5").style.backgroundColor = "";
+    }
+    if (score === 63) {
+        document.querySelector(".vpath1 .g6").style.backgroundColor = "";
+    }
+    if (score === 64) {
+        document.querySelector(".home .hr").style.backgroundColor = "";
+    }
+    if (score === 65) { //blue home.
+        document.querySelector(".path10 .g2").style.backgroundColor = "";
+    }
+    if (score === 66) {
+        document.querySelector(".path9 .g2").style.backgroundColor = "";
+    }
+    if (score === 67) {
+        document.querySelector(".path8 .g2").style.backgroundColor = "";
+    }
+    if (score === 68) {
+        document.querySelector(".path7 .g2").style.backgroundColor = "";
+    }
+    if (score === 69) {
+        document.querySelector(".path6 .g2").style.backgroundColor = "";
+    }
+    if (score === 70) {
+        document.querySelector(".home .hb").style.backgroundColor = "";
+    }
+    if (score === 71) { //yellow home.
+        document.querySelector(".vpath4 .g5").style.backgroundColor = "";
+    }
+    if (score === 72) {
+        document.querySelector(".vpath4 .g4").style.backgroundColor = "";
+    }
+    if (score === 73) {
+        document.querySelector(".vpath4 .g3").style.backgroundColor = "";
+    }
+    if (score === 74) {
+        document.querySelector(".vpath4 .g2").style.backgroundColor = "";
+    }
+    if (score === 75) {
+        document.querySelector(".vpath4 .g1").style.backgroundColor = "";
+    }
+    if (score === 76) {
+        document.querySelector(".home .hy").style.backgroundColor = "";
+    }
+}
+
+function select(score) {
     if (score === 1) {
         document.querySelector(".path1 .g1").style.backgroundColor = ""; //green starts from here.
         selector = document.querySelector(".path1 .g1 img");
@@ -370,6 +602,7 @@ function selecto(score) {
     }
     if (score === 11) {
         document.querySelector(".vpath .g1").style.backgroundColor = "";
+        selector = document.querySelector(".vpath .g1 img");
         return selector;
     }
     if (score === 12) {
@@ -574,7 +807,7 @@ function selecto(score) {
     }
     if (score === 52) {
         document.querySelector(".path .g1").style.backgroundColor = "";
-        selector = document.querySelector(".path .g1");
+        selector = document.querySelector(".path .g1 img");
         return selector;
     }
     //For Home.
@@ -2179,12 +2412,14 @@ function countdown() {
     document.querySelector(".countdown #counter").style.visibility = "visible";
     document.querySelector(".countdown #chronometer").src = "images/count-down.gif";
     document.querySelector(".countdown #counter").src = "images/counter.gif";
+    document.querySelector(".btn").disabled = "blocked";
     timer = setTimeout(function() {
         animationend(null);
         updater(null);
+        disappear(null);
         checker(null);
         dispose_countdown(null);
-    }, 5000);
+    }, 6000);
 }
 
 function dispose_countdown() {

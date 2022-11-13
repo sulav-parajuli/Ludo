@@ -526,7 +526,7 @@ function greenstrike(value) {
             if (temp > 51) {
                 greatvalue = temp - 51;
                 temp = 52 + greatvalue;
-                selector = selector(gs[0]);
+                selector = select(gs[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -537,13 +537,12 @@ function greenstrike(value) {
                         touch = 1;
                         selector.style.visibility = "hidden";
                         selector.src = "";
-                        path(temp, col);
                         gs[0] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else {
-                selector = selector(gs[0]);
+                selector = select(gs[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -554,9 +553,8 @@ function greenstrike(value) {
                         touch = 1;
                         selector.style.visibility = "hidden";
                         selector.src = "";
-                        path(temp, col);
                         gs[0] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             }
@@ -567,7 +565,7 @@ function greenstrike(value) {
             if (temp > 51) {
                 greatvalue = temp - 51;
                 temp = 52 + greatvalue;
-                selector1 = selector(gs[1]);
+                selector1 = select(gs[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -578,13 +576,12 @@ function greenstrike(value) {
                         touch = 1;
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
-                        path(temp, col);
                         gs[1] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else {
-                selector1 = selector(gs[1]);
+                selector1 = select(gs[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -595,9 +592,8 @@ function greenstrike(value) {
                         touch = 1;
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
-                        path(temp, col);
                         gs[1] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             }
@@ -608,7 +604,7 @@ function greenstrike(value) {
             if (temp > 51) {
                 greatvalue = temp - 51;
                 temp = 52 + greatvalue;
-                selector2 = selector(gs[2]);
+                selector2 = select(gs[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -619,13 +615,12 @@ function greenstrike(value) {
                         touch = 1;
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
-                        path(temp, col);
                         gs[2] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else {
-                selector2 = selector(gs[2]);
+                selector2 = select(gs[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -636,9 +631,8 @@ function greenstrike(value) {
                         touch = 1;
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
-                        path(temp, col);
                         gs[2] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             }
@@ -649,7 +643,7 @@ function greenstrike(value) {
             if (temp > 51) {
                 greatvalue = temp - 51;
                 temp = 52 + greatvalue;
-                selector3 = selector(gs[3]);
+                selector3 = select(gs[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -660,13 +654,12 @@ function greenstrike(value) {
                         touch = 1;
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
-                        path(temp, col);
                         gs[3] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else {
-                selector3 = selector(gs[3]);
+                selector3 = select(gs[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -677,9 +670,8 @@ function greenstrike(value) {
                         touch = 1;
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
-                        path(temp, col);
                         gs[3] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             }
@@ -781,7 +773,7 @@ function redstrike(value) {
                 greatvalue = temp - 52;
                 greatr[0] = temp;
                 temp = greatvalue;
-                selector = selector(rs[0]);
+                selector = select(rs[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -792,15 +784,14 @@ function redstrike(value) {
                         touch = 1;
                         selector.style.visibility = "hidden";
                         selector.src = "";
-                        path(temp, col);
                         rs[0] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else if (greatr[0] > 64) {
                 greatvalue = greatr[0] - 64;
                 temp = greatvalue + 58;
-                selector = selector(rs[0]);
+                selector = select(rs[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -811,13 +802,11 @@ function redstrike(value) {
                         touch = 1;
                         selector.style.visibility = "hidden";
                         selector.src = "";
-                        path(temp, col);
                         rs[0] = temp;
-                        checker(null);
                     }
                 });
             } else {
-                selector = selector(rs[0]);
+                selector = select(rs[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -828,9 +817,8 @@ function redstrike(value) {
                         touch = 1;
                         selector.style.visibility = "hidden";
                         selector.src = "";
-                        path(temp, col);
                         rs[0] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             }
@@ -843,7 +831,7 @@ function redstrike(value) {
                 greatvalue = temp - 52;
                 greatr[1] = temp;
                 temp = greatvalue;
-                selector1 = selector(rs[1]);
+                selector1 = select(rs[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -854,15 +842,14 @@ function redstrike(value) {
                         touch = 1;
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
-                        path(temp, col);
                         rs[1] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else if (greatr[1] > 64) {
                 greatvalue = greatr[1] - 64;
                 temp = greatvalue + 58;
-                selector1 = selector(rs[1]);
+                selector1 = select(rs[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -873,13 +860,12 @@ function redstrike(value) {
                         touch = 1;
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
-                        path(temp, col);
                         rs[1] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else {
-                selector1 = selector(rs[1]);
+                selector1 = select(rs[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -890,9 +876,8 @@ function redstrike(value) {
                         touch = 1;
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
-                        path(temp, col);
                         rs[1] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             }
@@ -905,7 +890,7 @@ function redstrike(value) {
                 greatvalue = temp - 52;
                 greatr[2] = temp;
                 temp = greatvalue;
-                selector2 = selector(rs[2]);
+                selector2 = select(rs[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -916,15 +901,14 @@ function redstrike(value) {
                         touch = 1;
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
-                        path(temp, col);
                         rs[2] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else if (greatr[2] > 64) {
                 greatvalue = greatr[2] - 64;
                 temp = greatvalue + 58;
-                selector2 = selector(rs[2]);
+                selector2 = select(rs[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -935,13 +919,12 @@ function redstrike(value) {
                         touch = 1;
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
-                        path(temp, col);
                         rs[2] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else {
-                selector2 = selector(rs[2]);
+                selector2 = select(rs[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -952,9 +935,8 @@ function redstrike(value) {
                         touch = 1;
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
-                        path(temp, col);
                         rs[2] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             }
@@ -967,7 +949,7 @@ function redstrike(value) {
                 greatvalue = temp - 52;
                 greatr[3] = temp;
                 temp = greatvalue;
-                selector3 = selector(rs[3]);
+                selector3 = select(rs[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -978,15 +960,14 @@ function redstrike(value) {
                         touch = 1;
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
-                        path(temp, col);
                         rs[3] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else if (greatr[3] > 64) {
                 greatvalue = greatr[3] - 64;
                 temp = greatvalue + 58;
-                selector3 = selector(rs[3]);
+                selector3 = select(rs[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -997,13 +978,12 @@ function redstrike(value) {
                         touch = 1;
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
-                        path(temp, col);
                         rs[3] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else {
-                selector3 = selector(rs[3]);
+                selector3 = select(rs[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1014,9 +994,8 @@ function redstrike(value) {
                         touch = 1;
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
-                        path(temp, col);
                         rs[3] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             }
@@ -1118,7 +1097,7 @@ function bluestrike(value) {
                 greatvalue = temp - 52;
                 greatb[0] = temp;
                 temp = greatvalue;
-                selector = selector(bs[0]);
+                selector = select(bs[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1129,15 +1108,14 @@ function bluestrike(value) {
                         touch = 1;
                         selector.style.visibility = "hidden";
                         selector.src = "";
-                        path(temp, col);
                         bs[0] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else if (greatb[0] > 77) {
                 greatvalue = greatb[0] - 77;
                 temp = greatvalue + 64;
-                selector = selector(bs[0]);
+                selector = select(bs[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1148,13 +1126,12 @@ function bluestrike(value) {
                         touch = 1;
                         selector.style.visibility = "hidden";
                         selector.src = "";
-                        path(temp, col);
                         bs[0] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else {
-                selector = selector(bs[0]);
+                selector = select(bs[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1165,9 +1142,8 @@ function bluestrike(value) {
                         touch = 1;
                         selector.style.visibility = "hidden";
                         selector.src = "";
-                        path(temp, col);
                         bs[0] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             }
@@ -1180,7 +1156,7 @@ function bluestrike(value) {
                 greatvalue = temp - 52;
                 greatb[1] = temp;
                 temp = greatvalue;
-                selector1 = selector(bs[1]);
+                selector1 = select(bs[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1191,15 +1167,14 @@ function bluestrike(value) {
                         touch = 1;
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
-                        path(temp, col);
                         bs[1] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else if (greatb[1] > 77) {
                 greatvalue = greatb[1] - 77;
                 temp = greatvalue + 64;
-                selector1 = selector(bs[1]);
+                selector1 = select(bs[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1210,13 +1185,12 @@ function bluestrike(value) {
                         touch = 1;
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
-                        path(temp, col);
                         bs[1] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else {
-                selector1 = selector(bs[1]);
+                selector1 = select(bs[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1227,9 +1201,8 @@ function bluestrike(value) {
                         touch = 1;
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
-                        path(temp, col);
                         bs[1] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             }
@@ -1242,7 +1215,7 @@ function bluestrike(value) {
                 greatvalue = temp - 52;
                 greatb[2] = temp;
                 temp = greatvalue;
-                selector2 = selector(bs[2]);
+                selector2 = select(bs[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1253,15 +1226,14 @@ function bluestrike(value) {
                         touch = 1;
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
-                        path(temp, col);
                         bs[2] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else if (greatb[2] > 77) {
                 greatvalue = greatb[2] - 77;
                 temp = greatvalue + 64;
-                selector2 = selector(bs[2]);
+                selector2 = select(bs[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1272,13 +1244,12 @@ function bluestrike(value) {
                         touch = 1;
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
-                        path(temp, col);
                         bs[2] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else {
-                selector2 = selector(bs[2]);
+                selector2 = select(bs[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1289,9 +1260,8 @@ function bluestrike(value) {
                         touch = 1;
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
-                        path(temp, col);
                         bs[2] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             }
@@ -1304,7 +1274,7 @@ function bluestrike(value) {
                 greatvalue = temp - 52;
                 greatb[3] = temp;
                 temp = greatvalue;
-                selector3 = selector(bs[3]);
+                selector3 = select(bs[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1315,15 +1285,14 @@ function bluestrike(value) {
                         touch = 1;
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
-                        path(temp, col);
                         bs[3] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else if (greatb[3] > 77) {
                 greatvalue = greatb[3] - 77;
                 temp = greatvalue + 64;
-                selector3 = selector(bs[3]);
+                selector3 = select(bs[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1334,13 +1303,12 @@ function bluestrike(value) {
                         touch = 1;
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
-                        path(temp, col);
                         bs[3] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else {
-                selector3 = selector(bs[3]);
+                selector3 = select(bs[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1351,9 +1319,8 @@ function bluestrike(value) {
                         touch = 1;
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
-                        path(temp, col);
                         bs[3] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             }
@@ -1455,7 +1422,7 @@ function yellowstrike(value) {
                 greatvalue = temp - 52;
                 greaty[0] = temp;
                 temp = greatvalue;
-                selector = selector(ys[0]);
+                selector = select(ys[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1466,15 +1433,14 @@ function yellowstrike(value) {
                         touch = 1;
                         selector.style.visibility = "hidden";
                         selector.src = "";
-                        path(temp, col);
                         ys[0] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else if (greaty[0] > 90) {
                 greatvalue = greaty[0] - 90;
                 temp = greatvalue + 70;
-                selector = selector(ys[0]);
+                selector = select(ys[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1485,13 +1451,12 @@ function yellowstrike(value) {
                         touch = 1;
                         selector.style.visibility = "hidden";
                         selector.src = "";
-                        path(temp, col);
                         ys[0] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else {
-                selector = selector(ys[0]);
+                selector = select(ys[0]);
                 selector.style.visibility = "visible";
                 selector.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1502,9 +1467,8 @@ function yellowstrike(value) {
                         touch = 1;
                         selector.style.visibility = "hidden";
                         selector.src = "";
-                        path(temp, col);
                         ys[0] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             }
@@ -1517,7 +1481,7 @@ function yellowstrike(value) {
                 greatvalue = temp - 52;
                 greaty[1] = temp;
                 temp = greatvalue;
-                selector1 = selector(ys[1]);
+                selector1 = select(ys[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1528,15 +1492,14 @@ function yellowstrike(value) {
                         touch = 1;
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
-                        path(temp, col);
                         ys[1] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else if (greaty[1] > 90) {
                 greatvalue = greaty[1] - 90;
                 temp = greatvalue + 70;
-                selector1 = selector(ys[1]);
+                selector1 = select(ys[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1547,13 +1510,12 @@ function yellowstrike(value) {
                         touch = 1;
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
-                        path(temp, col);
                         ys[1] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else {
-                selector1 = selector(ys[1]);
+                selector1 = select(ys[1]);
                 selector1.style.visibility = "visible";
                 selector1.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1564,9 +1526,8 @@ function yellowstrike(value) {
                         touch = 1;
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
-                        path(temp, col);
                         ys[1] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             }
@@ -1579,7 +1540,7 @@ function yellowstrike(value) {
                 greatvalue = temp - 52;
                 greaty[2] = temp;
                 temp = greatvalue;
-                selector2 = selector(ys[2]);
+                selector2 = select(ys[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1590,15 +1551,14 @@ function yellowstrike(value) {
                         touch = 1;
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
-                        path(temp, col);
                         ys[2] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else if (greaty[2] > 90) {
                 greatvalue = greaty[2] - 90;
                 temp = greatvalue + 70;
-                selector2 = selector(ys[2]);
+                selector2 = select(ys[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1609,13 +1569,12 @@ function yellowstrike(value) {
                         touch = 1;
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
-                        path(temp, col);
                         ys[2] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else {
-                selector2 = selector(ys[2]);
+                selector2 = select(ys[2]);
                 selector2.style.visibility = "visible";
                 selector2.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1626,9 +1585,8 @@ function yellowstrike(value) {
                         touch = 1;
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
-                        path(temp, col);
                         ys[2] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             }
@@ -1641,7 +1599,7 @@ function yellowstrike(value) {
                 greatvalue = temp - 52;
                 greaty[3] = temp;
                 temp = greatvalue;
-                selector3 = selector(ys[3]);
+                selector3 = select(ys[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1652,15 +1610,14 @@ function yellowstrike(value) {
                         touch = 1;
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
-                        path(temp, col);
                         ys[3] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else if (greaty[3] > 90) {
                 greatvalue = greaty[3] - 90;
                 temp = greatvalue + 70;
-                selector3 = selector(ys[3]);
+                selector3 = select(ys[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1671,13 +1628,12 @@ function yellowstrike(value) {
                         touch = 1;
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
-                        path(temp, col);
                         ys[3] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             } else {
-                selector3 = selector(ys[3]);
+                selector3 = select(ys[3]);
                 selector3.style.visibility = "visible";
                 selector3.src = "images/" + col + "-star.gif";
                 time = setTimeout(function() {
@@ -1688,9 +1644,8 @@ function yellowstrike(value) {
                         touch = 1;
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
-                        path(temp, col);
                         ys[3] = temp;
-                        checker(null);
+                        path(temp, col);
                     }
                 });
             }
