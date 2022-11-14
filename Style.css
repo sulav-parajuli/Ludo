@@ -593,7 +593,10 @@ a {
             width: 320px;
         }
         .img {
-            visibility: hidden;
+            visibility: visible;
+            width: 100px;
+            height: 100px;
+            bottom: 5px;
         }
     }
 }
@@ -618,7 +621,10 @@ a {
             width: 320px;
         }
         .img {
-            visibility: hidden;
+            visibility: visible;
+            width: 150px;
+            height: 150px;
+            bottom: 10px;
         }
     }
 }
@@ -643,7 +649,10 @@ a {
             width: 320px;
         }
         .img {
-            visibility: hidden;
+            visibility: visible;
+            width: 200px;
+            height: 200px;
+            bottom: 20px;
         }
     }
 }
