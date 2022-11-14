@@ -57,8 +57,9 @@ h5 {
     width: 300px;
     height: 300px;
     position: relative;
-    bottom: 50px;
+    bottom: 35px;
     left: 20px;
+    object-fit: contain;
 }
 
 .button-first:hover,
@@ -152,6 +153,7 @@ a {
     width: 400px;
     height: 40px;
     position: relative;
+    color: purple;
     background-color: white;
     border-radius: 5px;
     text-align: center;
@@ -594,9 +596,10 @@ a {
         }
         .img {
             visibility: visible;
-            width: 100px;
-            height: 100px;
+            width: 170px;
+            height: 300px;
             bottom: 5px;
+            left: 5px;
         }
     }
 }
@@ -622,9 +625,10 @@ a {
         }
         .img {
             visibility: visible;
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 300px;
             bottom: 10px;
+            left: 10px;
         }
     }
 }
@@ -650,9 +654,10 @@ a {
         }
         .img {
             visibility: visible;
-            width: 200px;
-            height: 200px;
-            bottom: 20px;
+            width: 250px;
+            height: 300px;
+            bottom: 10px;
+            left: 10px;
         }
     }
 }
@@ -665,9 +670,6 @@ a {
         }
         .button {
             left: 27%;
-        }
-        .img {
-            visibility: visible;
         }
     }
 }
