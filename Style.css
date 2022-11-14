@@ -17,16 +17,6 @@ h4 {
     margin: 5px;
 }
 
-h5 {
-    font-family: 'Noto Sans', sans-serif;
-    color: white;
-    font-size: 15px;
-    text-align: center;
-    position: relative;
-    top: 80px;
-    margin: 5px;
-}
-
 .content {
     height: 100%;
     overflow-x: hidden;
@@ -571,9 +561,10 @@ a {
 #name2,
 #name3,
 #name4 {
-    position: relative;
-    left: 20px;
-    top: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    font-size: 15px;
+    text-align: center;
 }
 
 @media screen and (min-width: 100px) {
@@ -600,6 +591,13 @@ a {
             height: 300px;
             bottom: 5px;
             left: 5px;
+        }
+        #name1,
+        #name2,
+        #name3,
+        #name4 {
+            position: relative;
+            right: 25px;
         }
     }
 }
@@ -629,6 +627,13 @@ a {
             bottom: 10px;
             left: 10px;
         }
+        #name1,
+        #name2,
+        #name3,
+        #name4 {
+            position: relative;
+            right: 25px;
+        }
     }
 }
 
@@ -656,6 +661,13 @@ a {
             height: 300px;
             bottom: 10px;
             left: 10px;
+        }
+        #name1,
+        #name2,
+        #name3,
+        #name4 {
+            position: relative;
+            right: 25px;
         }
     }
 }
