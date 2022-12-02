@@ -56,7 +56,7 @@ function colorrf() {
         //     sessionStorage.setItem("color2", b);
         //     sessionStorage.setItem("color3", c);
         //     sessionStorage.setItem("color4", e);
-        //     document.querySelector(".submitt a").href = "ludo.html";
+        //     location.href = "ludo.html";
         // }
         // else 
         if (count == "second") {
@@ -69,7 +69,7 @@ function colorrf() {
                 sessionStorage.setItem("color2", b);
                 sessionStorage.setItem("color3", c);
                 sessionStorage.setItem("color4", e);
-                document.querySelector(".submitt a").href = "ludo.html";
+                location.href = "ludo.html";
             }
         } else if (count == "third") {
             if (a === b || a === c || b === c) {
@@ -80,7 +80,7 @@ function colorrf() {
                 sessionStorage.setItem("color2", b);
                 sessionStorage.setItem("color3", c);
                 sessionStorage.setItem("color4", e);
-                document.querySelector(".submitt a").href = "ludo.html";
+                location.href = "ludo.html";
             }
         } else if (count == "fourth") {
             if (a === b || c === e || a === c || a === e || b === c || b === e) {
@@ -90,7 +90,7 @@ function colorrf() {
                 sessionStorage.setItem("color2", b);
                 sessionStorage.setItem("color3", c);
                 sessionStorage.setItem("color4", e);
-                document.querySelector(".submitt a").href = "ludo.html";
+                location.href = "ludo.html";
             }
         }
     });
@@ -105,6 +105,7 @@ private: function playername() {
     sessionStorage.setItem("name2", y);
     sessionStorage.setItem("name3", z);
     sessionStorage.setItem("name4", w);
+    location.href = "color.html";
 }
 
 
