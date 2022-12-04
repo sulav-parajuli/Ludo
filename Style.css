@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
 * {
     margin: 0px;
 }
@@ -73,6 +74,7 @@ a:hover,
 .submitt:hover {
     background-color: lightgray;
     color: blue;
+    font-family: 'Mountains of Christmas', cursive;
 }
 
 a {
@@ -531,16 +533,52 @@ a {
     height: 700px;
 }
 
-#status {
+#status1 {
     position: absolute;
     left: 220px;
     top: 10px;
 }
 
-#image {
-    position: relative;
-    left: 225px;
-    bottom: 20px;
+#status2 {
+    position: absolute;
+    left: 220px;
+    top: 57px;
+}
+
+#status3 {
+    position: absolute;
+    left: 220px;
+    top: 103px;
+}
+
+#status4 {
+    position: absolute;
+    left: 220px;
+    top: 147px;
+}
+
+#image1 {
+    position: absolute;
+    left: 230px;
+    bottom: 160px;
+}
+
+#image2 {
+    position: absolute;
+    left: 230px;
+    bottom: 115px;
+}
+
+#image3 {
+    position: absolute;
+    left: 230px;
+    bottom: 65px;
+}
+
+#image4 {
+    position: absolute;
+    left: 230px;
+    bottom: 15px;
 }
 
 #star {
@@ -578,99 +616,12 @@ a {
     top: 10px;
 }
 
-@media screen and (min-width: 100px) {
-    @media screen and (max-width: 370px) {
-        h1 {
-            font-size: 1.7em;
-        }
-        .content {
-            overflow-x: visible;
-        }
-        .button {
-            left: 10%;
-        }
-        .button-first,
-        .button-Fourth,
-        .button-Second,
-        .button-Third,
-        .submitt {
-            width: 320px;
-        }
-        .img {
-            visibility: visible;
-            width: 170px;
-            height: 300px;
-            bottom: 5px;
-            left: 5px;
-        }
-    }
-}
-
-@media screen and (min-width: 370px) {
-    @media screen and (max-width: 500px) {
-        h1 {
-            font-size: 1.7em;
-        }
-        .content {
-            overflow-x: visible;
-        }
-        .button {
-            left: 17%;
-        }
-        .button-first,
-        .button-Fourth,
-        .button-Second,
-        .button-Third,
-        .submitt {
-            width: 320px;
-        }
-        .img {
-            visibility: visible;
-            width: 200px;
-            height: 300px;
-            bottom: 10px;
-            left: 10px;
-        }
-    }
-}
-
-@media screen and (min-width: 500px) {
-    @media screen and (max-width: 740px) {
-        h1 {
-            font-size: 1.7em;
-        }
-        .content {
-            overflow-x: hidden;
-        }
-        .button {
-            left: 25%;
-        }
-        .button-first,
-        .button-Fourth,
-        .button-Second,
-        .button-Third,
-        .submitt {
-            width: 320px;
-        }
-        .img {
-            visibility: visible;
-            width: 250px;
-            height: 300px;
-            bottom: 10px;
-            left: 10px;
-        }
-    }
-}
-
-@media screen and (min-width: 740px) {
-    @media screen and (max-width: 1000px) {
-        .content {
-            overflow-x: visible;
-        }
-        .button {
-            left: 27%;
-        }
-    }
+#dice1 {
+    width: 100px;
+    height: 100px;
+    left: 350px;
+    top: 300px;
+    position: absolute;
 }
 
 
@@ -685,6 +636,7 @@ a {
         width: 450px;
         border-width: 3px;
         border-style: solid;
+        margin-top: 170px;
         left: 0px;
     }
     .Player {
@@ -709,6 +661,7 @@ a {
     }
     .countdown {
         left: 0px;
+        top: 60px;
     }
     .Player1 {
         width: 320px;
@@ -718,6 +671,7 @@ a {
         background-color: darkgray;
         border-radius: 5px;
         margin-bottom: 3px;
+        display: none;
     }
     .Player2 {
         width: 320px;
@@ -728,6 +682,7 @@ a {
         background-color: darkgray;
         border-radius: 5px;
         margin-bottom: 3px;
+        display: none;
     }
     .Player3 {
         width: 320px;
@@ -738,6 +693,7 @@ a {
         border-radius: 5px;
         margin-bottom: 3px;
         background-color: darkgray;
+        display: none;
     }
     .Player4 {
         width: 320px;
@@ -748,6 +704,7 @@ a {
         top: 9px;
         margin-bottom: 3px;
         background-color: darkgray;
+        display: none;
     }
     .home {
         width: 83px;
@@ -992,15 +949,24 @@ a {
         bottom: 34px;
         position: absolute;
     }
-    #status {
-        position: absolute;
-        left: 220px;
-        top: 10px;
+    #image1,
+    #image2,
+    #image3,
+    #image4 {
+        left: 230px;
+        bottom: 40px;
     }
-    #image {
-        position: relative;
-        left: 225px;
-        bottom: 20px;
+    #status2 {
+        left: 220px;
+        top: 13px;
+    }
+    #status3 {
+        left: 220px;
+        top: 16px;
+    }
+    #status4 {
+        left: 220px;
+        top: 20px;
     }
     #star {
         width: 30px;
@@ -1024,5 +990,158 @@ a {
         visibility: hidden;
         right: 120px;
         bottom: 45px;
+    }
+    #dice1 {
+        width: 55px;
+        height: 55px;
+        left: 197px;
+        top: 147px;
+    }
+}
+
+@media screen and (min-width: 100px) {
+    @media screen and (max-width: 370px) {
+        h1 {
+            font-size: 1.7em;
+        }
+        .content {
+            overflow-x: visible;
+        }
+        .container {
+            margin-left: 0px;
+        }
+        .button {
+            left: 10%;
+        }
+        .button-first,
+        .button-Fourth,
+        .button-Second,
+        .button-Third,
+        .submitt {
+            width: 320px;
+        }
+        .img {
+            visibility: visible;
+            width: 170px;
+            height: 300px;
+            bottom: 5px;
+            left: 5px;
+        }
+    }
+}
+
+@media screen and (min-width: 370px) {
+    @media screen and (max-width: 500px) {
+        h1 {
+            font-size: 1.7em;
+        }
+        .content {
+            overflow-x: visible;
+        }
+        .Player {
+            left: 70px;
+        }
+        .button {
+            left: 17%;
+        }
+        .button-first,
+        .button-Fourth,
+        .button-Second,
+        .button-Third,
+        .submitt {
+            width: 320px;
+        }
+        .img {
+            visibility: visible;
+            width: 200px;
+            height: 300px;
+            bottom: 10px;
+            left: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+    @media screen and (max-width: 620px) {
+        h1 {
+            font-size: 1.7em;
+        }
+        .content {
+            overflow-x: hidden;
+        }
+        .container {
+            margin-left: 70px;
+        }
+        .Player {
+            left: 125px;
+        }
+        .button {
+            left: 25%;
+        }
+        .button-first,
+        .button-Fourth,
+        .button-Second,
+        .button-Third,
+        .submitt {
+            width: 320px;
+        }
+        .img {
+            visibility: visible;
+            width: 250px;
+            height: 300px;
+            bottom: 10px;
+            left: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 620px) {
+    @media screen and (max-width: 740px) {
+        h1 {
+            font-size: 1.7em;
+        }
+        .content {
+            overflow-x: hidden;
+        }
+        .container {
+            margin-left: 85px;
+        }
+        .Player {
+            left: 125px;
+        }
+        .button {
+            left: 25%;
+        }
+        .button-first,
+        .button-Fourth,
+        .button-Second,
+        .button-Third,
+        .submitt {
+            width: 320px;
+        }
+        .img {
+            visibility: visible;
+            width: 250px;
+            height: 300px;
+            bottom: 10px;
+            left: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 740px) {
+    @media screen and (max-width: 1000px) {
+        .content {
+            overflow-x: visible;
+        }
+        .button {
+            left: 27%;
+        }
+    }
+}
+
+@media screen and (min-width: 1295px) {
+    .content {
+        overflow-x: hidden;
     }
 }

@@ -1,12 +1,6 @@
 var count = sessionStorage.getItem('val');
 var d, y, z, w, a, b, c, e, temp;
 
-// if (count == "first") {
-//     document.querySelector(".button-Second").style.display = "none";
-//     document.querySelector(".button-Third").style.display = "none";
-//     document.querySelector(".button-Fourth").style.display = "none";
-
-// } else 
 if (count == "second") {
     document.querySelector(".button-Third").style.display = "none";
     document.querySelector(".button-Fourth").style.display = "none";
@@ -25,9 +19,6 @@ function colorrf() {
     sessionStorage.setItem("namethird", z);
     sessionStorage.setItem("namefourth", w);
 
-    // if (count == "first") {
-    //     document.querySelector("#name1").innerHTML = d;
-    // } else 
     if (count == "second") {
         document.querySelector("#name1").innerHTML = d;
         document.querySelector("#name2").innerHTML = y;
@@ -48,17 +39,7 @@ function colorrf() {
         b = document.querySelector(".button-Second").value;
         c = document.querySelector(".button-Third").value;
         e = document.querySelector(".button-Fourth").value;
-        // if (count == "first") {
-        //     b,
-        //     c,
-        //     e = "";
-        //     sessionStorage.setItem("color1", a);
-        //     sessionStorage.setItem("color2", b);
-        //     sessionStorage.setItem("color3", c);
-        //     sessionStorage.setItem("color4", e);
-        //     location.href = "ludo.html";
-        // }
-        // else 
+
         if (count == "second") {
             if (a === b) {
                 alert("Same Color Selected!");
@@ -107,6 +88,5 @@ private: function playername() {
     sessionStorage.setItem("name4", w);
     location.href = "color.html";
 }
-
 
 sessionStorage.setItem("name5", count);

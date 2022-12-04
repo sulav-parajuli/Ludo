@@ -26,6 +26,7 @@ gs = [0, 0, 0, 0],
     greaty = [0, 0, 0, 0],
     greatb = [0, 0, 0, 0]; //score for storing the greatest value.
 
+document.querySelector("#dice1").style.visibility = "hidden";
 document.querySelector(".greena .first").style.backgroundColor = "green";
 document.querySelector(".greena .Second").style.backgroundColor = "green";
 document.querySelector(".greena .Third").style.backgroundColor = "green";
@@ -47,13 +48,6 @@ document.querySelector(".bluea .Third").style.backgroundColor = "blue";
 document.querySelector(".bluea .Fourth").style.backgroundColor = "blue";
 
 
-// if (count == "first") {
-//     document.querySelector("#name1").innerHTML = x;
-//     document.querySelector("#name1").style.color = a;
-//     document.querySelector("#name2").style.color = "";
-//     document.querySelector("#name3").style.color = "";
-//     document.querySelector("#name4").style.color = "";
-// } else
 if (count == "second") {
     document.querySelector("#name1").innerHTML = x;
     document.querySelector("#name1").style.color = a;
@@ -402,54 +396,132 @@ if (document.querySelector("#name1").innerHTML === "") {
     }
 }
 
+function dice(turn) {
+    if (turn === 1) {
+        document.querySelector(".home").style.backgroundColor = "white";
+        document.querySelector(".home").style.opacity = "70%";
+        document.querySelector("#dice1").style.visibility = "visible";
+        document.querySelector("#dice1").src = "images/dice1.png";
+    }
+}
 
-document.querySelector(".btn").addEventListener("click", function() {
-    // if (count === "first") {
-    //     // turn++;
-    //     if (turn === 1) {
-    //         document.querySelector(".Player1 #image").firstElementChild.src = "images/roll.gif";
-    //         value = Math.ceil(Math.random() * 6);
-    //         time = setTimeout(function() {
-    //             document.querySelector(".Player1 #image").firstElementChild.src = "";
-    //         }, 500);
-    //         document.querySelector(".Player1 #status").innerHTML = value;
-    // turn = result(turn, value, count);
-    //         // turn = 0;
-    //     }
-    // } else
-    if (count === "second" || count === "third" || count === "fourth") {
+function windo(turn) {
+    if (window.innerWidth <= 740) {
+        document.querySelector(".btn").style.visibility = "hidden";
         if (turn === 1) {
-            document.querySelector(".Player1 #image").firstElementChild.src = "images/roll.gif";
-            value = Math.ceil(Math.random() * 6);
-            time = setTimeout(function() {
-                document.querySelector(".Player1 #image").firstElementChild.src = "";
-            }, 500);
-            document.querySelector(".Player1 #status").innerHTML = value;
-            turn = result(turn, value, count);
+            document.querySelector(".Player1").style.visibility = "visible";
+            document.querySelector(".Player1").style.display = "block";
+            document.querySelector("#image1").style.visibility = "visible";
+            document.querySelector("#image1").style.display = "block";
+            document.querySelector(".Player2").style.display = "none";
+            document.querySelector(".Player3").style.display = "none";
+            document.querySelector(".Player4").style.display = "none";
+            document.querySelector("#image2").style.display = "none";
+            document.querySelector("#image3").style.display = "none";
+            document.querySelector("#image4").style.display = "none";
+            document.querySelector(".Player #status2").innerHTML = "";
+            document.querySelector(".Player #status3").innerHTML = "";
+            document.querySelector(".Player #status4").innerHTML = "";
+            document.querySelector(".Player2").style.visibility = "hidden";
+            document.querySelector(".Player3").style.visibility = "hidden";
+            document.querySelector(".Player4").style.visibility = "hidden";
+            document.querySelector("#image2").style.visibility = "hidden";
+            document.querySelector("#image3").style.visibility = "hidden";
+            document.querySelector("#image4").style.visibility = "hidden";
         } else if (turn === 2) {
-            document.querySelector(".Player2 #image").firstElementChild.src = "images/roll.gif";
-            value = Math.ceil(Math.random() * 6);
-            time = setTimeout(function() {
-                document.querySelector(".Player2 #image").firstElementChild.src = "";
-            }, 500);
-            document.querySelector(".Player2 #status").innerHTML = value;
-            turn = result(turn, value, count);
+            document.querySelector(".Player2").style.visibility = "visible";
+            document.querySelector(".Player2").style.display = "block";
+            document.querySelector("#image2").style.visibility = "visible";
+            document.querySelector("#image2").style.display = "block";
+            document.querySelector(".Player1").style.display = "none";
+            document.querySelector(".Player3").style.display = "none";
+            document.querySelector(".Player4").style.display = "none";
+            document.querySelector("#image1").style.display = "none";
+            document.querySelector("#image3").style.display = "none";
+            document.querySelector("#image4").style.display = "none";
+            document.querySelector(".Player #status1").innerHTML = "";
+            document.querySelector(".Player #status3").innerHTML = "";
+            document.querySelector(".Player #status4").innerHTML = "";
+            document.querySelector(".Player1").style.visibility = "hidden";
+            document.querySelector(".Player3").style.visibility = "hidden";
+            document.querySelector(".Player4").style.visibility = "hidden";
+            document.querySelector("#image1").style.visibility = "hidden";
+            document.querySelector("#image3").style.visibility = "hidden";
+            document.querySelector("#image4").style.visibility = "hidden";
         } else if (turn === 3) {
-            document.querySelector(".Player3 #image").firstElementChild.src = "images/roll.gif";
-            value = Math.ceil(Math.random() * 6);
-            time = setTimeout(function() {
-                document.querySelector(".Player3 #image").firstElementChild.src = "";
-            }, 500);
-            document.querySelector(".Player3 #status").innerHTML = value;
-            turn = result(turn, value, count);
+            document.querySelector(".Player3").style.visibility = "visible";
+            document.querySelector(".Player3").style.display = "block";
+            document.querySelector("#image3").style.visibility = "visible";
+            document.querySelector("#image3").style.display = "block";
+            document.querySelector(".Player2").style.display = "none";
+            document.querySelector(".Player1").style.display = "none";
+            document.querySelector(".Player4").style.display = "none";
+            document.querySelector("#image2").style.display = "none";
+            document.querySelector("#image1").style.display = "none";
+            document.querySelector("#image4").style.display = "none";
+            document.querySelector(".Player #status2").innerHTML = "";
+            document.querySelector(".Player #status1").innerHTML = "";
+            document.querySelector(".Player #status4").innerHTML = "";
+            document.querySelector(".Player2").style.visibility = "hidden";
+            document.querySelector(".Player1").style.visibility = "hidden";
+            document.querySelector(".Player4").style.visibility = "hidden";
+            document.querySelector("#image2").style.visibility = "hidden";
+            document.querySelector("#image1").style.visibility = "hidden";
+            document.querySelector("#image4").style.visibility = "hidden";
         } else if (turn === 4) {
-            document.querySelector(".Player4 #image").firstElementChild.src = "images/roll.gif";
+            document.querySelector(".Player4").style.visibility = "visible";
+            document.querySelector(".Player4").style.display = "block";
+            document.querySelector("#image4").style.visibility = "visible";
+            document.querySelector("#image4").style.display = "block";
+            document.querySelector(".Player2").style.display = "none";
+            document.querySelector(".Player3").style.display = "none";
+            document.querySelector(".Player1").style.display = "none";
+            document.querySelector("#image2").style.display = "none";
+            document.querySelector("#image3").style.display = "none";
+            document.querySelector("#image1").style.display = "none";
+            document.querySelector(".Player #status2").innerHTML = "";
+            document.querySelector(".Player #status3").innerHTML = "";
+            document.querySelector(".Player #status1").innerHTML = "";
+            document.querySelector(".Player2").style.visibility = "hidden";
+            document.querySelector(".Player3").style.visibility = "hidden";
+            document.querySelector(".Player1").style.visibility = "hidden";
+            document.querySelector("#image2").style.visibility = "hidden";
+            document.querySelector("#image3").style.visibility = "hidden";
+            document.querySelector("#image1").style.visibility = "hidden";
+        }
+    }
+}
+
+document.querySelector("#dice1").addEventListener("click", function() {
+    if (count === "second" || count === "third" || count === "fourth") {
+        if (turn === 1 || turn === 2 || turn === 3 || turn === 4) {
+            //time = setTimeout(function() {}, 3700);
+            windo(turn);
+            document.querySelector("#dice1").src = "images/dice1.gif";
+            document.querySelector(".Player #image" + turn).src = "images/roll.gif";
             value = Math.ceil(Math.random() * 6);
-            time = setTimeout(function() {
-                document.querySelector(".Player4 #image").firstElementChild.src = "";
+            setTimeout(function() {
+                if (value === 1) {
+                    document.querySelector("#dice1").src = "images/dice1.png";
+                } else if (value === 2) {
+                    document.querySelector("#dice1").src = "images/dice2.png";
+                } else if (value === 3) {
+                    document.querySelector("#dice1").src = "images/dice3.png";
+                } else if (value === 4) {
+                    document.querySelector("#dice1").src = "images/dice4.png";
+                } else if (value === 5) {
+                    document.querySelector("#dice1").src = "images/dice5.png";
+                } else if (value === 6) {
+                    document.querySelector("#dice1").src = "images/dice6.png";
+                }
+                document.querySelector(".Player #image" + turn).src = "";
+                // document.querySelector("." + col + "a").style.backgroundColor = "";
+                // document.querySelector("#dice1").src = "";
+                // document.querySelector("#dice1").style.visibility = "hidden";
+                // document.querySelector("." + col + "a").style.opacity = "100%";
+                document.querySelector(".Player #status" + turn).innerHTML = value;
+                turn = result(turn, value, count);
             }, 500);
-            document.querySelector(".Player4 #status").innerHTML = value;
-            turn = result(turn, value, count);
         }
     }
 });
@@ -461,8 +533,7 @@ function result(turn, value, count) {
             if (value === 1 || value === 2 || value === 3 || value === 4 || value === 5) {
                 window[col + "strike"](value); //calls the function "greenstrike(value)" if color is "green".
                 return (2);
-            }
-            if (value === 6) {
+            } else if (value === 6) {
                 window[col + "strike"](value);
                 return (1);
             }
@@ -471,14 +542,14 @@ function result(turn, value, count) {
         col = document.querySelector("#name2").style.color;
         if (col === "green" || col === "yellow" || col === "blue" || col === "red") {
             if (value === 1 || value === 2 || value === 3 || value === 4 || value === 5) {
-                window[col + "strike"](value);
                 if (count === "second") {
+                    window[col + "strike"](value);
                     return (1);
                 } else {
+                    window[col + "strike"](value);
                     return (3);
                 }
-            }
-            if (value === 6) {
+            } else if (value === 6) {
                 window[col + "strike"](value);
                 return (2);
             }
@@ -487,14 +558,14 @@ function result(turn, value, count) {
         col = document.querySelector("#name3").style.color;
         if (col === "green" || col === "yellow" || col === "blue" || col === "red") {
             if (value === 1 || value === 2 || value === 3 || value === 4 || value === 5) {
-                window[col + "strike"](value);
                 if (count === "third") {
+                    window[col + "strike"](value);
                     return (1);
                 } else {
+                    window[col + "strike"](value);
                     return (4);
                 }
-            }
-            if (value === 6) {
+            } else if (value === 6) {
                 window[col + "strike"](value);
                 return (3);
             }
@@ -505,8 +576,7 @@ function result(turn, value, count) {
             if (value === 1 || value === 2 || value === 3 || value === 4 || value === 5) {
                 window[col + "strike"](value);
                 return (1);
-            }
-            if (value === 6) {
+            } else if (value === 6) {
                 window[col + "strike"](value);
                 return (4);
             }
@@ -804,6 +874,7 @@ function redstrike(value) {
                         selector.style.visibility = "hidden";
                         selector.src = "";
                         rs[0] = temp;
+                        path(temp, col);
                     }
                 });
             } else {
