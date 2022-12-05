@@ -10,7 +10,7 @@ var w = sessionStorage.getItem('namefourth');
 var value, score, col, pos, pos1, pos2, pos3,
     tempcol, done = 0,
     temp, turn = 1,
-    time,
+    time, active = 0,
     selector, selector1, selector2, selector3,
     touch = 0,
     greatvalue = [0, 0, 0, 0];
@@ -493,35 +493,39 @@ function windo(turn) {
 }
 
 document.querySelector("#dice1").addEventListener("click", function() {
-    if (count === "second" || count === "third" || count === "fourth") {
-        if (turn === 1 || turn === 2 || turn === 3 || turn === 4) {
-            //time = setTimeout(function() {}, 3700);
-            windo(turn);
-            document.querySelector("#dice1").src = "images/dice1.gif";
-            document.querySelector(".Player #image" + turn).src = "images/roll.gif";
-            value = Math.ceil(Math.random() * 6);
-            setTimeout(function() {
-                if (value === 1) {
-                    document.querySelector("#dice1").src = "images/dice1.png";
-                } else if (value === 2) {
-                    document.querySelector("#dice1").src = "images/dice2.png";
-                } else if (value === 3) {
-                    document.querySelector("#dice1").src = "images/dice3.png";
-                } else if (value === 4) {
-                    document.querySelector("#dice1").src = "images/dice4.png";
-                } else if (value === 5) {
-                    document.querySelector("#dice1").src = "images/dice5.png";
-                } else if (value === 6) {
-                    document.querySelector("#dice1").src = "images/dice6.png";
-                }
-                document.querySelector(".Player #image" + turn).src = "";
-                // document.querySelector("." + col + "a").style.backgroundColor = "";
-                // document.querySelector("#dice1").src = "";
-                // document.querySelector("#dice1").style.visibility = "hidden";
-                // document.querySelector("." + col + "a").style.opacity = "100%";
-                document.querySelector(".Player #status" + turn).innerHTML = value;
-                turn = result(turn, value, count);
-            }, 500);
+    if (pos !== "none" && pos1 !== "none" && pos2 !== "none" && pos3 !== "none" && value !== 6) { active = 0; }
+    if (active === 0 && touch === 0) {
+        if (count === "second" || count === "third" || count === "fourth") {
+            if (turn === 1 || turn === 2 || turn === 3 || turn === 4) {
+                //time = setTimeout(function() {}, 3700);
+                active = 1;
+                windo(turn);
+                document.querySelector("#dice1").src = "images/dice1.gif";
+                document.querySelector(".Player #image" + turn).src = "images/roll.gif";
+                value = Math.ceil(Math.random() * 6);
+                setTimeout(function() {
+                    if (value === 1) {
+                        document.querySelector("#dice1").src = "images/dice1.png";
+                    } else if (value === 2) {
+                        document.querySelector("#dice1").src = "images/dice2.png";
+                    } else if (value === 3) {
+                        document.querySelector("#dice1").src = "images/dice3.png";
+                    } else if (value === 4) {
+                        document.querySelector("#dice1").src = "images/dice4.png";
+                    } else if (value === 5) {
+                        document.querySelector("#dice1").src = "images/dice5.png";
+                    } else if (value === 6) {
+                        document.querySelector("#dice1").src = "images/dice6.png";
+                    }
+                    document.querySelector(".Player #image" + turn).src = "";
+                    // document.querySelector("." + col + "a").style.backgroundColor = "";
+                    // document.querySelector("#dice1").src = "";
+                    // document.querySelector("#dice1").style.visibility = "hidden";
+                    // document.querySelector("." + col + "a").style.opacity = "100%";
+                    document.querySelector(".Player #status" + turn).innerHTML = value;
+                    turn = result(turn, value, count);
+                }, 500);
+            }
         }
     }
 });
@@ -609,7 +613,8 @@ function greenstrike(value) {
                         selector.style.visibility = "hidden";
                         selector.src = "";
                         gs[0] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else {
@@ -625,7 +630,8 @@ function greenstrike(value) {
                         selector.style.visibility = "hidden";
                         selector.src = "";
                         gs[0] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             }
@@ -648,7 +654,8 @@ function greenstrike(value) {
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
                         gs[1] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else {
@@ -664,7 +671,8 @@ function greenstrike(value) {
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
                         gs[1] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             }
@@ -687,7 +695,8 @@ function greenstrike(value) {
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
                         gs[2] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else {
@@ -703,7 +712,8 @@ function greenstrike(value) {
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
                         gs[2] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             }
@@ -726,7 +736,8 @@ function greenstrike(value) {
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
                         gs[3] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else {
@@ -742,7 +753,8 @@ function greenstrike(value) {
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
                         gs[3] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             }
@@ -764,7 +776,7 @@ function greenstrike(value) {
                     document.querySelector(".greena .first img").style.visibility = "hidden";
                     gb[0] = 1;
                     gs[0] = 1;
-                    path(gs[0], col);
+                    checker(null); //path(gs[0], col);
                 }
             });
         }
@@ -783,7 +795,7 @@ function greenstrike(value) {
                     document.querySelector(".greena .Second img").style.visibility = "hidden";
                     gb[1] = 1;
                     gs[1] = 1;
-                    path(gs[1], col);
+                    checker(null); //path(gs[1], col);
                 }
             });
         }
@@ -802,7 +814,7 @@ function greenstrike(value) {
                     document.querySelector(".greena .Third img").style.visibility = "hidden";
                     gb[2] = 1;
                     gs[2] = 1;
-                    path(gs[2], col);
+                    checker(null); //path(gs[2], col);
                 }
             });
         }
@@ -821,12 +833,12 @@ function greenstrike(value) {
                     document.querySelector(".greena .Fourth img").style.visibility = "hidden";
                     gb[3] = 1;
                     gs[3] = 1;
-                    path(gs[3], col);
+                    checker(null); //path(gs[3], col);
                 }
             });
         }
     }
-    touch = 0;
+    //touch = 0;
 }
 
 function redstrike(value) {
@@ -856,7 +868,8 @@ function redstrike(value) {
                         selector.style.visibility = "hidden";
                         selector.src = "";
                         rs[0] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else if (greatr[0] > 64) {
@@ -874,7 +887,8 @@ function redstrike(value) {
                         selector.style.visibility = "hidden";
                         selector.src = "";
                         rs[0] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else {
@@ -890,7 +904,8 @@ function redstrike(value) {
                         selector.style.visibility = "hidden";
                         selector.src = "";
                         rs[0] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             }
@@ -915,7 +930,8 @@ function redstrike(value) {
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
                         rs[1] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else if (greatr[1] > 64) {
@@ -933,7 +949,8 @@ function redstrike(value) {
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
                         rs[1] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else {
@@ -949,7 +966,8 @@ function redstrike(value) {
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
                         rs[1] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             }
@@ -974,7 +992,8 @@ function redstrike(value) {
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
                         rs[2] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else if (greatr[2] > 64) {
@@ -992,7 +1011,8 @@ function redstrike(value) {
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
                         rs[2] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else {
@@ -1008,7 +1028,8 @@ function redstrike(value) {
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
                         rs[2] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             }
@@ -1033,7 +1054,8 @@ function redstrike(value) {
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
                         rs[3] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else if (greatr[3] > 64) {
@@ -1051,7 +1073,8 @@ function redstrike(value) {
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
                         rs[3] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else {
@@ -1067,7 +1090,8 @@ function redstrike(value) {
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
                         rs[3] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             }
@@ -1089,7 +1113,7 @@ function redstrike(value) {
                     document.querySelector(".reda .first img").style.visibility = "hidden";
                     rb[0] = 1;
                     rs[0] = 14;
-                    path(rs[0], col);
+                    checker(null); //path(rs[0], col);
                 }
             });
         }
@@ -1108,7 +1132,7 @@ function redstrike(value) {
                     document.querySelector(".reda .Second img").style.visibility = "hidden";
                     rb[1] = 1;
                     rs[1] = 14;
-                    path(rs[1], col);
+                    checker(null); //path(rs[1], col);
                 }
             });
         }
@@ -1127,7 +1151,7 @@ function redstrike(value) {
                     document.querySelector(".reda .Third img").style.visibility = "hidden";
                     rb[2] = 1;
                     rs[2] = 14;
-                    path(rs[2], col);
+                    checker(null); //path(rs[2], col);
                 }
             });
         }
@@ -1146,12 +1170,12 @@ function redstrike(value) {
                     document.querySelector(".reda .Fourth img").style.visibility = "hidden";
                     rb[3] = 1;
                     rs[3] = 14;
-                    path(rs[3], col);
+                    checker(null); //path(rs[3], col);
                 }
             });
         }
     }
-    touch = 0;
+    //touch = 0;
 }
 
 function bluestrike(value) {
@@ -1181,7 +1205,8 @@ function bluestrike(value) {
                         selector.style.visibility = "hidden";
                         selector.src = "";
                         bs[0] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else if (greatb[0] > 77) {
@@ -1199,7 +1224,8 @@ function bluestrike(value) {
                         selector.style.visibility = "hidden";
                         selector.src = "";
                         bs[0] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else {
@@ -1215,7 +1241,8 @@ function bluestrike(value) {
                         selector.style.visibility = "hidden";
                         selector.src = "";
                         bs[0] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             }
@@ -1240,7 +1267,8 @@ function bluestrike(value) {
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
                         bs[1] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else if (greatb[1] > 77) {
@@ -1258,7 +1286,8 @@ function bluestrike(value) {
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
                         bs[1] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else {
@@ -1274,7 +1303,8 @@ function bluestrike(value) {
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
                         bs[1] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             }
@@ -1299,7 +1329,8 @@ function bluestrike(value) {
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
                         bs[2] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else if (greatb[2] > 77) {
@@ -1317,7 +1348,8 @@ function bluestrike(value) {
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
                         bs[2] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else {
@@ -1333,7 +1365,8 @@ function bluestrike(value) {
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
                         bs[2] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             }
@@ -1358,7 +1391,8 @@ function bluestrike(value) {
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
                         bs[3] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else if (greatb[3] > 77) {
@@ -1376,7 +1410,8 @@ function bluestrike(value) {
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
                         bs[3] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else {
@@ -1392,7 +1427,8 @@ function bluestrike(value) {
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
                         bs[3] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             }
@@ -1414,7 +1450,7 @@ function bluestrike(value) {
                     document.querySelector(".bluea .first img").style.visibility = "hidden";
                     bb[0] = 1;
                     bs[0] = 27;
-                    path(bs[0], col);
+                    checker(null); //path(bs[0], col);
                 }
             });
         }
@@ -1433,7 +1469,7 @@ function bluestrike(value) {
                     document.querySelector(".bluea .Second img").style.visibility = "hidden";
                     bb[1] = 1;
                     bs[1] = 27;
-                    path(bs[1], col);
+                    checker(null); //path(bs[1], col);
                 }
             });
         }
@@ -1452,7 +1488,7 @@ function bluestrike(value) {
                     document.querySelector(".bluea .Third img").style.visibility = "hidden";
                     bb[2] = 1;
                     bs[2] = 27;
-                    path(bs[2], col);
+                    checker(null); //path(bs[2], col);
                 }
             });
         }
@@ -1471,12 +1507,12 @@ function bluestrike(value) {
                     document.querySelector(".bluea .Fourth img").style.visibility = "hidden";
                     bb[3] = 1;
                     bs[3] = 27;
-                    path(bs[3], col);
+                    checker(null); //path(bs[3], col);
                 }
             });
         }
     }
-    touch = 0;
+    //touch = 0;
 }
 
 function yellowstrike(value) {
@@ -1506,7 +1542,8 @@ function yellowstrike(value) {
                         selector.style.visibility = "hidden";
                         selector.src = "";
                         ys[0] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else if (greaty[0] > 90) {
@@ -1524,7 +1561,8 @@ function yellowstrike(value) {
                         selector.style.visibility = "hidden";
                         selector.src = "";
                         ys[0] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else {
@@ -1540,7 +1578,8 @@ function yellowstrike(value) {
                         selector.style.visibility = "hidden";
                         selector.src = "";
                         ys[0] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             }
@@ -1565,7 +1604,8 @@ function yellowstrike(value) {
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
                         ys[1] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else if (greaty[1] > 90) {
@@ -1583,7 +1623,8 @@ function yellowstrike(value) {
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
                         ys[1] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else {
@@ -1599,7 +1640,8 @@ function yellowstrike(value) {
                         selector1.style.visibility = "hidden";
                         selector1.src = "";
                         ys[1] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             }
@@ -1624,7 +1666,8 @@ function yellowstrike(value) {
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
                         ys[2] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else if (greaty[2] > 90) {
@@ -1642,7 +1685,8 @@ function yellowstrike(value) {
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
                         ys[2] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else {
@@ -1658,7 +1702,8 @@ function yellowstrike(value) {
                         selector2.style.visibility = "hidden";
                         selector2.src = "";
                         ys[2] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             }
@@ -1683,7 +1728,8 @@ function yellowstrike(value) {
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
                         ys[3] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else if (greaty[3] > 90) {
@@ -1701,7 +1747,8 @@ function yellowstrike(value) {
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
                         ys[3] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             } else {
@@ -1717,7 +1764,8 @@ function yellowstrike(value) {
                         selector3.style.visibility = "hidden";
                         selector3.src = "";
                         ys[3] = temp;
-                        path(temp, col);
+                        checker(null);
+                        //path(temp, col);
                     }
                 });
             }
@@ -1739,7 +1787,7 @@ function yellowstrike(value) {
                     document.querySelector(".yellowa .first img").style.visibility = "hidden";
                     yb[0] = 1;
                     ys[0] = 40;
-                    path(ys[0], col);
+                    checker(null); //path(ys[0], col);
                 }
             });
         }
@@ -1758,7 +1806,7 @@ function yellowstrike(value) {
                     document.querySelector(".yellowa .Second img").style.visibility = "hidden";
                     yb[1] = 1;
                     ys[1] = 40;
-                    path(ys[1], col);
+                    checker(null); //path(ys[1], col);
                 }
             });
         }
@@ -1777,7 +1825,7 @@ function yellowstrike(value) {
                     document.querySelector(".yellowa .Third img").style.visibility = "hidden";
                     yb[2] = 1;
                     ys[2] = 40;
-                    path(ys[2], col);
+                    checker(null); //path(ys[2], col);
                 }
             });
         }
@@ -1796,12 +1844,12 @@ function yellowstrike(value) {
                     document.querySelector(".yellowa .Fourth img").style.visibility = "hidden";
                     yb[3] = 1;
                     ys[3] = 40;
-                    path(ys[3], col);
+                    checker(null); //path(ys[3], col);
                 }
             });
         }
     }
-    touch = 0;
+    //touch = 0;
 }
 
 //For ending animation.
