@@ -497,6 +497,9 @@ document.querySelector("#dice1").addEventListener("click", function() {
     if (active === 0 && touch === 0) {
         if (count === "second" || count === "third" || count === "fourth") {
             if (turn === 1 || turn === 2 || turn === 3 || turn === 4) {
+                clearTimeout(time);
+                checker(null);
+                dispose_countdown(null);
                 //time = setTimeout(function() {}, 3700);
                 active = 1;
                 windo(turn);
