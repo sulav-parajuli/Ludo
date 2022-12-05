@@ -614,7 +614,6 @@ function greenstrike(value) {
                         selector.src = "";
                         gs[0] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else {
@@ -631,7 +630,6 @@ function greenstrike(value) {
                         selector.src = "";
                         gs[0] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             }
@@ -655,7 +653,6 @@ function greenstrike(value) {
                         selector1.src = "";
                         gs[1] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else {
@@ -672,7 +669,6 @@ function greenstrike(value) {
                         selector1.src = "";
                         gs[1] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             }
@@ -696,7 +692,6 @@ function greenstrike(value) {
                         selector2.src = "";
                         gs[2] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else {
@@ -713,7 +708,6 @@ function greenstrike(value) {
                         selector2.src = "";
                         gs[2] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             }
@@ -737,7 +731,6 @@ function greenstrike(value) {
                         selector3.src = "";
                         gs[3] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else {
@@ -754,7 +747,6 @@ function greenstrike(value) {
                         selector3.src = "";
                         gs[3] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             }
@@ -776,7 +768,7 @@ function greenstrike(value) {
                     document.querySelector(".greena .first img").style.visibility = "hidden";
                     gb[0] = 1;
                     gs[0] = 1;
-                    checker(null); //path(gs[0], col);
+                    checker(null);;
                 }
             });
         }
@@ -795,7 +787,7 @@ function greenstrike(value) {
                     document.querySelector(".greena .Second img").style.visibility = "hidden";
                     gb[1] = 1;
                     gs[1] = 1;
-                    checker(null); //path(gs[1], col);
+                    checker(null);;
                 }
             });
         }
@@ -814,7 +806,7 @@ function greenstrike(value) {
                     document.querySelector(".greena .Third img").style.visibility = "hidden";
                     gb[2] = 1;
                     gs[2] = 1;
-                    checker(null); //path(gs[2], col);
+                    checker(null);;
                 }
             });
         }
@@ -833,7 +825,7 @@ function greenstrike(value) {
                     document.querySelector(".greena .Fourth img").style.visibility = "hidden";
                     gb[3] = 1;
                     gs[3] = 1;
-                    checker(null); //path(gs[3], col);
+                    checker(null);;
                 }
             });
         }
@@ -869,7 +861,6 @@ function redstrike(value) {
                         selector.src = "";
                         rs[0] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else if (greatr[0] > 64) {
@@ -888,7 +879,6 @@ function redstrike(value) {
                         selector.src = "";
                         rs[0] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else {
@@ -905,7 +895,6 @@ function redstrike(value) {
                         selector.src = "";
                         rs[0] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             }
@@ -931,7 +920,6 @@ function redstrike(value) {
                         selector1.src = "";
                         rs[1] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else if (greatr[1] > 64) {
@@ -950,7 +938,6 @@ function redstrike(value) {
                         selector1.src = "";
                         rs[1] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else {
@@ -967,7 +954,6 @@ function redstrike(value) {
                         selector1.src = "";
                         rs[1] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             }
@@ -993,7 +979,6 @@ function redstrike(value) {
                         selector2.src = "";
                         rs[2] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else if (greatr[2] > 64) {
@@ -1012,7 +997,6 @@ function redstrike(value) {
                         selector2.src = "";
                         rs[2] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else {
@@ -1029,7 +1013,6 @@ function redstrike(value) {
                         selector2.src = "";
                         rs[2] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             }
@@ -1055,7 +1038,6 @@ function redstrike(value) {
                         selector3.src = "";
                         rs[3] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else if (greatr[3] > 64) {
@@ -1074,7 +1056,6 @@ function redstrike(value) {
                         selector3.src = "";
                         rs[3] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else {
@@ -1091,7 +1072,6 @@ function redstrike(value) {
                         selector3.src = "";
                         rs[3] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             }
@@ -1113,7 +1093,7 @@ function redstrike(value) {
                     document.querySelector(".reda .first img").style.visibility = "hidden";
                     rb[0] = 1;
                     rs[0] = 14;
-                    checker(null); //path(rs[0], col);
+                    checker(null);;
                 }
             });
         }
@@ -1132,7 +1112,7 @@ function redstrike(value) {
                     document.querySelector(".reda .Second img").style.visibility = "hidden";
                     rb[1] = 1;
                     rs[1] = 14;
-                    checker(null); //path(rs[1], col);
+                    checker(null);;
                 }
             });
         }
@@ -1151,7 +1131,7 @@ function redstrike(value) {
                     document.querySelector(".reda .Third img").style.visibility = "hidden";
                     rb[2] = 1;
                     rs[2] = 14;
-                    checker(null); //path(rs[2], col);
+                    checker(null);;
                 }
             });
         }
@@ -1170,7 +1150,7 @@ function redstrike(value) {
                     document.querySelector(".reda .Fourth img").style.visibility = "hidden";
                     rb[3] = 1;
                     rs[3] = 14;
-                    checker(null); //path(rs[3], col);
+                    checker(null);;
                 }
             });
         }
@@ -1206,7 +1186,6 @@ function bluestrike(value) {
                         selector.src = "";
                         bs[0] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else if (greatb[0] > 77) {
@@ -1225,7 +1204,6 @@ function bluestrike(value) {
                         selector.src = "";
                         bs[0] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else {
@@ -1242,7 +1220,6 @@ function bluestrike(value) {
                         selector.src = "";
                         bs[0] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             }
@@ -1268,7 +1245,6 @@ function bluestrike(value) {
                         selector1.src = "";
                         bs[1] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else if (greatb[1] > 77) {
@@ -1287,7 +1263,6 @@ function bluestrike(value) {
                         selector1.src = "";
                         bs[1] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else {
@@ -1304,7 +1279,6 @@ function bluestrike(value) {
                         selector1.src = "";
                         bs[1] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             }
@@ -1330,7 +1304,6 @@ function bluestrike(value) {
                         selector2.src = "";
                         bs[2] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else if (greatb[2] > 77) {
@@ -1349,7 +1322,6 @@ function bluestrike(value) {
                         selector2.src = "";
                         bs[2] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else {
@@ -1366,7 +1338,6 @@ function bluestrike(value) {
                         selector2.src = "";
                         bs[2] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             }
@@ -1392,7 +1363,6 @@ function bluestrike(value) {
                         selector3.src = "";
                         bs[3] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else if (greatb[3] > 77) {
@@ -1411,7 +1381,6 @@ function bluestrike(value) {
                         selector3.src = "";
                         bs[3] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else {
@@ -1428,7 +1397,6 @@ function bluestrike(value) {
                         selector3.src = "";
                         bs[3] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             }
@@ -1450,7 +1418,7 @@ function bluestrike(value) {
                     document.querySelector(".bluea .first img").style.visibility = "hidden";
                     bb[0] = 1;
                     bs[0] = 27;
-                    checker(null); //path(bs[0], col);
+                    checker(null);;
                 }
             });
         }
@@ -1469,7 +1437,7 @@ function bluestrike(value) {
                     document.querySelector(".bluea .Second img").style.visibility = "hidden";
                     bb[1] = 1;
                     bs[1] = 27;
-                    checker(null); //path(bs[1], col);
+                    checker(null);;
                 }
             });
         }
@@ -1488,7 +1456,7 @@ function bluestrike(value) {
                     document.querySelector(".bluea .Third img").style.visibility = "hidden";
                     bb[2] = 1;
                     bs[2] = 27;
-                    checker(null); //path(bs[2], col);
+                    checker(null);;
                 }
             });
         }
@@ -1507,7 +1475,7 @@ function bluestrike(value) {
                     document.querySelector(".bluea .Fourth img").style.visibility = "hidden";
                     bb[3] = 1;
                     bs[3] = 27;
-                    checker(null); //path(bs[3], col);
+                    checker(null);;
                 }
             });
         }
@@ -1543,7 +1511,6 @@ function yellowstrike(value) {
                         selector.src = "";
                         ys[0] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else if (greaty[0] > 90) {
@@ -1562,7 +1529,6 @@ function yellowstrike(value) {
                         selector.src = "";
                         ys[0] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else {
@@ -1579,7 +1545,6 @@ function yellowstrike(value) {
                         selector.src = "";
                         ys[0] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             }
@@ -1605,7 +1570,6 @@ function yellowstrike(value) {
                         selector1.src = "";
                         ys[1] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else if (greaty[1] > 90) {
@@ -1624,7 +1588,6 @@ function yellowstrike(value) {
                         selector1.src = "";
                         ys[1] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else {
@@ -1641,7 +1604,6 @@ function yellowstrike(value) {
                         selector1.src = "";
                         ys[1] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             }
@@ -1667,7 +1629,6 @@ function yellowstrike(value) {
                         selector2.src = "";
                         ys[2] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else if (greaty[2] > 90) {
@@ -1686,7 +1647,6 @@ function yellowstrike(value) {
                         selector2.src = "";
                         ys[2] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else {
@@ -1703,7 +1663,6 @@ function yellowstrike(value) {
                         selector2.src = "";
                         ys[2] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             }
@@ -1729,7 +1688,6 @@ function yellowstrike(value) {
                         selector3.src = "";
                         ys[3] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else if (greaty[3] > 90) {
@@ -1748,7 +1706,6 @@ function yellowstrike(value) {
                         selector3.src = "";
                         ys[3] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             } else {
@@ -1765,7 +1722,6 @@ function yellowstrike(value) {
                         selector3.src = "";
                         ys[3] = temp;
                         checker(null);
-                        //path(temp, col);
                     }
                 });
             }
@@ -1787,7 +1743,7 @@ function yellowstrike(value) {
                     document.querySelector(".yellowa .first img").style.visibility = "hidden";
                     yb[0] = 1;
                     ys[0] = 40;
-                    checker(null); //path(ys[0], col);
+                    checker(null);;
                 }
             });
         }
@@ -1806,7 +1762,7 @@ function yellowstrike(value) {
                     document.querySelector(".yellowa .Second img").style.visibility = "hidden";
                     yb[1] = 1;
                     ys[1] = 40;
-                    checker(null); //path(ys[1], col);
+                    checker(null);;
                 }
             });
         }
@@ -1825,7 +1781,7 @@ function yellowstrike(value) {
                     document.querySelector(".yellowa .Third img").style.visibility = "hidden";
                     yb[2] = 1;
                     ys[2] = 40;
-                    checker(null); //path(ys[2], col);
+                    checker(null);;
                 }
             });
         }
@@ -1844,7 +1800,7 @@ function yellowstrike(value) {
                     document.querySelector(".yellowa .Fourth img").style.visibility = "hidden";
                     yb[3] = 1;
                     ys[3] = 40;
-                    checker(null); //path(ys[3], col);
+                    checker(null);;
                 }
             });
         }
