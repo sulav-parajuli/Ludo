@@ -33,7 +33,7 @@ h5 {
     overflow-y: hidden;
     background-size: cover;
     background-position: center;
-    background-image: url('images/background.png');
+    background-image: url('images/background0.png');
 }
 
 .container {
@@ -44,7 +44,7 @@ h5 {
     position: relative;
     border-width: 3px;
     border-style: solid;
-    left: 100px;
+    left: 50px;
 }
 
 .button {
@@ -84,7 +84,7 @@ a {
 
 .Player {
     position: relative;
-    left: 950px;
+    left: 900px;
     bottom: 700px;
     display: inline;
 }
@@ -622,6 +622,160 @@ a {
     left: 350px;
     top: 300px;
     position: absolute;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    color: white;
+}
+
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0563bb;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.section-title p {
+    margin-bottom: 0;
+    color: white;
+}
+
+section {
+    display: block;
+    padding-top: 10px;
+}
+
+.theme {
+    display: block;
+    padding-top: 40px;
+}
+
+.theme .theme-item {
+    margin-bottom: 30px;
+}
+
+.theme .theme-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(69, 80, 91, 0.8);
+}
+
+.theme .theme-wrap::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+}
+
+.theme .theme-wrap .theme-info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme .theme-wrap .theme-info::before {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    border-top: 3px solid #d7dce1;
+    border-left: 3px solid #d7dce1;
+    transition: all 0.5s ease 0s;
+    z-index: 9994;
+}
+
+.theme .theme-wrap .theme-info::after {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    border-bottom: 3px solid #d7dce1;
+    border-right: 3px solid #d7dce1;
+    transition: all 0.5s ease 0s;
+    z-index: 9994;
+}
+
+.theme .theme-wrap .theme-info h4 {
+    font-size: 20px;
+    color: #45505b;
+    font-weight: 600;
+}
+
+.theme .theme-wrap:hover::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+
+.theme .theme-wrap:hover .theme-info {
+    opacity: 1;
+}
+
+.theme .theme-wrap:hover .theme-info::before {
+    top: 15px;
+    left: 15px;
+}
+
+.theme .theme-wrap:hover .theme-info::after {
+    bottom: 15px;
+    right: 15px;
+}
+
+.theme-wrap img {
+    height: 250px;
+    width: 200px;
 }
 
 

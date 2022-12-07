@@ -7,7 +7,7 @@ var x = sessionStorage.getItem('namefirst');
 var y = sessionStorage.getItem('namesecond');
 var z = sessionStorage.getItem('namethird');
 var w = sessionStorage.getItem('namefourth');
-var value, score, col, pos, pos1, pos2, pos3,
+var value, i, score, col, pos, pos1, pos2, pos3,
     tempcol, done = 0,
     temp, turn = 1,
     time, active = 0,
@@ -394,6 +394,14 @@ if (document.querySelector("#name1").innerHTML === "") {
             }
         }
     }
+}
+
+private: function board(i) {
+    document.querySelector("#main").src = "images/frame" + i + ".png";
+}
+
+private: function background(i) {
+    document.querySelector(".content").style.backgroundImage = "images/background" + i + ".png";
 }
 
 function dice(turn) {
