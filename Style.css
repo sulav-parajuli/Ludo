@@ -814,6 +814,9 @@ section {
         margin-top: 170px;
         left: 0px;
     }
+    .menu {
+        left: 450px;
+    }
     .Player {
         left: 20px;
         bottom: 0px;
@@ -1241,6 +1244,9 @@ section {
         h1 {
             font-size: 1.7em;
         }
+        .menu {
+            left: 550px;
+        }
         .content {
             overflow-x: hidden;
         }
@@ -1277,6 +1283,9 @@ section {
         }
         .content {
             overflow-x: hidden;
+        }
+        .menu {
+            left: 650px;
         }
         .container {
             margin-left: 85px;
