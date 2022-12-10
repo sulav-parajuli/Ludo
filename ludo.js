@@ -7,7 +7,9 @@ var x = sessionStorage.getItem('namefirst');
 var y = sessionStorage.getItem('namesecond');
 var z = sessionStorage.getItem('namethird');
 var w = sessionStorage.getItem('namefourth');
-var value, i, score, col, pos, pos1, pos2, pos3,
+var value, brd, bgd, bd = 1,
+    bg = 0,
+    score, col, pos, pos1, pos2, pos3,
     tempcol, done = 0,
     temp, turn = 1,
     time, active = 0,
@@ -396,12 +398,34 @@ if (document.querySelector("#name1").innerHTML === "") {
     }
 }
 
-private: function board(i) {
-    document.querySelector("#main").src = "images/frame" + i + ".png";
+function theme() {
+    var brd = sessionStorage.getItem('bd');
+    var bgd = sessionStorage.getItem('bg');
+    if (brd === null && bgd === null) {
+        document.querySelector("#main").src = "images/frame" + bd + ".png";
+        document.querySelector(".content").style.backgroundImage = "images/background" + bg + ".png";
+    } else if (brd === null && bgd !== null) {
+        bg = bgd;
+        document.querySelector(".content").style.backgroundImage = "images/background" + bgd + ".png";
+    } else if (brd !== null && bgd === null) {
+        bd = brd;
+        document.querySelector("#main").src = "images/frame" + brd + ".png";
+    } else {
+        bd = brd;
+        bg = bgd;
+        document.querySelector("#main").src = "images/frame" + brd + ".png";
+        document.querySelector(".content").style.backgroundImage = "images/background" + bgd + ".png";
+    }
 }
 
-private: function background(i) {
-    document.querySelector(".content").style.backgroundImage = "images/background" + i + ".png";
+function board(bd) {
+    sessionStorage.setItem("bd", bd);
+    document.querySelector("#main").src = "images/frame" + bd + ".png";
+}
+
+function background(bg) {
+    sessionStorage.setItem("bg", bg);
+    document.querySelector(".content").style.backgroundImage = "images/background" + bg + ".png";
 }
 
 function dice(turn) {
