@@ -525,7 +525,10 @@ function windo(turn) {
 }
 
 document.querySelector("#dice1").addEventListener("click", function() {
-    if (pos !== "none" && pos1 !== "none" && pos2 !== "none" && pos3 !== "none" && value !== 6) { active = 0; }
+    if (pos !== "none" && pos1 !== "none" && pos2 !== "none" && pos3 !== "none" && value !== 6) {
+        active = 0;
+        touch = 0;
+    }
     if (active === 0 && touch === 0) {
         if (count === "second" || count === "third" || count === "fourth") {
             if (turn === 1 || turn === 2 || turn === 3 || turn === 4) {
@@ -570,9 +573,15 @@ function result(turn, value, count) {
         col = document.querySelector("#name1").style.color;
         if (col === "green" || col === "yellow" || col === "blue" || col === "red") {
             if (value === 1 || value === 2 || value === 3 || value === 4 || value === 5) {
+                // time = setTimeout(function() {
+                //     countdown(null);
+                // }, 3000);
                 window[col + "strike"](value); //calls the function "greenstrike(value)" if color is "green".
                 return (2);
             } else if (value === 6) {
+                // time = setTimeout(function() {
+                //     countdown(null);
+                // }, 3000);
                 window[col + "strike"](value);
                 return (1);
             }
@@ -582,13 +591,22 @@ function result(turn, value, count) {
         if (col === "green" || col === "yellow" || col === "blue" || col === "red") {
             if (value === 1 || value === 2 || value === 3 || value === 4 || value === 5) {
                 if (count === "second") {
+                    // time = setTimeout(function() {
+                    //     countdown(null);
+                    // }, 3000);
                     window[col + "strike"](value);
                     return (1);
                 } else {
+                    // time = setTimeout(function() {
+                    //     countdown(null);
+                    // }, 3000);
                     window[col + "strike"](value);
                     return (3);
                 }
             } else if (value === 6) {
+                // time = setTimeout(function() {
+                //     countdown(null);
+                // }, 3000);
                 window[col + "strike"](value);
                 return (2);
             }
@@ -598,13 +616,22 @@ function result(turn, value, count) {
         if (col === "green" || col === "yellow" || col === "blue" || col === "red") {
             if (value === 1 || value === 2 || value === 3 || value === 4 || value === 5) {
                 if (count === "third") {
+                    // time = setTimeout(function() {
+                    //     countdown(null);
+                    // }, 3000);
                     window[col + "strike"](value);
                     return (1);
                 } else {
+                    // time = setTimeout(function() {
+                    //     countdown(null);
+                    // }, 3000);
                     window[col + "strike"](value);
                     return (4);
                 }
             } else if (value === 6) {
+                // time = setTimeout(function() {
+                //     countdown(null);
+                // }, 3000);
                 window[col + "strike"](value);
                 return (3);
             }
@@ -613,9 +640,15 @@ function result(turn, value, count) {
         col = document.querySelector("#name4").style.color;
         if (col === "green" || col === "yellow" || col === "blue" || col === "red") {
             if (value === 1 || value === 2 || value === 3 || value === 4 || value === 5) {
+                // time = setTimeout(function() {
+                //     countdown(null);
+                // }, 3000);
                 window[col + "strike"](value);
                 return (1);
             } else if (value === 6) {
+                // time = setTimeout(function() {
+                //     countdown(null);
+                // }, 3000);
                 window[col + "strike"](value);
                 return (4);
             }
@@ -1995,9 +2028,9 @@ function animationend() {
         document.querySelector(".vpath .g1 img").style.visibility = "hidden";
         document.querySelector(".vpath .g1 img").src = "";
     }
-    if (document.querySelector(".vpath .g1 img").style.visibility = "visible") {
-        document.querySelector(".vpath .g1 img").style.visibility = "hidden";
-        document.querySelector(".vpath .g1 img").src = "";
+    if (document.querySelector(".vpath1 .g1 img").style.visibility = "visible") {
+        document.querySelector(".vpath1 .g1 img").style.visibility = "hidden";
+        document.querySelector(".vpath1 .g1 img").src = "";
     }
     if (document.querySelector(".vpath2 .g1 img").style.visibility = "visible") {
         document.querySelector(".vpath2 .g1 img").style.visibility = "hidden";
