@@ -95,8 +95,19 @@ a {
 .Player {
     position: relative;
     left: 900px;
+    width: 500px;
     bottom: 700px;
+    display: relative;
+}
+
+.zoom {
+    width: 235px;
+    height: 200px;
     display: inline;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    border-radius: 5px;
 }
 
 .btn {
@@ -115,7 +126,7 @@ a {
 .countdown {
     width: 320px;
     height: 40px;
-    background-color: #0E011D;
+    /* background-color: #0E011D; */
     position: absolute;
     font-family: 'Noto Sans', sans-serif;
     border-radius: 10px;
@@ -249,6 +260,7 @@ a {
     display: relative;
     bottom: 289px;
     left: 326px;
+    border-radius: 50%;
 }
 
 .greena {
@@ -259,15 +271,6 @@ a {
     top: 54px;
     position: absolute;
 }
-
-
-/* .dice {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    border-radius: 35%;
-    border: 1px solid;
-} */
 
 .first {
     width: 45px;
@@ -892,6 +895,11 @@ section {
         bottom: 0px;
         top: 143px;
         left: 184px;
+    }
+    .zoom {
+        width: 123px;
+        height: 95px;
+        position: absolute;
     }
     .greena {
         width: 123px;

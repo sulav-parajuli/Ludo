@@ -1,12 +1,12 @@
 var count = sessionStorage.getItem('val');
 var d, y, z, w, a, b, c, e, temp;
 
-if (count == "second") {
+if (count == 2) {
     document.querySelector(".button-Third").style.display = "none";
     document.querySelector(".button-Fourth").style.display = "none";
-} else if (count == "third") {
+} else if (count == 3) {
     document.querySelector(".button-Fourth").style.display = "none";
-} else if (count == "fourth") {}
+} else if (count == 4) {}
 
 function colorrf() {
     d = sessionStorage.getItem('name1');
@@ -19,14 +19,14 @@ function colorrf() {
     sessionStorage.setItem("namethird", z);
     sessionStorage.setItem("namefourth", w);
 
-    if (count == "second") {
+    if (count == 2) {
         document.querySelector("#name1").innerHTML = d;
         document.querySelector("#name2").innerHTML = y;
-    } else if (count == "third") {
+    } else if (count == 3) {
         document.querySelector("#name1").innerHTML = d;
         document.querySelector("#name2").innerHTML = y;
         document.querySelector("#name3").innerHTML = z;
-    } else if (count == "fourth") {
+    } else if (count == 4) {
         document.querySelector("#name1").innerHTML = d;
         document.querySelector("#name2").innerHTML = y;
         document.querySelector("#name3").innerHTML = z;
@@ -40,7 +40,7 @@ function colorrf() {
         c = document.querySelector(".button-Third").value;
         e = document.querySelector(".button-Fourth").value;
 
-        if (count == "second") {
+        if (count == 2) {
             if (a === b) {
                 alert("Same Color Selected!");
             } else {
@@ -52,7 +52,7 @@ function colorrf() {
                 sessionStorage.setItem("color4", e);
                 location.href = "ludo.html";
             }
-        } else if (count == "third") {
+        } else if (count == 3) {
             if (a === b || a === c || b === c) {
                 alert("Same Color Selected!");
             } else {
@@ -63,7 +63,7 @@ function colorrf() {
                 sessionStorage.setItem("color4", e);
                 location.href = "ludo.html";
             }
-        } else if (count == "fourth") {
+        } else if (count == 4) {
             if (a === b || c === e || a === c || a === e || b === c || b === e) {
                 alert("Same Color Selected!");
             } else {
